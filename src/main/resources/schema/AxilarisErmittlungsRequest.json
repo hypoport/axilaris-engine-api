@@ -263,337 +263,16 @@
             "additionalProperties": false
           },
           "ausgaben": {
-            "type": "object",
-            "properties": {
-              "krankenversicherungsBeitraege": {
-                "type": "number"
-              },
-              "eigenMieteInklusiveNebenkosten": {
-                "type": "number"
-              },
-              "unterhalt": {
-                "type": "number"
-              },
-              "rateImmobiliendarlehen": {
-                "type": "number"
-              },
-              "lebensVersicherungsBeitraege": {
-                "type": "number"
-              },
-              "bausparDarlehensRate": {
-                "type": "number"
-              },
-              "sonstigeAusgaben": {
-                "type": "number"
-              }
-            },
-            "additionalProperties": false
+            "$ref": "#/definitions/ausgaben"
           },
           "einnahmen": {
-            "type": "object",
-            "properties": {
-              "monatlicheEinnahmen": {
-                "type": "object",
-                "properties": {
-                  "regelmaessigesUnselbstaendigesEinkommenMonatlich": {
-                    "type": "number"
-                  },
-                  "rente": {
-                    "type": "number"
-                  },
-                  "kindesUnterhalt": {
-                    "type": "number"
-                  },
-                  "ehegattenUnterhalt": {
-                    "type": "number"
-                  },
-                  "kinderGeld": {
-                    "type": "number"
-                  },
-                  "nebentaetigkeit": {
-                    "type": "number"
-                  },
-                  "mietUndPachtEinnahmen": {
-                    "type": "object",
-                    "properties": {
-                      "warm": {
-                        "type": "number"
-                      },
-                      "kalt": {
-                        "type": "number"
-                      }
-                    },
-                    "additionalProperties": false
-                  },
-                  "sonstige": {
-                    "type": "number"
-                  }
-                },
-                "additionalProperties": false
-              },
-              "jaehrlicheEinnahmen": {
-                "type": "object",
-                "properties": {
-                  "selbstaendigkeitEinkommen": {
-                    "type": "object",
-                    "properties": {
-                      "nettoEinkommenJaehrlich": {
-                        "type": "number"
-                      },
-                      "zuVersteuerndesJahresEinkommen": {
-                        "type": "object",
-                        "properties": {
-                          "laufendesJahr": {
-                            "type": "number"
-                          },
-                          "vorEinemJahr": {
-                            "type": "number"
-                          },
-                          "vorZweiJahren": {
-                            "type": "number"
-                          },
-                          "vorDreiJahren": {
-                            "type": "number"
-                          }
-                        },
-                        "additionalProperties": false
-                      },
-                      "einkommensSteuer": {
-                        "type": "object",
-                        "properties": {
-                          "laufendesJahr": {
-                            "type": "number"
-                          },
-                          "vorEinemJahr": {
-                            "type": "number"
-                          },
-                          "vorZweiJahren": {
-                            "type": "number"
-                          },
-                          "vorDreiJahren": {
-                            "type": "number"
-                          }
-                        },
-                        "additionalProperties": false
-                      },
-                      "abschreibungen": {
-                        "type": "object",
-                        "properties": {
-                          "laufendesJahr": {
-                            "type": "number"
-                          },
-                          "vorEinemJahr": {
-                            "type": "number"
-                          },
-                          "vorZweiJahren": {
-                            "type": "number"
-                          },
-                          "vorDreiJahren": {
-                            "type": "number"
-                          }
-                        },
-                        "additionalProperties": false
-                      },
-                      "bruttoEinkommenJaehrlichErwartet": {
-                        "type": "number"
-                      }
-                    },
-                    "additionalProperties": false
-                  }
-                },
-                "additionalProperties": false
-              }
-            },
-            "additionalProperties": false
+            "$ref": "#/definitions/einnahmen"
           },
           "vermoegen": {
-            "type": "object",
-            "properties": {
-              "rueckkaufsWertLebensversicherung": {
-                "type": "number"
-              },
-              "bausparGuthaben": {
-                "type": "number"
-              },
-              "eigengenutzteImmobilien": {
-                "type": "number"
-              },
-              "vermieteteImmobilien": {
-                "type": "number"
-              },
-              "immobilie": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "art": {
-                      "type": "string"
-                    },
-                    "verkehrswert": {
-                      "type": "number"
-                    },
-                    "wohnflaeche": {
-                      "type": "integer"
-                    },
-                    "vermieteteWohnflaeche": {
-                      "type": "integer"
-                    },
-                    "nutzungsart": {
-                      "enum": [
-                        "VERMIETET",
-                        "EIGENGENUTZT",
-                        "EIGENGENUTZT_UND_VERMIETET"
-                      ]
-                    }
-                  }
-                }
-              },
-              "wohnflaecheEigengenutzterImmobilie": {
-                "type": "integer"
-              }
-            },
-            "additionalProperties": false
+            "$ref": "#/definitions/vermoegen"
           },
           "verbindlichkeiten": {
-            "type": "object",
-            "properties": {
-              "ratenkredite": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "monatlicheRate": {
-                      "type": "number"
-                    },
-                    "letzteRate": {
-                      "type": "number"
-                    },
-                    "datumLetzteRate": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "restschuld": {
-                      "type": "number"
-                    }
-                  },
-                  "additionalProperties": false
-                }
-              },
-              "sonstigeVerbindlichkeiten": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "monatlicheRate": {
-                      "type": "number"
-                    },
-                    "letzteRate": {
-                      "type": "number"
-                    },
-                    "datumLetzteRate": {
-                      "type": "string",
-                      "format": "date-time"
-                    },
-                    "restschuld": {
-                      "type": "number"
-                    }
-                  },
-                  "additionalProperties": false
-                }
-              },
-              "leasings": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "monatlicheRate": {
-                      "type": "number"
-                    },
-                    "letzteRate": {
-                      "type": "number"
-                    },
-                    "datumLetzteRate": {
-                      "type": "string",
-                      "format": "date-time"
-                    }
-                  },
-                  "additionalProperties": false
-                }
-              },
-              "kreditkarten": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "verfuegungsRahmen": {
-                      "type": "number"
-                    },
-                    "monatlicheRate": {
-                      "type": "number"
-                    },
-                    "beanspruchterBetrag": {
-                      "type": "number"
-                    }
-                  },
-                  "additionalProperties": false
-                }
-              },
-              "dispositionskredite": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "verfuegungsRahmen": {
-                      "type": "number"
-                    },
-                    "beanspruchterBetrag": {
-                      "type": "number"
-                    }
-                  },
-                  "additionalProperties": false
-                }
-              },
-              "immobiliendarlehen": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "immobilieId": {
-                      "type": "string"
-                    },
-                    "monatlicheRate": {
-                      "type": "number"
-                    },
-                    "restschuld": {
-                      "type": "number"
-                    }
-                  },
-                  "additionalProperties": false
-                }
-              },
-              "summeImmobilienDarlehen": {
-                "type": "number"
-              }
-            },
-            "additionalProperties": false
+            "$ref": "#/definitions/verbindlichkeiten"
           },
           "anzahlKinder": {
             "type": "integer"
@@ -640,7 +319,8 @@
             },
             "additionalProperties": false
           }
-        }
+        },
+        "additionalProperties": false
       },
       "additionalProperties": false
     }
@@ -664,6 +344,340 @@
         },
         "land": {
           "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ausgaben": {
+      "type": "object",
+      "properties": {
+        "krankenversicherungsBeitraege": {
+          "type": "number"
+        },
+        "eigenMieteInklusiveNebenkosten": {
+          "type": "number"
+        },
+        "unterhalt": {
+          "type": "number"
+        },
+        "rateImmobiliendarlehen": {
+          "type": "number"
+        },
+        "lebensVersicherungsBeitraege": {
+          "type": "number"
+        },
+        "bausparDarlehensRate": {
+          "type": "number"
+        },
+        "sonstigeAusgaben": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "einnahmen": {
+      "type": "object",
+      "properties": {
+        "monatlicheEinnahmen": {
+          "type": "object",
+          "properties": {
+            "regelmaessigesUnselbstaendigesEinkommenMonatlich": {
+              "type": "number"
+            },
+            "rente": {
+              "type": "number"
+            },
+            "kindesUnterhalt": {
+              "type": "number"
+            },
+            "ehegattenUnterhalt": {
+              "type": "number"
+            },
+            "kinderGeld": {
+              "type": "number"
+            },
+            "nebentaetigkeit": {
+              "type": "number"
+            },
+            "mietUndPachtEinnahmen": {
+              "type": "object",
+              "properties": {
+                "warm": {
+                  "type": "number"
+                },
+                "kalt": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
+            },
+            "sonstige": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false
+        },
+        "jaehrlicheEinnahmen": {
+          "type": "object",
+          "properties": {
+            "selbstaendigkeitEinkommen": {
+              "type": "object",
+              "properties": {
+                "nettoEinkommenJaehrlich": {
+                  "type": "number"
+                },
+                "zuVersteuerndesJahresEinkommen": {
+                  "type": "object",
+                  "properties": {
+                    "laufendesJahr": {
+                      "type": "number"
+                    },
+                    "vorEinemJahr": {
+                      "type": "number"
+                    },
+                    "vorZweiJahren": {
+                      "type": "number"
+                    },
+                    "vorDreiJahren": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "einkommensSteuer": {
+                  "type": "object",
+                  "properties": {
+                    "laufendesJahr": {
+                      "type": "number"
+                    },
+                    "vorEinemJahr": {
+                      "type": "number"
+                    },
+                    "vorZweiJahren": {
+                      "type": "number"
+                    },
+                    "vorDreiJahren": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "abschreibungen": {
+                  "type": "object",
+                  "properties": {
+                    "laufendesJahr": {
+                      "type": "number"
+                    },
+                    "vorEinemJahr": {
+                      "type": "number"
+                    },
+                    "vorZweiJahren": {
+                      "type": "number"
+                    },
+                    "vorDreiJahren": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "bruttoEinkommenJaehrlichErwartet": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "vermoegen": {
+      "type": "object",
+      "properties": {
+        "rueckkaufsWertLebensversicherung": {
+          "type": "number"
+        },
+        "bausparGuthaben": {
+          "type": "number"
+        },
+        "eigengenutzteImmobilien": {
+          "type": "number"
+        },
+        "vermieteteImmobilien": {
+          "type": "number"
+        },
+        "immobilie": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "art": {
+                "type": "string"
+              },
+              "verkehrswert": {
+                "type": "number"
+              },
+              "wohnflaeche": {
+                "type": "integer"
+              },
+              "vermieteteWohnflaeche": {
+                "type": "integer"
+              },
+              "nutzungsart": {
+                "enum": [
+                  "VERMIETET",
+                  "EIGENGENUTZT",
+                  "EIGENGENUTZT_UND_VERMIETET"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "wohnflaecheEigengenutzterImmobilie": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "verbindlichkeiten": {
+      "type": "object",
+      "properties": {
+        "ratenkredite": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "monatlicheRate": {
+                "type": "number"
+              },
+              "letzteRate": {
+                "type": "number"
+              },
+              "datumLetzteRate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "restschuld": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "sonstigeVerbindlichkeiten": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "monatlicheRate": {
+                "type": "number"
+              },
+              "letzteRate": {
+                "type": "number"
+              },
+              "datumLetzteRate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "restschuld": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "leasings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "monatlicheRate": {
+                "type": "number"
+              },
+              "letzteRate": {
+                "type": "number"
+              },
+              "datumLetzteRate": {
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "kreditkarten": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "verfuegungsRahmen": {
+                "type": "number"
+              },
+              "monatlicheRate": {
+                "type": "number"
+              },
+              "beanspruchterBetrag": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "dispositionskredite": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "verfuegungsRahmen": {
+                "type": "number"
+              },
+              "beanspruchterBetrag": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "immobiliendarlehen": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "immobilieId": {
+                "type": "string"
+              },
+              "monatlicheRate": {
+                "type": "number"
+              },
+              "restschuld": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "summeImmobilienDarlehen": {
+          "type": "number"
         }
       },
       "additionalProperties": false
