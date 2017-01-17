@@ -67,10 +67,7 @@
             "type": "object",
             "properties": {
               "anrede": {
-                "enum": [
-                  "HERR",
-                  "FRAU"
-                ]
+                "$ref": "#/definitions/anrede"
               },
               "titel": {
                 "type": "string"
@@ -321,6 +318,241 @@
           }
         },
         "additionalProperties": false
+      },
+      "additionalProperties": false
+    },
+    "gemeinsameAntragstellerAngaben": {
+      "type": "object",
+      "properties": {
+        "ausgaben": {
+          "$ref": "#/definitions/ausgaben"
+        },
+        "einnahmen": {
+          "$ref": "#/definitions/einnahmen"
+        },
+        "vermoegen": {
+          "$ref": "#/definitions/vermoegen"
+        },
+        "verbindlichkeiten": {
+          "$ref": "#/definitions/verbindlichkeiten"
+        },
+        "anzahlKinder": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "konto": {
+      "$ref": "#/definitions/konto"
+    },
+    "abzuloesendeVerbindlichkeiten": {
+      "type": "object",
+      "properties": {
+        "ratenkredite": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "monatlicheRate": {
+                "type": "number"
+              },
+              "letzteRate": {
+                "type": "number"
+              },
+              "datumErsteRate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "datumLetzteRate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "urspruenglicherBetrag": {
+                "type": "number"
+              },
+              "abloeseBetrag": {
+                "type": "number"
+              },
+              "konto": {
+                "$ref": "#/definitions/konto"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "sonstigeVerbindlichkeiten": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "monatlicheRate": {
+                "type": "number"
+              },
+              "letzteRate": {
+                "type": "number"
+              },
+              "datumErsteRate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "datumLetzteRate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "urspruenglicherBetrag": {
+                "type": "number"
+              },
+              "abloeseBetrag": {
+                "type": "number"
+              },
+              "konto": {
+                "$ref": "#/definitions/konto"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "kreditkarten": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "verfuegungsRahmen": {
+                "type": "number"
+              },
+              "monatlicheRate": {
+                "type": "number"
+              },
+              "abloeseBetrag": {
+                "type": "number"
+              },
+              "konto": {
+                "$ref": "#/definitions/konto"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "dispositionskredite": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "verfuegungsRahmen": {
+                "type": "number"
+              },
+              "abloeseBetrag": {
+                "type": "number"
+              },
+              "konto": {
+                "$ref": "#/definitions/konto"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "finanzierungsZweck": {
+      "enum": [
+        "CONVERSION",
+        "OTHERS",
+        "BUY_NEW_CAR",
+        "MODERN_UND_WOHNEN"
+      ]
+    },
+    "fahrzeugDaten": {
+      "type": "object",
+      "properties": {
+        "erstzulassungsDatum": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "kaufpreis": {
+          "type": "number"
+        },
+        "beglicheneKosten": {
+          "type": "number"
+        },
+        "fahrzeugLeistung": {
+          "type": "object",
+          "properties": {
+            "nennleistung": {
+              "type": "number"
+            },
+            "einheitLeistung": {
+              "enum": [
+                "PS",
+                "KW"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "laufleistung": {
+          "type": "integer"
+        },
+        "marke": {
+          "type": "string"
+        },
+        "modell": {
+          "type": "string"
+        },
+        "verkaeuferArt": {
+          "enum": [
+            "PRIVAT",
+            "HAENDLER"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "kundenBetreuer": {
+      "type": "object",
+      "properties": {
+        "partnerId": {
+          "type": "string"
+        },
+        "firmenname": {
+          "type": "string"
+        },
+        "vorname": {
+          "type": "string"
+        },
+        "nachname": {
+          "type": "string"
+        },
+        "anschrift": {
+          "$ref": "#/definitions/adresse"
+        },
+        "telefon": {
+          "type": "string"
+        },
+        "fax": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
+        },
+        "anrede": {
+          "$ref": "#/definitions/anrede"
+        }
       },
       "additionalProperties": false
     }
@@ -681,6 +913,33 @@
         }
       },
       "additionalProperties": false
+    },
+    "konto": {
+      "type": "object",
+      "properties": {
+        "kreditInstitut": {
+          "type": "string"
+        },
+        "kontoInhaberIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "iban": {
+          "type": "string"
+        },
+        "bic": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "anrede": {
+      "enum": [
+        "HERR",
+        "FRAU"
+      ]
     }
   }
 }
