@@ -26,23 +26,8 @@
       "rateProMonat": {
         "type": "number"
       },
-      "versicherungsWunsch": {
-        "type": "object",
-        "properties": {
-          "leben": {
-            "type": "boolean"
-          },
-          "arbeitsUnfaehigkeit": {
-            "type": "boolean"
-          },
-          "arbeitsLosigkeit": {
-            "type": "boolean"
-          },
-          "kreditNehmerId": {
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
+      "versicherungsrisiken": {
+        "$ref": "definitions.json#/versicherungsrisiken"
       }
     },
     "additionalProperties": false

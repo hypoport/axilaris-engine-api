@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "axilaris-engine-api Abschlussresponse",
+  "id": "http://jsonschema.net/axilaris-engine-api/abschluss/response",
+  "type": "object",
+  "properties": {
+    "angebot": {
+      "$ref": "axilarisAngebot.json#/angebot"
+    },
+    "dokumente": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "bezeichnung": {
+            "type": "string"
+          },
+          "dateiname": {
+            "type": "string"
+          },
+          "base64pdf": {
+            "type": "string"
+          },
+          "sichtbarkeit": {
+            "type": "object",
+            "properties": {
+              "sichtbarFuerVertrieb": {
+                "type": "boolean"
+              },
+              "sichtbarFuerProduktAnbieter": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "referenzNummerProduzent": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

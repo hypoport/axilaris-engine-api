@@ -1,0 +1,179 @@
+{
+  "angebot": {
+    "type": "object",
+    "properties": {
+      "produktAnbieter": {
+        "type": "string"
+      },
+      "produktBezeichnung": {
+        "type": "string"
+      },
+      "angebotsVariantenTyp": {
+        "type": "string"
+      },
+      "kreditKonditionen": {
+        "type": "object",
+        "properties": {
+          "effektivZinssatz": {
+            "type": "number"
+          },
+          "sollZinssatz": {
+            "type": "number"
+          },
+          "gesamtBetrag": {
+            "type": "number"
+          },
+          "nominalBetrag": {
+            "type": "number"
+          },
+          "auszahlungsBetrag": {
+            "type": "number"
+          },
+          "laufzeitInMonaten": {
+            "type": "integer"
+          },
+          "rateProMonat": {
+            "type": "number"
+          },
+          "letzteRate": {
+            "type": "number"
+          },
+          "provision": {
+            "type": "number"
+          },
+          "europaceNutzungsGebuehr": {
+            "type": "number"
+          },
+          "produzentZahltEuropaceNutzungsGebuehr": {
+            "type": "number"
+          },
+          "vorlaufZinsenProTag": {
+            "type": "number"
+          },
+          "basisBetragFuerDieProvisionsermittlung": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false
+      },
+      "versicherungsKonditionen": {
+        "type": "object",
+        "properties": {
+          "basisFuerDieProvisionsErmittlung": {
+            "enum": [
+              "VERSICHERUNGS_PRAEMIE_NETTO",
+              "VERSICHERUNGS_PRAEMIE_BRUTTO"
+            ]
+          },
+          "versicherungsProvision": {
+            "type": "number"
+          },
+          "versicherungsPraemieBrutto": {
+            "type": "number"
+          },
+          "versicherungsPraemieNetto": {
+            "type": "number"
+          },
+          "versicherungsrisiken": {
+            "$ref": "definitions.json#/versicherungsrisiken"
+          },
+          "versicherer": {
+            "type": "string"
+          },
+          "europaceNutzungsGebuehr": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "machbarkeitsStatus": {
+            "enum": [
+              "MACHBAR",
+              "MACHBAR_UNTER_VORBEHALT_PRODUZENT",
+              "NICHT_MACHBAR"
+            ]
+          },
+          "angepasst": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "meldungen": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "kategorie": {
+              "enum": [
+                "MACHBARKEIT",
+                "VOLLSTAENDIGKEIT",
+                "HINWEIS",
+                "ANPASSUNG"
+              ]
+            },
+            "text": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "erforderlicheUnterlagen": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "alternativesAngebot": {
+        "type": "object",
+        "properties": {
+          "alternativesAngebot": {
+            "type": "boolean"
+          },
+          "angebotsAlternativenTyp": {
+            "enum": [
+              "DOWNSELL",
+              "UPSELL"
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "bonitaetsCheck": {
+        "type": "object",
+        "properties": {
+          "ueberschuss": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false
+      },
+      "uebersichten": {
+        "type": "object",
+        "properties": {
+          "bausteinUebersicht": {
+            "$ref": "definitions.json#/uebersicht"
+          },
+          "boniCheck": {
+            "$ref": "definitions.json#/uebersicht"
+          }
+        },
+        "additionalProperties": false
+      },
+      "maximalerAuszahlungsBetrag": {
+        "type": "number"
+      },
+      "uebertragungVonDokumentenAnExterneSystemeMoeglich": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+}

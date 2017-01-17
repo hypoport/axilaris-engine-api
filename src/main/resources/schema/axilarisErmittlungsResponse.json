@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "axilaris-engine-api Ermittlungsresponse",
+  "id": "http://jsonschema.net/axilaris-engine-api/ermittlung/response",
+  "type": "object",
+  "properties": {
+    "angebote": {
+      "type": "array",
+      "items": {
+        "$ref": "axilarisAngebot.json#/angebot"
+      }
+    }
+  },
+  "additionalProperties": false
+}

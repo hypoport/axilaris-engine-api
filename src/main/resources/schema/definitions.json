@@ -392,5 +392,44 @@
       "HERR",
       "FRAU"
     ]
+  },
+  "versicherungsrisiken": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "antragstellerId": {
+          "type": "string"
+        },
+        "tod": {
+          "type": "boolean"
+        },
+        "arbeitsunfaehigkeit": {
+          "type": "boolean"
+        },
+        "arbeitsLosigkeit": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "uebersicht": {
+    "type": "object",
+    "properties": {
+      "ueberschrift": {
+        "type": "string"
+      },
+      "exzerpt": {
+        "type": "object",
+        "properties": {
+          "ueberschrift": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
   }
 }
