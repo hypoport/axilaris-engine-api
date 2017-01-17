@@ -1,0 +1,672 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "axilaris-engine-api Ermittlungsrequest",
+  "id": "http://jsonschema.net/axilaris-engine-api/ermittlung/request",
+  "type": "object",
+  "properties": {
+    "metadaten": {
+      "type": "object",
+      "properties": {
+        "traceId": {
+          "type": "boolean"
+        },
+        "vorgangsNummer": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "kreditWunsch": {
+      "type": "object",
+      "properties": {
+        "auszahlungsBetrag": {
+          "type": "number"
+        },
+        "ratenZahlungTermin": {
+          "type": "integer"
+        },
+        "laufzeitInMonaten": {
+          "type": "integer"
+        },
+        "rateProMonat": {
+          "type": "number"
+        },
+        "versicherungsWunsch": {
+          "type": "object",
+          "properties": {
+            "leben": {
+              "type": "boolean"
+            },
+            "arbeitsUnfaehigkeit": {
+              "type": "boolean"
+            },
+            "arbeitsLosigkeit": {
+              "type": "boolean"
+            },
+            "kreditNehmerId": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "antragsteller": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "haushaltsPartnerId": {
+            "type": "string"
+          },
+          "persoenlicheAngaben": {
+            "type": "object",
+            "properties": {
+              "anrede": {
+                "enum": [
+                  "HERR",
+                  "FRAU"
+                ]
+              },
+              "titel": {
+                "type": "string"
+              },
+              "vorname": {
+                "type": "string"
+              },
+              "nachname": {
+                "type": "string"
+              },
+              "geburtsDatum": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "geburtsOrt": {
+                "type": "string"
+              },
+              "geburtsName": {
+                "type": "string"
+              },
+              "staatsAngehoerigkeit": {
+                "type": "string"
+              },
+              "familienStand": {
+                "type": "string"
+              },
+              "anzahlPersonenImHaushalt": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false
+          },
+          "angabenZurBeschaeftigung": {
+            "type": "object",
+            "properties": {
+              "beschaeftigungsVerhaeltnis": {
+                "enum": [
+                  "ANGESTELLT",
+                  "ARBEITER",
+                  "BEAMTER",
+                  "GF_GESELLSCHAFTER",
+                  "SELBSTAENDIG",
+                  "FREIBERUFLER",
+                  "RENTNER",
+                  "HAUSFRAU",
+                  "ARBEITSLOS"
+                ]
+              },
+              "befristet": {
+                "enum": [
+                  "UNLIMITED",
+                  "LIMITED",
+                  "PROBATIONARY"
+                ]
+              },
+              "beschaeftigtSeit": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "befristetBis": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "beruf": {
+                "type": "string"
+              },
+              "branche": {
+                "enum": [
+                  "HOUSING_INDUSTRIES",
+                  "SERVICES",
+                  "ENERGY_SUPPLIER",
+                  "LOCAL_AUTHORITY",
+                  "RETAIL",
+                  "GASTRONOMIE",
+                  "FINANCING",
+                  "AGRICULTURE",
+                  "PUBLIC_SERVICE",
+                  "NON_PROFIT",
+                  "PRIVATE_HOMES",
+                  "SOCIAL_SECURITY",
+                  "MANUFACTURING",
+                  "TELECOMMUNICATION",
+                  "OTHERS"
+                ]
+              },
+              "anschriftArbeitgeber": {
+                "$ref": "#/definitions/adresse"
+              },
+              "nameArbeitgeber": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "angabenZurVorherigenBeschaeftigung": {
+            "type": "object",
+            "properties": {
+              "beschaeftigtSeit": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "befristetBis": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "anschriftArbeitgeber": {
+                "$ref": "#/definitions/adresse"
+              },
+              "nameArbeitgeber": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "wohnsituation": {
+            "type": "object",
+            "properties": {
+              "wohnArt": {
+                "enum": [
+                  "BY_RENT",
+                  "OWN_RESIDENCE",
+                  "AT_PARENTS",
+                  "BY_SUBLETTING"
+                ]
+              },
+              "wohnhaftSeit": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "anschrift": {
+                "$ref": "#/definitions/adresse"
+              },
+              "vorAnschrift": {
+                "$ref": "#/definitions/adresse"
+              },
+              "wohnhaftSeitVorAnschrift": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "anzahlPkw": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false
+          },
+          "kontakt": {
+            "type": "object",
+            "properties": {
+              "telefonPrivat": {
+                "type": "string"
+              },
+              "telefonGeschaeftlich": {
+                "type": "string"
+              },
+              "eMail": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "herkunft": {
+            "type": "object",
+            "properties": {
+              "aufenthaltstitel": {
+                "type": "object",
+                "properties": {
+                  "inDeutschlandSeit": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "art": {
+                    "enum": [
+                      "PERMISSION_UNLIMITED",
+                      "PERMISSION_LIMITED",
+                      "ALLOWANCE"
+                    ]
+                  },
+                  "befristetBis": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "arbeitsErlaubnisBefristetBis": {
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "additionalProperties": false
+          },
+          "ausgaben": {
+            "type": "object",
+            "properties": {
+              "krankenversicherungsBeitraege": {
+                "type": "number"
+              },
+              "eigenMieteInklusiveNebenkosten": {
+                "type": "number"
+              },
+              "unterhalt": {
+                "type": "number"
+              },
+              "rateImmobiliendarlehen": {
+                "type": "number"
+              },
+              "lebensVersicherungsBeitraege": {
+                "type": "number"
+              },
+              "bausparDarlehensRate": {
+                "type": "number"
+              },
+              "sonstigeAusgaben": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          },
+          "einnahmen": {
+            "type": "object",
+            "properties": {
+              "monatlicheEinnahmen": {
+                "type": "object",
+                "properties": {
+                  "regelmaessigesUnselbstaendigesEinkommenMonatlich": {
+                    "type": "number"
+                  },
+                  "rente": {
+                    "type": "number"
+                  },
+                  "kindesUnterhalt": {
+                    "type": "number"
+                  },
+                  "ehegattenUnterhalt": {
+                    "type": "number"
+                  },
+                  "kinderGeld": {
+                    "type": "number"
+                  },
+                  "nebentaetigkeit": {
+                    "type": "number"
+                  },
+                  "mietUndPachtEinnahmen": {
+                    "type": "object",
+                    "properties": {
+                      "warm": {
+                        "type": "number"
+                      },
+                      "kalt": {
+                        "type": "number"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "sonstige": {
+                    "type": "number"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "jaehrlicheEinnahmen": {
+                "type": "object",
+                "properties": {
+                  "selbstaendigkeitEinkommen": {
+                    "type": "object",
+                    "properties": {
+                      "nettoEinkommenJaehrlich": {
+                        "type": "number"
+                      },
+                      "zuVersteuerndesJahresEinkommen": {
+                        "type": "object",
+                        "properties": {
+                          "laufendesJahr": {
+                            "type": "number"
+                          },
+                          "vorEinemJahr": {
+                            "type": "number"
+                          },
+                          "vorZweiJahren": {
+                            "type": "number"
+                          },
+                          "vorDreiJahren": {
+                            "type": "number"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      "einkommensSteuer": {
+                        "type": "object",
+                        "properties": {
+                          "laufendesJahr": {
+                            "type": "number"
+                          },
+                          "vorEinemJahr": {
+                            "type": "number"
+                          },
+                          "vorZweiJahren": {
+                            "type": "number"
+                          },
+                          "vorDreiJahren": {
+                            "type": "number"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      "abschreibungen": {
+                        "type": "object",
+                        "properties": {
+                          "laufendesJahr": {
+                            "type": "number"
+                          },
+                          "vorEinemJahr": {
+                            "type": "number"
+                          },
+                          "vorZweiJahren": {
+                            "type": "number"
+                          },
+                          "vorDreiJahren": {
+                            "type": "number"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      "bruttoEinkommenJaehrlichErwartet": {
+                        "type": "number"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          },
+          "vermoegen": {
+            "type": "object",
+            "properties": {
+              "rueckkaufsWertLebensversicherung": {
+                "type": "number"
+              },
+              "bausparGuthaben": {
+                "type": "number"
+              },
+              "eigengenutzteImmobilien": {
+                "type": "number"
+              },
+              "vermieteteImmobilien": {
+                "type": "number"
+              },
+              "immobilie": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "art": {
+                      "type": "string"
+                    },
+                    "verkehrswert": {
+                      "type": "number"
+                    },
+                    "wohnflaeche": {
+                      "type": "integer"
+                    },
+                    "vermieteteWohnflaeche": {
+                      "type": "integer"
+                    },
+                    "nutzungsart": {
+                      "enum": [
+                        "VERMIETET",
+                        "EIGENGENUTZT",
+                        "EIGENGENUTZT_UND_VERMIETET"
+                      ]
+                    }
+                  }
+                }
+              },
+              "wohnflaecheEigengenutzterImmobilie": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false
+          },
+          "verbindlichkeiten": {
+            "type": "object",
+            "properties": {
+              "ratenkredite": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "monatlicheRate": {
+                      "type": "number"
+                    },
+                    "letzteRate": {
+                      "type": "number"
+                    },
+                    "datumLetzteRate": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "restschuld": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "sonstigeVerbindlichkeiten": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "monatlicheRate": {
+                      "type": "number"
+                    },
+                    "letzteRate": {
+                      "type": "number"
+                    },
+                    "datumLetzteRate": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "restschuld": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "leasings": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "monatlicheRate": {
+                      "type": "number"
+                    },
+                    "letzteRate": {
+                      "type": "number"
+                    },
+                    "datumLetzteRate": {
+                      "type": "string",
+                      "format": "date-time"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "kreditkarten": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "verfuegungsRahmen": {
+                      "type": "number"
+                    },
+                    "monatlicheRate": {
+                      "type": "number"
+                    },
+                    "beanspruchterBetrag": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "dispositionskredite": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "verfuegungsRahmen": {
+                      "type": "number"
+                    },
+                    "beanspruchterBetrag": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "immobiliendarlehen": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "immobilieId": {
+                      "type": "string"
+                    },
+                    "monatlicheRate": {
+                      "type": "number"
+                    },
+                    "restschuld": {
+                      "type": "number"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "summeImmobilienDarlehen": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          },
+          "anzahlKinder": {
+            "type": "integer"
+          },
+          "rentenVersicherung": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "anschrift": {
+                "$ref": "#/definitions/adresse"
+              },
+              "rentnerSeit": {
+                "type": "string",
+                "format": "date-time"
+              }
+            },
+            "additionalProperties": false
+          },
+          "legitimation": {
+            "type": "object",
+            "properties": {
+              "ausweisArt": {
+                "enum": [
+                  "PERSONALAUSWEIS",
+                  "REISEPASS",
+                  "ANDERER_AUSWEIS"
+                ]
+              },
+              "ausweisNummer": {
+                "type": "string"
+              },
+              "ausstellendeBehoerde": {
+                "type": "string"
+              },
+              "ausstellungsDatum": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "ausstellungsOrt": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "adresse": {
+      "type": "object",
+      "properties": {
+        "strasse": {
+          "type": "string"
+        },
+        "hausnummer": {
+          "type": "string"
+        },
+        "postleitzahl": {
+          "type": "string"
+        },
+        "ort": {
+          "type": "string"
+        },
+        "land": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
