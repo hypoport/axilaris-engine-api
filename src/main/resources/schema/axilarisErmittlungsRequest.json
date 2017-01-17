@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "axilaris-engine-api Ermittlungsrequest",
+  "id": "http://jsonschema.net/axilaris-engine-api/ermittlung/request",
+  "type": "object",
+  "properties": {
+    "metadaten": {
+      "$ref": "axilarisRequest.json#/metadaten"
+    },
+    "kreditwunsch": {
+      "$ref": "axilarisRequest.json#/kreditwunsch"
+    },
+    "antragsteller": {
+      "$ref": "axilarisRequest.json#/antragsteller"
+    },
+    "gemeinsameAntragstellerAngaben": {
+      "$ref": "axilarisRequest.json#/gemeinsameAntragstellerAngaben"
+    },
+    "konto": {
+      "$ref": "definitions.json#/konto"
+    },
+    "abzuloesendeVerbindlichkeiten": {
+      "$ref": "axilarisRequest.json#/abzuloesendeVerbindlichkeiten"
+    },
+    "finanzierungsZweck": {
+      "$ref": "axilarisRequest.json#/finanzierungsZweck"
+    },
+    "fahrzeugDaten": {
+      "$ref": "axilarisRequest.json#/fahrzeugDaten"
+    },
+    "kundenBetreuer": {
+      "$ref": "axilarisRequest.json#/kundenBetreuer"
+    }
+  },
+  "additionalProperties": false
+}
