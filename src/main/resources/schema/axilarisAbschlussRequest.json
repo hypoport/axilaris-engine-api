@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "axilaris-engine-api Abschlussrequest",
+  "id": "http://jsonschema.net/axilaris-engine-api/abschluss/request",
+  "type": "object",
+  "properties": {
+    "metadaten": {
+      "$ref": "axilarisRequest.json#/metadaten"
+    },
+    "kreditwunsch": {
+      "$ref": "axilarisRequest.json#/kreditwunsch"
+    },
+    "antragsteller": {
+      "$ref": "axilarisRequest.json#/antragsteller"
+    },
+    "gemeinsameAntragstellerAngaben": {
+      "$ref": "axilarisRequest.json#/gemeinsameAntragstellerAngaben"
+    },
+    "konto": {
+      "$ref": "definitions.json#/konto"
+    },
+    "abzuloesendeVerbindlichkeiten": {
+      "$ref": "axilarisRequest.json#/abzuloesendeVerbindlichkeiten"
+    },
+    "finanzierungsZweck": {
+      "$ref": "axilarisRequest.json#/finanzierungsZweck"
+    },
+    "fahrzeugDaten": {
+      "$ref": "axilarisRequest.json#/fahrzeugDaten"
+    },
+    "kundenBetreuer": {
+      "$ref": "axilarisRequest.json#/kundenBetreuer"
+    },
+    "angebotsVariantenTyp": {
+      "type": "string"
+    },
+    "bearbeiter": {
+      "type": "object",
+      "properties": {
+        "vorname": {
+          "type": "string"
+        },
+        "nachname": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "beratungsArt": {
+      "enum": [
+        "PRAESENZ_GESCHAEFT",
+        "FERN_ABSATZ_GESCHAEFT",
+        "AUSSER_GESCHAEFTSRAUM_VERTRAG"
+      ]
+    },
+    "vertriebsGruppe": {
+      "type": "string"
+    },
+    "vertriebsOrganisation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "kreditProvisionsWunsch": {
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}
