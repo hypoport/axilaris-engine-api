@@ -30,6 +30,24 @@
     },
     "kundenBetreuer": {
       "$ref": "axilarisRequest.json#/kundenBetreuer"
+    },
+    "handelsbeziehungen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "produktAnbieterId": {
+            "type": "string"
+          },
+          "vertriebsGruppe": {
+            "type": "string"
+          },
+          "kreditProvisionsWunsch": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "additionalProperties": false
