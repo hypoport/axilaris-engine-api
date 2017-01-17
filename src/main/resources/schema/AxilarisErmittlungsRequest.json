@@ -67,7 +67,7 @@
             "type": "object",
             "properties": {
               "anrede": {
-                "$ref": "#/definitions/anrede"
+                "$ref": "definitions.json#/anrede"
               },
               "titel": {
                 "type": "string"
@@ -154,7 +154,7 @@
                 ]
               },
               "anschriftArbeitgeber": {
-                "$ref": "#/definitions/adresse"
+                "$ref": "definitions.json#/adresse"
               },
               "nameArbeitgeber": {
                 "type": "string"
@@ -174,7 +174,7 @@
                 "format": "date-time"
               },
               "anschriftArbeitgeber": {
-                "$ref": "#/definitions/adresse"
+                "$ref": "definitions.json#/adresse"
               },
               "nameArbeitgeber": {
                 "type": "string"
@@ -198,10 +198,10 @@
                 "format": "date-time"
               },
               "anschrift": {
-                "$ref": "#/definitions/adresse"
+                "$ref": "definitions.json#/adresse"
               },
               "vorAnschrift": {
-                "$ref": "#/definitions/adresse"
+                "$ref": "definitions.json#/adresse"
               },
               "wohnhaftSeitVorAnschrift": {
                 "type": "string",
@@ -260,16 +260,16 @@
             "additionalProperties": false
           },
           "ausgaben": {
-            "$ref": "#/definitions/ausgaben"
+            "$ref": "definitions.json#/ausgaben"
           },
           "einnahmen": {
-            "$ref": "#/definitions/einnahmen"
+            "$ref": "definitions.json#/einnahmen"
           },
           "vermoegen": {
-            "$ref": "#/definitions/vermoegen"
+            "$ref": "definitions.json#/vermoegen"
           },
           "verbindlichkeiten": {
-            "$ref": "#/definitions/verbindlichkeiten"
+            "$ref": "definitions.json#/verbindlichkeiten"
           },
           "anzahlKinder": {
             "type": "integer"
@@ -281,7 +281,7 @@
                 "type": "string"
               },
               "anschrift": {
-                "$ref": "#/definitions/adresse"
+                "$ref": "definitions.json#/adresse"
               },
               "rentnerSeit": {
                 "type": "string",
@@ -325,16 +325,16 @@
       "type": "object",
       "properties": {
         "ausgaben": {
-          "$ref": "#/definitions/ausgaben"
+          "$ref": "definitions.json#/ausgaben"
         },
         "einnahmen": {
-          "$ref": "#/definitions/einnahmen"
+          "$ref": "definitions.json#/einnahmen"
         },
         "vermoegen": {
-          "$ref": "#/definitions/vermoegen"
+          "$ref": "definitions.json#/vermoegen"
         },
         "verbindlichkeiten": {
-          "$ref": "#/definitions/verbindlichkeiten"
+          "$ref": "definitions.json#/verbindlichkeiten"
         },
         "anzahlKinder": {
           "type": "integer"
@@ -343,7 +343,7 @@
       "additionalProperties": false
     },
     "konto": {
-      "$ref": "#/definitions/konto"
+      "$ref": "definitions.json#/konto"
     },
     "abzuloesendeVerbindlichkeiten": {
       "type": "object",
@@ -377,7 +377,7 @@
                 "type": "number"
               },
               "konto": {
-                "$ref": "#/definitions/konto"
+                "$ref": "definitions.json#/konto"
               }
             },
             "additionalProperties": false
@@ -412,7 +412,7 @@
                 "type": "number"
               },
               "konto": {
-                "$ref": "#/definitions/konto"
+                "$ref": "definitions.json#/konto"
               }
             },
             "additionalProperties": false
@@ -436,7 +436,7 @@
                 "type": "number"
               },
               "konto": {
-                "$ref": "#/definitions/konto"
+                "$ref": "definitions.json#/konto"
               }
             },
             "additionalProperties": false
@@ -457,7 +457,7 @@
                 "type": "number"
               },
               "konto": {
-                "$ref": "#/definitions/konto"
+                "$ref": "definitions.json#/konto"
               }
             },
             "additionalProperties": false
@@ -536,7 +536,7 @@
           "type": "string"
         },
         "anschrift": {
-          "$ref": "#/definitions/adresse"
+          "$ref": "definitions.json#/adresse"
         },
         "telefon": {
           "type": "string"
@@ -551,7 +551,7 @@
           "type": "string"
         },
         "anrede": {
-          "$ref": "#/definitions/anrede"
+          "$ref": "definitions.json#/anrede"
         }
       },
       "additionalProperties": false
