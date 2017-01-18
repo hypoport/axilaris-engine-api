@@ -17,7 +17,7 @@
       "$ref": "axilarisRequest.json#/gemeinsameAntragstellerAngaben"
     },
     "konto": {
-      "$ref": "definitions.json#/konto"
+      "$ref": "axilarisDefinitions.json#/konto"
     },
     "abzuloesendeVerbindlichkeiten": {
       "$ref": "axilarisRequest.json#/abzuloesendeVerbindlichkeiten"

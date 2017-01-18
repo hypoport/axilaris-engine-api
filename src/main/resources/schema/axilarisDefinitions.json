@@ -376,7 +376,8 @@
         "type": "array",
         "items": {
           "type": "string"
-        }
+        },
+        "maxItems": 2
       },
       "iban": {
         "type": "string"

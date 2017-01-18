@@ -27,7 +27,7 @@
         "type": "number"
       },
       "versicherungsrisiken": {
-        "$ref": "definitions.json#/versicherungsrisiken"
+        "$ref": "axilarisDefinitions.json#/versicherungsrisiken"
       }
     },
     "additionalProperties": false
@@ -47,7 +47,7 @@
           "type": "object",
           "properties": {
             "anrede": {
-              "$ref": "definitions.json#/anrede"
+              "$ref": "axilarisDefinitions.json#/anrede"
             },
             "titel": {
               "type": "string"
@@ -134,7 +134,7 @@
               ]
             },
             "anschrift": {
-              "$ref": "definitions.json#/adresse"
+              "$ref": "axilarisDefinitions.json#/adresse"
             },
             "nameArbeitgeber": {
               "type": "string"
@@ -154,7 +154,7 @@
               "format": "date-time"
             },
             "anschrift": {
-              "$ref": "definitions.json#/adresse"
+              "$ref": "axilarisDefinitions.json#/adresse"
             },
             "nameArbeitgeber": {
               "type": "string"
@@ -178,10 +178,10 @@
               "format": "date-time"
             },
             "anschrift": {
-              "$ref": "definitions.json#/adresse"
+              "$ref": "axilarisDefinitions.json#/adresse"
             },
             "vorAnschrift": {
-              "$ref": "definitions.json#/adresse"
+              "$ref": "axilarisDefinitions.json#/adresse"
             },
             "wohnhaftSeitVorAnschrift": {
               "type": "string",
@@ -240,16 +240,16 @@
           "additionalProperties": false
         },
         "ausgaben": {
-          "$ref": "definitions.json#/ausgaben"
+          "$ref": "axilarisDefinitions.json#/ausgaben"
         },
         "einnahmen": {
-          "$ref": "definitions.json#/einnahmen"
+          "$ref": "axilarisDefinitions.json#/einnahmen"
         },
         "vermoegen": {
-          "$ref": "definitions.json#/vermoegen"
+          "$ref": "axilarisDefinitions.json#/vermoegen"
         },
         "verbindlichkeiten": {
-          "$ref": "definitions.json#/verbindlichkeiten"
+          "$ref": "axilarisDefinitions.json#/verbindlichkeiten"
         },
         "anzahlKinder": {
           "type": "integer"
@@ -261,7 +261,7 @@
               "type": "string"
             },
             "anschrift": {
-              "$ref": "definitions.json#/adresse"
+              "$ref": "axilarisDefinitions.json#/adresse"
             },
             "rentnerSeit": {
               "type": "string",
@@ -299,22 +299,23 @@
       },
       "additionalProperties": false
     },
+    "maxItems": 2,
     "additionalProperties": false
   },
   "gemeinsameAntragstellerAngaben": {
     "type": "object",
     "properties": {
       "ausgaben": {
-        "$ref": "definitions.json#/ausgaben"
+        "$ref": "axilarisDefinitions.json#/ausgaben"
       },
       "einnahmen": {
-        "$ref": "definitions.json#/einnahmen"
+        "$ref": "axilarisDefinitions.json#/einnahmen"
       },
       "vermoegen": {
-        "$ref": "definitions.json#/vermoegen"
+        "$ref": "axilarisDefinitions.json#/vermoegen"
       },
       "verbindlichkeiten": {
-        "$ref": "definitions.json#/verbindlichkeiten"
+        "$ref": "axilarisDefinitions.json#/verbindlichkeiten"
       },
       "anzahlKinder": {
         "type": "integer"
@@ -354,7 +355,7 @@
               "type": "number"
             },
             "konto": {
-              "$ref": "definitions.json#/konto"
+              "$ref": "axilarisDefinitions.json#/konto"
             }
           },
           "additionalProperties": false
@@ -389,7 +390,7 @@
               "type": "number"
             },
             "konto": {
-              "$ref": "definitions.json#/konto"
+              "$ref": "axilarisDefinitions.json#/konto"
             }
           },
           "additionalProperties": false
@@ -413,7 +414,7 @@
               "type": "number"
             },
             "konto": {
-              "$ref": "definitions.json#/konto"
+              "$ref": "axilarisDefinitions.json#/konto"
             }
           },
           "additionalProperties": false
@@ -434,7 +435,7 @@
               "type": "number"
             },
             "konto": {
-              "$ref": "definitions.json#/konto"
+              "$ref": "axilarisDefinitions.json#/konto"
             }
           },
           "additionalProperties": false
@@ -513,7 +514,7 @@
         "type": "string"
       },
       "anschrift": {
-        "$ref": "definitions.json#/adresse"
+        "$ref": "axilarisDefinitions.json#/adresse"
       },
       "telefon": {
         "type": "string"
@@ -528,7 +529,7 @@
         "type": "string"
       },
       "anrede": {
-        "$ref": "definitions.json#/anrede"
+        "$ref": "axilarisDefinitions.json#/anrede"
       }
     },
     "additionalProperties": false

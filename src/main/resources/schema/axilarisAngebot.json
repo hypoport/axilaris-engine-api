@@ -75,7 +75,7 @@
             "type": "number"
           },
           "versicherungsrisiken": {
-            "$ref": "definitions.json#/versicherungsrisiken"
+            "$ref": "axilarisDefinitions.json#/versicherungsrisiken"
           },
           "versicherer": {
             "type": "string"
@@ -159,10 +159,10 @@
         "type": "object",
         "properties": {
           "bausteinUebersicht": {
-            "$ref": "definitions.json#/uebersicht"
+            "$ref": "axilarisDefinitions.json#/uebersicht"
           },
           "boniCheck": {
-            "$ref": "definitions.json#/uebersicht"
+            "$ref": "axilarisDefinitions.json#/uebersicht"
           }
         },
         "additionalProperties": false
