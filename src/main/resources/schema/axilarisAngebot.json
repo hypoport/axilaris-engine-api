@@ -14,19 +14,19 @@
       "kreditKonditionen": {
         "type": "object",
         "properties": {
-          "effektivZinssatz": {
+          "effektivzinssatz": {
             "type": "number"
           },
-          "sollZinssatz": {
+          "sollzinssatz": {
             "type": "number"
           },
-          "gesamtBetrag": {
+          "gesamtbetrag": {
             "type": "number"
           },
-          "nominalBetrag": {
+          "nettokreditbetrag": {
             "type": "number"
           },
-          "auszahlungsBetrag": {
+          "auszahlungsbetrag": {
             "type": "number"
           },
           "laufzeitInMonaten": {
@@ -41,16 +41,16 @@
           "provision": {
             "type": "number"
           },
-          "europaceNutzungsGebuehr": {
+          "basisbetragFuerDieProvisionsermittlung": {
             "type": "number"
           },
-          "produzentZahltEuropaceNutzungsGebuehr": {
+          "europaceNutzungsgebuehr": {
             "type": "number"
+          },
+          "produzentZahltEuropaceNutzungsgebuehr": {
+            "type": "boolean"
           },
           "vorlaufZinsenProTag": {
-            "type": "number"
-          },
-          "basisBetragFuerDieProvisionsermittlung": {
             "type": "number"
           }
         },
@@ -80,7 +80,7 @@
           "versicherer": {
             "type": "string"
           },
-          "europaceNutzungsGebuehr": {
+          "europaceNutzungsgebuehr": {
             "type": "number"
           }
         },
@@ -167,11 +167,8 @@
         },
         "additionalProperties": false
       },
-      "maximalerAuszahlungsBetrag": {
+      "maximalerAuszahlungsbetrag": {
         "type": "number"
-      },
-      "uebertragungVonDokumentenAnExterneSystemeMoeglich": {
-        "type": "boolean"
       }
     },
     "additionalProperties": false
