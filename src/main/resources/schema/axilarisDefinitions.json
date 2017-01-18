@@ -23,10 +23,10 @@
   "ausgaben": {
     "type": "object",
     "properties": {
-      "krankenversicherungsBeitraege": {
+      "krankenversicherungsbeitraege": {
         "$ref": "#/EUR"
       },
-      "eigenMieteInklusiveNebenkosten": {
+      "eigenmieteInklusiveNebenkosten": {
         "$ref": "#/EUR"
       },
       "unterhalt": {
@@ -35,10 +35,10 @@
       "rateImmobiliendarlehen": {
         "$ref": "#/EUR"
       },
-      "lebensVersicherungsBeitraege": {
+      "lebensversicherungsbeitraege": {
         "$ref": "#/EUR"
       },
-      "bausparDarlehensRate": {
+      "bauspardarlehensrate": {
         "$ref": "#/EUR"
       },
       "sonstigeAusgaben": {
@@ -59,19 +59,19 @@
           "rente": {
             "$ref": "#/EUR"
           },
-          "kindesUnterhalt": {
+          "kindesunterhalt": {
             "$ref": "#/EUR"
           },
-          "ehegattenUnterhalt": {
+          "ehegattenunterhalt": {
             "$ref": "#/EUR"
           },
-          "kinderGeld": {
+          "kindergeld": {
             "$ref": "#/EUR"
           },
           "nebentaetigkeit": {
             "$ref": "#/EUR"
           },
-          "mietUndPachtEinnahmen": {
+          "mietUndPachteinnahmen": {
             "type": "object",
             "properties": {
               "warm": {
@@ -95,19 +95,19 @@
           "einkommenAusSelbstaendigkeit": {
             "type": "object",
             "properties": {
-              "nettoEinkommenJaehrlich": {
+              "nettoeinkommenJaehrlich": {
                 "$ref": "#/EUR"
               },
-              "zuVersteuerndesJahresEinkommen": {
+              "zuVersteuerndesJahreseinkommen": {
                 "$ref": "#/jaehrlicheAngaben"
               },
-              "einkommensSteuer": {
+              "einkommenssteuer": {
                 "$ref": "#/jaehrlicheAngaben"
               },
               "abschreibungen": {
                 "$ref": "#/jaehrlicheAngaben"
               },
-              "bruttoEinkommenJaehrlichErwartet": {
+              "bruttoeinkommenJaehrlichErwartet": {
                 "$ref": "#/EUR"
               }
             },
@@ -122,10 +122,10 @@
   "vermoegen": {
     "type": "object",
     "properties": {
-      "rueckkaufsWertLebensversicherung": {
+      "rueckkaufswertLebensversicherung": {
         "$ref": "#/EUR"
       },
-      "bausparGuthaben": {
+      "bausparguthaben": {
         "$ref": "#/EUR"
       },
       "eigengenutzteImmobilien": {
@@ -254,7 +254,7 @@
             "id": {
               "type": "string"
             },
-            "verfuegungsRahmen": {
+            "verfuegungsrahmen": {
               "$ref": "#/EUR"
             },
             "monatlicheRate": {
@@ -275,7 +275,7 @@
             "id": {
               "type": "string"
             },
-            "verfuegungsRahmen": {
+            "verfuegungsrahmen": {
               "$ref": "#/EUR"
             },
             "beanspruchterBetrag": {
@@ -303,7 +303,7 @@
           "additionalProperties": false
         }
       },
-      "summeImmobilienDarlehen": {
+      "summeImmobiliendarlehen": {
         "$ref": "#/EUR"
       }
     },
@@ -312,10 +312,10 @@
   "konto": {
     "type": "object",
     "properties": {
-      "kreditInstitut": {
+      "kreditinstitut": {
         "type": "string"
       },
-      "kontoInhaberIds": {
+      "kontoinhaberIds": {
         "type": "array",
         "items": {
           "type": "string"

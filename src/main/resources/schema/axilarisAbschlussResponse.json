@@ -27,7 +27,7 @@
               "sichtbarFuerVertrieb": {
                 "type": "boolean"
               },
-              "sichtbarFuerProduktAnbieter": {
+              "sichtbarFuerProduktanbieter": {
                 "type": "boolean"
               }
             },
@@ -37,7 +37,7 @@
         "additionalProperties": false
       }
     },
-    "referenzNummerProduzent": {
+    "referenznummerProduktanbieter": {
       "type": "string"
     }
   },

@@ -13,8 +13,8 @@
     "antragsteller": {
       "$ref": "axilarisRequest.json#/antragsteller"
     },
-    "gemeinsameAntragstellerAngaben": {
-      "$ref": "axilarisRequest.json#/gemeinsameAntragstellerAngaben"
+    "gemeinsameAntragstellerangaben": {
+      "$ref": "axilarisRequest.json#/gemeinsameAntragstellerangaben"
     },
     "konto": {
       "$ref": "axilarisDefinitions.json#/konto"
@@ -22,27 +22,27 @@
     "abzuloesendeVerbindlichkeiten": {
       "$ref": "axilarisRequest.json#/abzuloesendeVerbindlichkeiten"
     },
-    "finanzierungsZweck": {
-      "$ref": "axilarisRequest.json#/finanzierungsZweck"
+    "finanzierungszweck": {
+      "$ref": "axilarisRequest.json#/finanzierungszweck"
     },
-    "fahrzeugDaten": {
-      "$ref": "axilarisRequest.json#/fahrzeugDaten"
+    "fahrzeugdaten": {
+      "$ref": "axilarisRequest.json#/fahrzeugdaten"
     },
-    "kundenBetreuer": {
-      "$ref": "axilarisRequest.json#/kundenBetreuer"
+    "kundenbetreuer": {
+      "$ref": "axilarisRequest.json#/kundenbetreuer"
     },
     "handelsbeziehungen": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "produktAnbieterId": {
+          "produktanbieter": {
             "type": "string"
           },
-          "vertriebsGruppe": {
+          "vertriebsgruppe": {
             "type": "string"
           },
-          "kreditProvisionsWunsch": {
+          "kreditProvisionswunsch": {
             "$ref": "axilarisDefinitions.json#/percent"
           }
         },

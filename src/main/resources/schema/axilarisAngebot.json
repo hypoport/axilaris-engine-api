@@ -2,16 +2,16 @@
   "angebot": {
     "type": "object",
     "properties": {
-      "produktAnbieter": {
+      "produktanbieter": {
         "type": "string"
       },
-      "produktBezeichnung": {
+      "produktbezeichnung": {
         "type": "string"
       },
       "angebotsVariantenTyp": {
         "type": "string"
       },
-      "kreditKonditionen": {
+      "kreditkonditionen": {
         "type": "object",
         "properties": {
           "effektivzinssatz": {
@@ -47,31 +47,31 @@
           "europaceNutzungsgebuehr": {
             "$ref": "axilarisDefinitions.json#/EUR"
           },
-          "produzentZahltEuropaceNutzungsgebuehr": {
+          "produktanbieterZahltEuropaceNutzungsgebuehr": {
             "type": "boolean"
           },
-          "vorlaufZinsenProTag": {
+          "vorlaufzinsenProTag": {
             "$ref": "axilarisDefinitions.json#/EUR"
           }
         },
         "additionalProperties": false
       },
-      "versicherungsKonditionen": {
+      "versicherungskonditionen": {
         "type": "object",
         "properties": {
-          "basisFuerDieProvisionsErmittlung": {
+          "basisFuerDieProvisionsermittlung": {
             "enum": [
               "VERSICHERUNGS_PRAEMIE_NETTO",
               "VERSICHERUNGS_PRAEMIE_BRUTTO"
             ]
           },
-          "versicherungsProvision": {
+          "versicherungsprovision": {
             "$ref": "axilarisDefinitions.json#/EUR"
           },
-          "versicherungsPraemieBrutto": {
+          "versicherungspraemieBrutto": {
             "$ref": "axilarisDefinitions.json#/EUR"
           },
-          "versicherungsPraemieNetto": {
+          "versicherungspraemieNetto": {
             "$ref": "axilarisDefinitions.json#/EUR"
           },
           "versicherungsrisiken": {
@@ -89,10 +89,10 @@
       "status": {
         "type": "object",
         "properties": {
-          "machbarkeitsStatus": {
+          "machbarkeitsstatus": {
             "enum": [
               "MACHBAR",
-              "MACHBAR_UNTER_VORBEHALT_PRODUZENT",
+              "MACHBAR_UNTER_VORBEHALT_PRODUKTANBIETER",
               "NICHT_MACHBAR"
             ]
           },
@@ -137,7 +137,7 @@
           "alternativesAngebot": {
             "type": "boolean"
           },
-          "angebotsAlternativenTyp": {
+          "angebotsAlternativentyp": {
             "enum": [
               "DOWNSELL",
               "UPSELL"
@@ -161,7 +161,7 @@
           "bausteinUebersicht": {
             "$ref": "axilarisDefinitions.json#/uebersicht"
           },
-          "boniCheck": {
+          "bonicheck": {
             "$ref": "axilarisDefinitions.json#/uebersicht"
           }
         },

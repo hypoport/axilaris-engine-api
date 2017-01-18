@@ -17,10 +17,10 @@
   "kreditwunsch": {
     "type": "object",
     "properties": {
-      "auszahlungsBetrag": {
+      "auszahlungsbetrag": {
         "$ref": "axilarisDefinitions.json#/EUR"
       },
-      "ratenZahlungTermin": {
+      "ratenzahlungtermin": {
         "type": "integer"
       },
       "laufzeitInMonaten": {
@@ -43,7 +43,7 @@
         "id": {
           "type": "string"
         },
-        "haushaltsPartnerId": {
+        "haushaltspartnerId": {
           "type": "string"
         },
         "persoenlicheAngaben": {
@@ -61,20 +61,20 @@
             "nachname": {
               "type": "string"
             },
-            "geburtsDatum": {
+            "geburtsdatum": {
               "type": "string",
               "format": "date-time"
             },
-            "geburtsOrt": {
+            "geburtsort": {
               "type": "string"
             },
-            "geburtsName": {
+            "geburtsname": {
               "type": "string"
             },
-            "staatsAngehoerigkeit": {
+            "staatsangehoerigkeit": {
               "type": "string"
             },
-            "familienStand": {
+            "familienstand": {
               "type": "string"
             },
             "anzahlPersonenImHaushalt": {
@@ -86,7 +86,7 @@
         "angabenZurBeschaeftigung": {
           "type": "object",
           "properties": {
-            "beschaeftigungsVerhaeltnis": {
+            "beschaeftigungsverhaeltnis": {
               "enum": [
                 "ANGESTELLT",
                 "ARBEITER",
@@ -139,7 +139,7 @@
             "anschrift": {
               "$ref": "axilarisDefinitions.json#/adresse"
             },
-            "nameArbeitgeber": {
+            "arbeitgebername": {
               "type": "string"
             }
           },
@@ -159,7 +159,7 @@
             "anschrift": {
               "$ref": "axilarisDefinitions.json#/adresse"
             },
-            "nameArbeitgeber": {
+            "arbeitgebername": {
               "type": "string"
             }
           },
@@ -168,7 +168,7 @@
         "wohnsituation": {
           "type": "object",
           "properties": {
-            "wohnArt": {
+            "wohnart": {
               "enum": [
                 "ZUR_MIETE",
                 "ZUR_UNTERMIETE",
@@ -183,10 +183,10 @@
             "anschrift": {
               "$ref": "axilarisDefinitions.json#/adresse"
             },
-            "vorAnschrift": {
+            "voranschrift": {
               "$ref": "axilarisDefinitions.json#/adresse"
             },
-            "wohnhaftSeitVorAnschrift": {
+            "wohnhaftSeitDerVoranschrift": {
               "type": "string",
               "format": "date-time"
             },
@@ -235,7 +235,7 @@
               },
               "additionalProperties": false
             },
-            "arbeitsErlaubnisBefristetBis": {
+            "arbeitserlaubnisBefristetBis": {
               "type": "string",
               "format": "date-time"
             }
@@ -257,7 +257,7 @@
         "anzahlKinder": {
           "type": "integer"
         },
-        "rentenVersicherung": {
+        "rentenversicherung": {
           "type": "object",
           "properties": {
             "name": {
@@ -276,24 +276,24 @@
         "legitimation": {
           "type": "object",
           "properties": {
-            "ausweisArt": {
+            "ausweisart": {
               "enum": [
                 "PERSONALAUSWEIS",
                 "REISEPASS",
                 "ANDERER_AUSWEIS"
               ]
             },
-            "ausweisNummer": {
+            "ausweisnummer": {
               "type": "string"
             },
             "ausstellendeBehoerde": {
               "type": "string"
             },
-            "ausstellungsDatum": {
+            "ausstellungsdatum": {
               "type": "string",
               "format": "date-time"
             },
-            "ausstellungsOrt": {
+            "ausstellungsort": {
               "type": "string"
             }
           },
@@ -305,7 +305,7 @@
     "maxItems": 2,
     "additionalProperties": false
   },
-  "gemeinsameAntragstellerAngaben": {
+  "gemeinsameAntragstellerangaben": {
     "type": "object",
     "properties": {
       "ausgaben": {
@@ -354,7 +354,7 @@
             "urspruenglicherBetrag": {
               "$ref": "axilarisDefinitions.json#/EUR"
             },
-            "abloeseBetrag": {
+            "abloesebetrag": {
               "$ref": "axilarisDefinitions.json#/EUR"
             },
             "konto": {
@@ -389,7 +389,7 @@
             "urspruenglicherBetrag": {
               "$ref": "axilarisDefinitions.json#/EUR"
             },
-            "abloeseBetrag": {
+            "abloesebetrag": {
               "$ref": "axilarisDefinitions.json#/EUR"
             },
             "konto": {
@@ -407,13 +407,13 @@
             "id": {
               "type": "string"
             },
-            "verfuegungsRahmen": {
+            "verfuegungsrahmen": {
               "$ref": "axilarisDefinitions.json#/EUR"
             },
             "monatlicheRate": {
               "$ref": "axilarisDefinitions.json#/EUR"
             },
-            "abloeseBetrag": {
+            "abloesebetrag": {
               "$ref": "axilarisDefinitions.json#/EUR"
             },
             "konto": {
@@ -431,10 +431,10 @@
             "id": {
               "type": "string"
             },
-            "verfuegungsRahmen": {
+            "verfuegungsrahmen": {
               "$ref": "axilarisDefinitions.json#/EUR"
             },
-            "abloeseBetrag": {
+            "abloesebetrag": {
               "$ref": "axilarisDefinitions.json#/EUR"
             },
             "konto": {
@@ -447,7 +447,7 @@
     },
     "additionalProperties": false
   },
-  "finanzierungsZweck": {
+  "finanzierungszweck": {
     "enum": [
       "UMSCHULDUNG",
       "SONSITGES",
@@ -455,10 +455,10 @@
       "MODERNISIERUNG_UND_WOHNEN"
     ]
   },
-  "fahrzeugDaten": {
+  "fahrzeugdaten": {
     "type": "object",
     "properties": {
-      "erstzulassungsDatum": {
+      "erstzulassungsdatum": {
         "type": "string",
         "format": "date-time"
       },
@@ -468,13 +468,13 @@
       "beglicheneKosten": {
         "$ref": "axilarisDefinitions.json#/EUR"
       },
-      "fahrzeugLeistung": {
+      "fahrzeugleistung": {
         "type": "object",
         "properties": {
           "nennleistung": {
             "type": "number"
           },
-          "einheitLeistung": {
+          "einheit": {
             "enum": [
               "PS",
               "KW"
@@ -492,7 +492,7 @@
       "modell": {
         "type": "string"
       },
-      "verkaeuferArt": {
+      "verkaeuferart": {
         "enum": [
           "PRIVAT",
           "HAENDLER"
@@ -501,7 +501,7 @@
     },
     "additionalProperties": false
   },
-  "kundenBetreuer": {
+  "kundenbetreuer": {
     "type": "object",
     "properties": {
       "partnerId": {
