@@ -131,21 +131,6 @@
           "type": "string"
         }
       },
-      "alternativesAngebot": {
-        "type": "object",
-        "properties": {
-          "alternativesAngebot": {
-            "type": "boolean"
-          },
-          "angebotsAlternativentyp": {
-            "enum": [
-              "DOWNSELL",
-              "UPSELL"
-            ]
-          }
-        },
-        "additionalProperties": false
-      },
       "bonitaetsCheck": {
         "type": "object",
         "properties": {

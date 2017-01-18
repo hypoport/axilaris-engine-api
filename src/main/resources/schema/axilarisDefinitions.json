@@ -360,18 +360,10 @@
   },
   "uebersicht": {
     "type": "object",
+    "description": "TODO Typ ist nicht final spezifiziert",
     "properties": {
       "ueberschrift": {
         "type": "string"
-      },
-      "exzerpt": {
-        "type": "object",
-        "properties": {
-          "ueberschrift": {
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
       }
     },
     "additionalProperties": false
