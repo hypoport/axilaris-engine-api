@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "axilaris-engine-api Produktanbieter",
+  "id": "http://jsonschema.net/axilaris-engine-api/produktanbieter",
+  "description": "Dokumentation aller zulaessigen Produktanbieter",
+  "enum": [
+    "SPK_BERLIN",
+    "HAMBURGER_SPK",
+    "KASSEL_SPK"
+  ]
+}
