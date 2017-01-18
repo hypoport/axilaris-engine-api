@@ -15,7 +15,7 @@
     "type": "object",
     "properties": {
       "auszahlungsBetrag": {
-        "type": "number"
+        "$ref": "axilarisDefinitions.json#/EUR"
       },
       "ratenZahlungTermin": {
         "type": "integer"
@@ -24,7 +24,7 @@
         "type": "integer"
       },
       "rateProMonat": {
-        "type": "number"
+        "$ref": "axilarisDefinitions.json#/EUR"
       },
       "versicherungsrisiken": {
         "$ref": "axilarisDefinitions.json#/versicherungsrisiken"
@@ -335,10 +335,10 @@
               "type": "string"
             },
             "monatlicheRate": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "letzteRate": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "datumErsteRate": {
               "type": "string",
@@ -349,10 +349,10 @@
               "format": "date-time"
             },
             "urspruenglicherBetrag": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "abloeseBetrag": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "konto": {
               "$ref": "axilarisDefinitions.json#/konto"
@@ -370,10 +370,10 @@
               "type": "string"
             },
             "monatlicheRate": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "letzteRate": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "datumErsteRate": {
               "type": "string",
@@ -384,10 +384,10 @@
               "format": "date-time"
             },
             "urspruenglicherBetrag": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "abloeseBetrag": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "konto": {
               "$ref": "axilarisDefinitions.json#/konto"
@@ -405,13 +405,13 @@
               "type": "string"
             },
             "verfuegungsRahmen": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "monatlicheRate": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "abloeseBetrag": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "konto": {
               "$ref": "axilarisDefinitions.json#/konto"
@@ -429,10 +429,10 @@
               "type": "string"
             },
             "verfuegungsRahmen": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "abloeseBetrag": {
-              "type": "number"
+              "$ref": "axilarisDefinitions.json#/EUR"
             },
             "konto": {
               "$ref": "axilarisDefinitions.json#/konto"
@@ -460,10 +460,10 @@
         "format": "date-time"
       },
       "kaufpreis": {
-        "type": "number"
+        "$ref": "axilarisDefinitions.json#/EUR"
       },
       "beglicheneKosten": {
-        "type": "number"
+        "$ref": "axilarisDefinitions.json#/EUR"
       },
       "fahrzeugLeistung": {
         "type": "object",

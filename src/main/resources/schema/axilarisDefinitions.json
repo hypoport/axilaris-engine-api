@@ -36,25 +36,25 @@
     "type": "object",
     "properties": {
       "krankenversicherungsBeitraege": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "eigenMieteInklusiveNebenkosten": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "unterhalt": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "rateImmobiliendarlehen": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "lebensVersicherungsBeitraege": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "bausparDarlehensRate": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "sonstigeAusgaben": {
-        "type": "number"
+        "$ref": "#/EUR"
       }
     },
     "additionalProperties": false
@@ -66,37 +66,37 @@
         "type": "object",
         "properties": {
           "regelmaessigesUnselbstaendigesEinkommenMonatlich": {
-            "type": "number"
+            "$ref": "#/EUR"
           },
           "rente": {
-            "type": "number"
+            "$ref": "#/EUR"
           },
           "kindesUnterhalt": {
-            "type": "number"
+            "$ref": "#/EUR"
           },
           "ehegattenUnterhalt": {
-            "type": "number"
+            "$ref": "#/EUR"
           },
           "kinderGeld": {
-            "type": "number"
+            "$ref": "#/EUR"
           },
           "nebentaetigkeit": {
-            "type": "number"
+            "$ref": "#/EUR"
           },
           "mietUndPachtEinnahmen": {
             "type": "object",
             "properties": {
               "warm": {
-                "type": "number"
+                "$ref": "#/EUR"
               },
               "kalt": {
-                "type": "number"
+                "$ref": "#/EUR"
               }
             },
             "additionalProperties": false
           },
           "sonstige": {
-            "type": "number"
+            "$ref": "#/EUR"
           }
         },
         "additionalProperties": false
@@ -108,7 +108,7 @@
             "type": "object",
             "properties": {
               "nettoEinkommenJaehrlich": {
-                "type": "number"
+                "$ref": "#/EUR"
               },
               "zuVersteuerndesJahresEinkommen": {
                 "$ref": "#/jaehrlicheAngaben"
@@ -120,7 +120,7 @@
                 "$ref": "#/jaehrlicheAngaben"
               },
               "bruttoEinkommenJaehrlichErwartet": {
-                "type": "number"
+                "$ref": "#/EUR"
               }
             },
             "additionalProperties": false
@@ -135,16 +135,16 @@
     "type": "object",
     "properties": {
       "rueckkaufsWertLebensversicherung": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "bausparGuthaben": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "eigengenutzteImmobilien": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "vermieteteImmobilien": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "immobilie": {
         "type": "array",
@@ -158,7 +158,7 @@
               "type": "string"
             },
             "verkehrswert": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "wohnflaeche": {
               "type": "integer"
@@ -195,17 +195,17 @@
               "type": "string"
             },
             "monatlicheRate": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "letzteRate": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "datumLetzteRate": {
               "type": "string",
               "format": "date-time"
             },
             "restschuld": {
-              "type": "number"
+              "$ref": "#/EUR"
             }
           },
           "additionalProperties": false
@@ -220,17 +220,17 @@
               "type": "string"
             },
             "monatlicheRate": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "letzteRate": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "datumLetzteRate": {
               "type": "string",
               "format": "date-time"
             },
             "restschuld": {
-              "type": "number"
+              "$ref": "#/EUR"
             }
           },
           "additionalProperties": false
@@ -245,10 +245,10 @@
               "type": "string"
             },
             "monatlicheRate": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "letzteRate": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "datumLetzteRate": {
               "type": "string",
@@ -267,13 +267,13 @@
               "type": "string"
             },
             "verfuegungsRahmen": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "monatlicheRate": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "beanspruchterBetrag": {
-              "type": "number"
+              "$ref": "#/EUR"
             }
           },
           "additionalProperties": false
@@ -288,10 +288,10 @@
               "type": "string"
             },
             "verfuegungsRahmen": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "beanspruchterBetrag": {
-              "type": "number"
+              "$ref": "#/EUR"
             }
           },
           "additionalProperties": false
@@ -306,17 +306,17 @@
               "type": "string"
             },
             "monatlicheRate": {
-              "type": "number"
+              "$ref": "#/EUR"
             },
             "restschuld": {
-              "type": "number"
+              "$ref": "#/EUR"
             }
           },
           "additionalProperties": false
         }
       },
       "summeImmobilienDarlehen": {
-        "type": "number"
+        "$ref": "#/EUR"
       }
     },
     "additionalProperties": false
@@ -392,18 +392,38 @@
     "type": "object",
     "properties": {
       "laufendesJahr": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "vorEinemJahr": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "vorZweiJahren": {
-        "type": "number"
+        "$ref": "#/EUR"
       },
       "vorDreiJahren": {
-        "type": "number"
+        "$ref": "#/EUR"
       }
     },
     "additionalProperties": false
+  },
+  "EUR": {
+    "type": "number",
+    "symbol": "€",
+    "name": "Euro",
+    "symbol_native": "€",
+    "decimal_digits": 2,
+    "rounding": 0,
+    "code": "EUR",
+    "name_plural": "euros"
+  },
+  "percent": {
+    "type": "number",
+    "symbol": "%",
+    "minimum": 0,
+    "maximum": 1,
+    "name": "Prozent",
+    "symbol_native": "%",
+    "decimal_digits": 2,
+    "rounding": 0
   }
 }

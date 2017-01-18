@@ -15,43 +15,43 @@
         "type": "object",
         "properties": {
           "effektivzinssatz": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/percent"
           },
           "sollzinssatz": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/percent"
           },
           "gesamtbetrag": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "nettokreditbetrag": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "auszahlungsbetrag": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "laufzeitInMonaten": {
             "type": "integer"
           },
           "rateProMonat": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "letzteRate": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "provision": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "basisbetragFuerDieProvisionsermittlung": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "europaceNutzungsgebuehr": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "produzentZahltEuropaceNutzungsgebuehr": {
             "type": "boolean"
           },
           "vorlaufZinsenProTag": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           }
         },
         "additionalProperties": false
@@ -66,13 +66,13 @@
             ]
           },
           "versicherungsProvision": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "versicherungsPraemieBrutto": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "versicherungsPraemieNetto": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
           "versicherungsrisiken": {
             "$ref": "axilarisDefinitions.json#/versicherungsrisiken"
@@ -81,7 +81,7 @@
             "type": "string"
           },
           "europaceNutzungsgebuehr": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           }
         },
         "additionalProperties": false
@@ -150,7 +150,7 @@
         "type": "object",
         "properties": {
           "ueberschuss": {
-            "type": "number"
+            "$ref": "axilarisDefinitions.json#/EUR"
           }
         },
         "additionalProperties": false
@@ -168,7 +168,7 @@
         "additionalProperties": false
       },
       "maximalerAuszahlungsbetrag": {
-        "type": "number"
+        "$ref": "axilarisDefinitions.json#/EUR"
       }
     },
     "additionalProperties": false

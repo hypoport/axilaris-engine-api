@@ -69,7 +69,7 @@
       "additionalProperties": false
     },
     "kreditProvisionsWunsch": {
-      "type": "number"
+      "$ref": "axilarisDefinitions.json#/percent"
     }
   },
   "additionalProperties": false
