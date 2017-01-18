@@ -3,10 +3,13 @@
     "type": "object",
     "properties": {
       "traceId": {
-        "type": "boolean"
+        "type": "string"
       },
-      "vorgangsNummer": {
-        "type": "boolean"
+      "vorgangsnummer": {
+        "type": "string"
+      },
+      "teilantragsnummer": {
+        "type": "string"
       }
     },
     "additionalProperties": false

@@ -1,16 +1,4 @@
 {
-  "metadaten": {
-    "type": "object",
-    "properties": {
-      "traceId": {
-        "type": "boolean"
-      },
-      "vorgangsNummer": {
-        "type": "boolean"
-      }
-    },
-    "additionalProperties": false
-  },
   "adresse": {
     "type": "object",
     "properties": {
