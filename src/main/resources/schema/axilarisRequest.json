@@ -98,9 +98,9 @@
             },
             "befristet": {
               "enum": [
-                "UNLIMITED",
-                "LIMITED",
-                "PROBATIONARY"
+                "UNBEFRISTET",
+                "BEFRISTET",
+                "PROBEZEIT"
               ]
             },
             "beschaeftigtSeit": {
@@ -116,21 +116,21 @@
             },
             "branche": {
               "enum": [
-                "HOUSING_INDUSTRIES",
-                "SERVICES",
-                "ENERGY_SUPPLIER",
-                "LOCAL_AUTHORITY",
-                "RETAIL",
-                "GASTRONOMIE",
-                "FINANCING",
-                "AGRICULTURE",
-                "PUBLIC_SERVICE",
-                "NON_PROFIT",
-                "PRIVATE_HOMES",
-                "SOCIAL_SECURITY",
-                "MANUFACTURING",
-                "TELECOMMUNICATION",
-                "OTHERS"
+                "BAUGEWERBE",
+                "DIENSTLEISTUNGEN",
+                "ENERGIE_WASSERVERSORGUNG_BERGBAU",
+                "GEBIETSKOERPERSCHAFTEN",
+                "HANDEL",
+                "HOTEL_GASTRONOMIE",
+                "KREDITINSTITUTE_VERSICHERUNGEN",
+                "LANDWIRTSCHAFT_FORSTWIRTSCHAFT_FISCHEREI",
+                "OEFFENTLICHER_DIENST",
+                "GEMEINNUETZIGE_ORGANISATION",
+                "PRIVATE_HAUSHALTE",
+                "SOZIALVERSICHERUNGEN",
+                "VERARBEITENDES_GEWERBE",
+                "VERKEHR_NACHRICHTENUEBERMITTLUNG",
+                "SONSTIGE"
               ]
             },
             "anschrift": {
@@ -167,10 +167,10 @@
           "properties": {
             "wohnArt": {
               "enum": [
-                "BY_RENT",
-                "OWN_RESIDENCE",
-                "AT_PARENTS",
-                "BY_SUBLETTING"
+                "ZUR_MIETE",
+                "ZUR_UNTERMIETE",
+                "IM_EIGENEN_HAUS",
+                "BEI_DEN_ELTERN"
               ]
             },
             "wohnhaftSeit": {
@@ -220,9 +220,9 @@
                 },
                 "art": {
                   "enum": [
-                    "PERMISSION_UNLIMITED",
-                    "PERMISSION_LIMITED",
-                    "ALLOWANCE"
+                    "AUFENTHALTSERLAUBNIS_UNBEFRISTET",
+                    "AUFENTHALTSERLAUBNIS_BEFRISTET",
+                    "VISUM"
                   ]
                 },
                 "befristetBis": {
@@ -446,10 +446,10 @@
   },
   "finanzierungsZweck": {
     "enum": [
-      "CONVERSION",
-      "OTHERS",
-      "BUY_NEW_CAR",
-      "MODERN_UND_WOHNEN"
+      "UMSCHULDUNG",
+      "SONSITGES",
+      "NEUWAGENKAUF",
+      "MODERNISIERUNG_UND_WOHNEN"
     ]
   },
   "fahrzeugDaten": {

@@ -104,65 +104,20 @@
       "jaehrlicheEinnahmen": {
         "type": "object",
         "properties": {
-          "selbstaendigkeitEinkommen": {
+          "einkommenAusSelbstaendigkeit": {
             "type": "object",
             "properties": {
               "nettoEinkommenJaehrlich": {
                 "type": "number"
               },
               "zuVersteuerndesJahresEinkommen": {
-                "type": "object",
-                "properties": {
-                  "laufendesJahr": {
-                    "type": "number"
-                  },
-                  "vorEinemJahr": {
-                    "type": "number"
-                  },
-                  "vorZweiJahren": {
-                    "type": "number"
-                  },
-                  "vorDreiJahren": {
-                    "type": "number"
-                  }
-                },
-                "additionalProperties": false
+                "$ref": "#/jaehrlicheAngaben"
               },
               "einkommensSteuer": {
-                "type": "object",
-                "properties": {
-                  "laufendesJahr": {
-                    "type": "number"
-                  },
-                  "vorEinemJahr": {
-                    "type": "number"
-                  },
-                  "vorZweiJahren": {
-                    "type": "number"
-                  },
-                  "vorDreiJahren": {
-                    "type": "number"
-                  }
-                },
-                "additionalProperties": false
+                "$ref": "#/jaehrlicheAngaben"
               },
               "abschreibungen": {
-                "type": "object",
-                "properties": {
-                  "laufendesJahr": {
-                    "type": "number"
-                  },
-                  "vorEinemJahr": {
-                    "type": "number"
-                  },
-                  "vorZweiJahren": {
-                    "type": "number"
-                  },
-                  "vorDreiJahren": {
-                    "type": "number"
-                  }
-                },
-                "additionalProperties": false
+                "$ref": "#/jaehrlicheAngaben"
               },
               "bruttoEinkommenJaehrlichErwartet": {
                 "type": "number"
@@ -429,6 +384,24 @@
           }
         },
         "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  },
+  "jaehrlicheAngaben": {
+    "type": "object",
+    "properties": {
+      "laufendesJahr": {
+        "type": "number"
+      },
+      "vorEinemJahr": {
+        "type": "number"
+      },
+      "vorZweiJahren": {
+        "type": "number"
+      },
+      "vorDreiJahren": {
+        "type": "number"
       }
     },
     "additionalProperties": false
