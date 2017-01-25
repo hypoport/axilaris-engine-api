@@ -165,7 +165,7 @@
           "additionalProperties": false
         }
       },
-      "wohnflaecheEigengenutzterImmobilie": {
+      "wohnflaecheEigengenutzterImmobilieInQm": {
         "type": "integer"
       }
     },
@@ -189,8 +189,7 @@
               "$ref": "#/EUR"
             },
             "datumLetzteRate": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "#/date"
             },
             "restschuld": {
               "$ref": "#/EUR"
@@ -214,8 +213,7 @@
               "$ref": "#/EUR"
             },
             "datumLetzteRate": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "#/date"
             },
             "restschuld": {
               "$ref": "#/EUR"
@@ -239,8 +237,7 @@
               "$ref": "#/EUR"
             },
             "datumLetzteRate": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "#/date"
             }
           },
           "additionalProperties": false
@@ -405,5 +402,9 @@
     "symbol_native": "%",
     "decimal_digits": 2,
     "rounding": 0
+  },
+  "date": {
+    "type": "string",
+    "format": "date-time"
   }
 }

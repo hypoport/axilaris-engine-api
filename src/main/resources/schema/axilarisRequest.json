@@ -62,8 +62,7 @@
               "type": "string"
             },
             "geburtsdatum": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "geburtsort": {
               "type": "string"
@@ -115,12 +114,10 @@
               ]
             },
             "beschaeftigtSeit": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "befristetBis": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "beruf": {
               "type": "string"
@@ -157,12 +154,10 @@
           "type": "object",
           "properties": {
             "beschaeftigtSeit": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "befristetBis": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "anschrift": {
               "$ref": "axilarisDefinitions.json#/adresse"
@@ -185,8 +180,7 @@
               ]
             },
             "wohnhaftSeit": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "anschrift": {
               "$ref": "axilarisDefinitions.json#/adresse"
@@ -195,8 +189,7 @@
               "$ref": "axilarisDefinitions.json#/adresse"
             },
             "wohnhaftSeitDerVoranschrift": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "anzahlPkw": {
               "type": "integer"
@@ -226,8 +219,7 @@
               "type": "object",
               "properties": {
                 "inDeutschlandSeit": {
-                  "type": "string",
-                  "format": "date-time"
+                  "$ref": "axilarisDefinitions.json#/date"
                 },
                 "art": {
                   "enum": [
@@ -237,15 +229,13 @@
                   ]
                 },
                 "befristetBis": {
-                  "type": "string",
-                  "format": "date-time"
+                  "$ref": "axilarisDefinitions.json#/date"
                 }
               },
               "additionalProperties": false
             },
             "arbeitserlaubnisBefristetBis": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             }
           },
           "additionalProperties": false
@@ -275,8 +265,7 @@
               "$ref": "axilarisDefinitions.json#/adresse"
             },
             "rentnerSeit": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             }
           },
           "additionalProperties": false
@@ -298,8 +287,7 @@
               "type": "string"
             },
             "ausstellungsdatum": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "ausstellungsort": {
               "type": "string"
@@ -352,12 +340,10 @@
               "$ref": "axilarisDefinitions.json#/EUR"
             },
             "datumErsteRate": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "datumLetzteRate": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "urspruenglicherBetrag": {
               "$ref": "axilarisDefinitions.json#/EUR"
@@ -387,12 +373,10 @@
               "$ref": "axilarisDefinitions.json#/EUR"
             },
             "datumErsteRate": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "datumLetzteRate": {
-              "type": "string",
-              "format": "date-time"
+              "$ref": "axilarisDefinitions.json#/date"
             },
             "urspruenglicherBetrag": {
               "$ref": "axilarisDefinitions.json#/EUR"
@@ -467,8 +451,7 @@
     "type": "object",
     "properties": {
       "erstzulassungsdatum": {
-        "type": "string",
-        "format": "date-time"
+        "$ref": "axilarisDefinitions.json#/date"
       },
       "kaufpreis": {
         "$ref": "axilarisDefinitions.json#/EUR"
