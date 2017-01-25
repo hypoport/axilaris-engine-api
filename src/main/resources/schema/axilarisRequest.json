@@ -71,7 +71,7 @@
               "type": "string"
             },
             "staatsangehoerigkeit": {
-              "type": "string"
+              "$ref": "axilarisDefinitions.json#/country"
             },
             "familienstand": {
               "enum": [

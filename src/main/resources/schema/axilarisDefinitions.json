@@ -15,7 +15,7 @@
         "type": "string"
       },
       "land": {
-        "type": "string"
+        "$ref": "#/country"
       }
     },
     "additionalProperties": false
@@ -406,5 +406,9 @@
   "date": {
     "type": "string",
     "format": "date-time"
+  },
+  "country": {
+    "type": "string",
+    "description": "Land als ISO 3166-1 alpha-2 Code (nur Grossbuchstaben)"
   }
 }
