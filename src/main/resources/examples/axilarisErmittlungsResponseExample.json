@@ -1,0 +1,128 @@
+{
+  "angebote": [
+    {
+      "produktanbieter": "SPK_BERLIN",
+      "produktbezeichnung": "Str_scVQCzMnPp",
+      "angebotsVariantenTyp": "eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6IlJBVEVOS1JFRElUIiwib2ZmZXJXb3JrZmxvdyI6Ik1hc3Rlck9mZmVyV29ya0Zsb3dJZCIsInByb2R1emVudCI6IlNLRyJ9fQ==",
+      "kreditkonditionen": {
+        "effektivzinssatz": 0.0531,
+        "sollzinssatz": 0.0511,
+        "gesamtbetrag": "67848.000000",
+        "nettokreditbetrag": "53235.000000",
+        "auszahlungsbetrag": "34039.000000",
+        "laufzeitInMonaten": 84,
+        "rateProMonat": "3300.000000",
+        "letzteRate": "40278.000000",
+        "provision": "64193.000000",
+        "basisbetragFuerDieProvisionsermittlung": "57155.000000",
+        "europaceNutzungsgebuehr": "43509.000000",
+        "produktanbieterZahltEuropaceNutzungsgebuehr": false,
+        "vorlaufzinsenProTag": "31638.000000"
+      },
+      "versicherungskonditionen": {
+        "basisFuerDieProvisionsermittlung": "VERSICHERUNGS_PRAEMIE_BRUTTO",
+        "versicherungsprovision": "83111.000000",
+        "versicherungspraemieBrutto": "61859.000000",
+        "versicherungspraemieNetto": "26857.000000",
+        "versicherungsrisiken": [
+          {
+            "antragstellerId": "Str_qVfJDrCJhV",
+            "tod": true,
+            "arbeitsunfaehigkeit": true,
+            "arbeitsLosigkeit": true
+          }
+        ],
+        "versicherer": "Str_PWDzCirhFF",
+        "europaceNutzungsgebuehr": "91665.000000"
+      },
+      "status": {
+        "machbarkeitsstatus": "NICHT_MACHBAR",
+        "angepasst": true
+      },
+      "meldungen": [
+        {
+          "kategorie": "ANPASSUNG",
+          "text": "Str_IAiZOjGQzH",
+          "code": "Str_YgKilEeyiv"
+        }
+      ],
+      "erforderlicheUnterlagen": [
+        "Str_ljTlGbBGNe"
+      ],
+      "bonitaetsCheck": {
+        "ueberschuss": "3387.000000"
+      },
+      "uebersichten": {
+        "bausteinUebersicht": {
+          "ueberschrift": "Str_ymMxYbiLqa"
+        },
+        "bonicheck": {
+          "ueberschrift": "Str_ALlhwsNBPR"
+        }
+      },
+      "maximalerAuszahlungsbetrag": "37227.000000"
+    },
+    {
+      "produktanbieter": "KASSEL_SPK",
+      "produktbezeichnung": "Str_MAKqdyJSWx",
+      "angebotsVariantenTyp": "eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6IlBST0RVS1RWQVJJQU5URV9CIiwib2ZmZXJXb3JrZmxvdyI6Ik1hc3Rlck9mZmVyV29ya0Zsb3dJZCIsInByb2R1emVudCI6IlNBTlRBTkRFUl9DQVIifX0=",
+      "kreditkonditionen": {
+        "effektivzinssatz": 0.0407,
+        "sollzinssatz": 0.0399,
+        "gesamtbetrag": "88164.000000",
+        "nettokreditbetrag": "85147.000000",
+        "auszahlungsbetrag": "12894.000000",
+        "laufzeitInMonaten": 72,
+        "rateProMonat": "151.000000",
+        "letzteRate": "35550.000000",
+        "provision": "89689.000000",
+        "basisbetragFuerDieProvisionsermittlung": "17051.000000",
+        "europaceNutzungsgebuehr": "92636.000000",
+        "produktanbieterZahltEuropaceNutzungsgebuehr": true,
+        "vorlaufzinsenProTag": "16734.000000"
+      },
+      "versicherungskonditionen": {
+        "basisFuerDieProvisionsermittlung": "VERSICHERUNGS_PRAEMIE_BRUTTO",
+        "versicherungsprovision": "35698.000000",
+        "versicherungspraemieBrutto": "99200.000000",
+        "versicherungspraemieNetto": "13768.000000",
+        "versicherungsrisiken": [
+          {
+            "antragstellerId": "Str_KyMhNJiVXM",
+            "tod": true,
+            "arbeitsunfaehigkeit": true,
+            "arbeitsLosigkeit": false
+          }
+        ],
+        "versicherer": "Str_aDrFfLSnnR",
+        "europaceNutzungsgebuehr": "17774.000000"
+      },
+      "status": {
+        "machbarkeitsstatus": "MACHBAR",
+        "angepasst": false
+      },
+      "meldungen": [
+        {
+          "kategorie": "HINWEIS",
+          "text": "Str_xNVmuKdtNE",
+          "code": "Str_ONhqGVSVIj"
+        }
+      ],
+      "erforderlicheUnterlagen": [
+        "Str_dfhIkvmQVh"
+      ],
+      "bonitaetsCheck": {
+        "ueberschuss": "8664.000000"
+      },
+      "uebersichten": {
+        "bausteinUebersicht": {
+          "ueberschrift": "Str_COtNcoMwab"
+        },
+        "bonicheck": {
+          "ueberschrift": "Str_cxPSXhLjrc"
+        }
+      },
+      "maximalerAuszahlungsbetrag": "65923.000000"
+    }
+  ]
+}
