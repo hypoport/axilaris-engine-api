@@ -207,7 +207,8 @@
               "type": "string"
             },
             "eMail": {
-              "type": "string"
+              "type": "string",
+              "format": "email"
             }
           },
           "additionalProperties": false
@@ -517,7 +518,8 @@
         "type": "string"
       },
       "email": {
-        "type": "string"
+        "type": "string",
+        "format": "email"
       },
       "iban": {
         "type": "string"
