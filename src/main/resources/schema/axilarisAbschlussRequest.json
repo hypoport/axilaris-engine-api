@@ -3,34 +3,10 @@
   "title": "axilaris-engine-api Abschlussrequest",
   "id": "http://jsonschema.net/axilaris-engine-api/abschluss/request",
   "type": "object",
+  "extends": {
+    "$ref": "axilarisRequest.json#/request"
+  },
   "properties": {
-    "metadaten": {
-      "$ref": "axilarisRequest.json#/metadaten"
-    },
-    "kreditwunsch": {
-      "$ref": "axilarisRequest.json#/kreditwunsch"
-    },
-    "antragsteller": {
-      "$ref": "axilarisRequest.json#/antragsteller"
-    },
-    "gemeinsameAntragstellerangaben": {
-      "$ref": "axilarisRequest.json#/gemeinsameAntragstellerangaben"
-    },
-    "konto": {
-      "$ref": "axilarisDefinitions.json#/konto"
-    },
-    "abzuloesendeVerbindlichkeiten": {
-      "$ref": "axilarisRequest.json#/abzuloesendeVerbindlichkeiten"
-    },
-    "finanzierungszweck": {
-      "$ref": "axilarisRequest.json#/finanzierungszweck"
-    },
-    "fahrzeugdaten": {
-      "$ref": "axilarisRequest.json#/fahrzeugdaten"
-    },
-    "kundenbetreuer": {
-      "$ref": "axilarisRequest.json#/kundenbetreuer"
-    },
     "angebotsVariantenTyp": {
       "type": "string"
     },

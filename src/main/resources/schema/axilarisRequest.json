@@ -1,531 +1,540 @@
 {
-  "metadaten": {
+  "request": {
     "type": "object",
     "properties": {
-      "traceId": {
-        "type": "string"
-      },
-      "vorgangsnummer": {
-        "type": "string"
-      },
-      "teilantragsnummer": {
-        "type": "string"
-      }
-    },
-    "additionalProperties": false
-  },
-  "kreditwunsch": {
-    "type": "object",
-    "properties": {
-      "auszahlungsbetrag": {
-        "$ref": "axilarisDefinitions.json#/EUR"
-      },
-      "ratenzahlungtermin": {
-        "type": "integer"
-      },
-      "laufzeitInMonaten": {
-        "type": "integer"
-      },
-      "rateProMonat": {
-        "$ref": "axilarisDefinitions.json#/EUR"
-      },
-      "versicherungsrisiken": {
-        "$ref": "axilarisDefinitions.json#/versicherungsrisiken"
-      }
-    },
-    "additionalProperties": false
-  },
-  "antragsteller": {
-    "type": "array",
-    "items": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "haushaltspartnerId": {
-          "type": "string"
-        },
-        "persoenlicheAngaben": {
-          "type": "object",
-          "properties": {
-            "anrede": {
-              "$ref": "axilarisDefinitions.json#/anrede"
-            },
-            "titel": {
-              "type": "string"
-            },
-            "vorname": {
-              "type": "string"
-            },
-            "nachname": {
-              "type": "string"
-            },
-            "geburtsdatum": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "geburtsort": {
-              "type": "string"
-            },
-            "geburtsname": {
-              "type": "string"
-            },
-            "staatsangehoerigkeit": {
-              "$ref": "axilarisDefinitions.json#/country"
-            },
-            "familienstand": {
-              "enum": [
-                "LEDIG",
-                "VERHEIRATET",
-                "GESCHIEDEN",
-                "VERWITWET",
-                "GETRENNT_LEBEND",
-                "EHEAEHNLICHE_GEMEINSCHAFT",
-                "EINGETRAGENE_LEBENSPARTNERSCHAFT"
-              ]
-            },
-            "anzahlPersonenImHaushalt": {
-              "type": "integer"
-            }
+      "metadaten": {
+        "type": "object",
+        "properties": {
+          "traceId": {
+            "type": "string"
           },
-          "additionalProperties": false
-        },
-        "angabenZurBeschaeftigung": {
-          "type": "object",
-          "properties": {
-            "beschaeftigungsverhaeltnis": {
-              "enum": [
-                "ANGESTELLT",
-                "ARBEITER",
-                "BEAMTER",
-                "GF_GESELLSCHAFTER",
-                "SELBSTAENDIG",
-                "FREIBERUFLER",
-                "RENTNER",
-                "HAUSFRAU",
-                "ARBEITSLOS"
-              ]
-            },
-            "befristet": {
-              "enum": [
-                "UNBEFRISTET",
-                "BEFRISTET",
-                "PROBEZEIT"
-              ]
-            },
-            "beschaeftigtSeit": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "befristetBis": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "beruf": {
-              "type": "string"
-            },
-            "branche": {
-              "enum": [
-                "BAUGEWERBE",
-                "DIENSTLEISTUNGEN",
-                "ENERGIE_WASSERVERSORGUNG_BERGBAU",
-                "GEBIETSKOERPERSCHAFTEN",
-                "HANDEL",
-                "HOTEL_GASTRONOMIE",
-                "KREDITINSTITUTE_VERSICHERUNGEN",
-                "LANDWIRTSCHAFT_FORSTWIRTSCHAFT_FISCHEREI",
-                "OEFFENTLICHER_DIENST",
-                "GEMEINNUETZIGE_ORGANISATION",
-                "PRIVATE_HAUSHALTE",
-                "SOZIALVERSICHERUNGEN",
-                "VERARBEITENDES_GEWERBE",
-                "VERKEHR_NACHRICHTENUEBERMITTLUNG",
-                "SONSTIGE"
-              ]
-            },
-            "anschrift": {
-              "$ref": "axilarisDefinitions.json#/adresse"
-            },
-            "arbeitgebername": {
-              "type": "string"
-            }
+          "vorgangsnummer": {
+            "type": "string"
           },
-          "additionalProperties": false
+          "teilantragsnummer": {
+            "type": "string"
+          }
         },
-        "angabenZurVorherigenBeschaeftigung": {
-          "type": "object",
-          "properties": {
-            "beschaeftigtSeit": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "befristetBis": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "anschrift": {
-              "$ref": "axilarisDefinitions.json#/adresse"
-            },
-            "arbeitgebername": {
-              "type": "string"
-            }
+        "additionalProperties": false
+      },
+      "kreditwunsch": {
+        "type": "object",
+        "properties": {
+          "auszahlungsbetrag": {
+            "$ref": "axilarisDefinitions.json#/EUR"
           },
-          "additionalProperties": false
-        },
-        "wohnsituation": {
-          "type": "object",
-          "properties": {
-            "wohnart": {
-              "enum": [
-                "ZUR_MIETE",
-                "ZUR_UNTERMIETE",
-                "IM_EIGENEN_HAUS",
-                "BEI_DEN_ELTERN"
-              ]
-            },
-            "wohnhaftSeit": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "anschrift": {
-              "$ref": "axilarisDefinitions.json#/adresse"
-            },
-            "voranschrift": {
-              "$ref": "axilarisDefinitions.json#/adresse"
-            },
-            "wohnhaftSeitDerVoranschrift": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "anzahlPkw": {
-              "type": "integer"
-            }
+          "ratenzahlungtermin": {
+            "type": "integer"
           },
-          "additionalProperties": false
+          "laufzeitInMonaten": {
+            "type": "integer"
+          },
+          "rateProMonat": {
+            "$ref": "axilarisDefinitions.json#/EUR"
+          },
+          "versicherungsrisiken": {
+            "$ref": "axilarisDefinitions.json#/versicherungsrisiken"
+          }
         },
-        "kontakt": {
+        "additionalProperties": false
+      },
+      "antragsteller": {
+        "type": "array",
+        "items": {
           "type": "object",
           "properties": {
-            "telefonPrivat": {
+            "id": {
               "type": "string"
             },
-            "telefonGeschaeftlich": {
+            "haushaltspartnerId": {
               "type": "string"
             },
-            "eMail": {
-              "type": "string",
-              "format": "email"
-            }
-          },
-          "additionalProperties": false
-        },
-        "herkunft": {
-          "type": "object",
-          "properties": {
-            "aufenthaltstitel": {
+            "persoenlicheAngaben": {
               "type": "object",
               "properties": {
-                "inDeutschlandSeit": {
+                "anrede": {
+                  "$ref": "axilarisDefinitions.json#/anrede"
+                },
+                "titel": {
+                  "type": "string"
+                },
+                "vorname": {
+                  "type": "string"
+                },
+                "nachname": {
+                  "type": "string"
+                },
+                "geburtsdatum": {
                   "$ref": "axilarisDefinitions.json#/date"
                 },
-                "art": {
+                "geburtsort": {
+                  "type": "string"
+                },
+                "geburtsname": {
+                  "type": "string"
+                },
+                "staatsangehoerigkeit": {
+                  "$ref": "axilarisDefinitions.json#/country"
+                },
+                "familienstand": {
                   "enum": [
-                    "AUFENTHALTSERLAUBNIS_UNBEFRISTET",
-                    "AUFENTHALTSERLAUBNIS_BEFRISTET",
-                    "VISUM"
+                    "LEDIG",
+                    "VERHEIRATET",
+                    "GESCHIEDEN",
+                    "VERWITWET",
+                    "GETRENNT_LEBEND",
+                    "EHEAEHNLICHE_GEMEINSCHAFT",
+                    "EINGETRAGENE_LEBENSPARTNERSCHAFT"
                   ]
                 },
+                "anzahlPersonenImHaushalt": {
+                  "type": "integer"
+                }
+              },
+              "additionalProperties": false
+            },
+            "angabenZurBeschaeftigung": {
+              "type": "object",
+              "properties": {
+                "beschaeftigungsverhaeltnis": {
+                  "enum": [
+                    "ANGESTELLT",
+                    "ARBEITER",
+                    "BEAMTER",
+                    "GF_GESELLSCHAFTER",
+                    "SELBSTAENDIG",
+                    "FREIBERUFLER",
+                    "RENTNER",
+                    "HAUSFRAU",
+                    "ARBEITSLOS"
+                  ]
+                },
+                "befristet": {
+                  "enum": [
+                    "UNBEFRISTET",
+                    "BEFRISTET",
+                    "PROBEZEIT"
+                  ]
+                },
+                "beschaeftigtSeit": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
                 "befristetBis": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "beruf": {
+                  "type": "string"
+                },
+                "branche": {
+                  "enum": [
+                    "BAUGEWERBE",
+                    "DIENSTLEISTUNGEN",
+                    "ENERGIE_WASSERVERSORGUNG_BERGBAU",
+                    "GEBIETSKOERPERSCHAFTEN",
+                    "HANDEL",
+                    "HOTEL_GASTRONOMIE",
+                    "KREDITINSTITUTE_VERSICHERUNGEN",
+                    "LANDWIRTSCHAFT_FORSTWIRTSCHAFT_FISCHEREI",
+                    "OEFFENTLICHER_DIENST",
+                    "GEMEINNUETZIGE_ORGANISATION",
+                    "PRIVATE_HAUSHALTE",
+                    "SOZIALVERSICHERUNGEN",
+                    "VERARBEITENDES_GEWERBE",
+                    "VERKEHR_NACHRICHTENUEBERMITTLUNG",
+                    "SONSTIGE"
+                  ]
+                },
+                "anschrift": {
+                  "$ref": "axilarisDefinitions.json#/adresse"
+                },
+                "arbeitgebername": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "angabenZurVorherigenBeschaeftigung": {
+              "type": "object",
+              "properties": {
+                "beschaeftigtSeit": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "befristetBis": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "anschrift": {
+                  "$ref": "axilarisDefinitions.json#/adresse"
+                },
+                "arbeitgebername": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "wohnsituation": {
+              "type": "object",
+              "properties": {
+                "wohnart": {
+                  "enum": [
+                    "ZUR_MIETE",
+                    "ZUR_UNTERMIETE",
+                    "IM_EIGENEN_HAUS",
+                    "BEI_DEN_ELTERN"
+                  ]
+                },
+                "wohnhaftSeit": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "anschrift": {
+                  "$ref": "axilarisDefinitions.json#/adresse"
+                },
+                "voranschrift": {
+                  "$ref": "axilarisDefinitions.json#/adresse"
+                },
+                "wohnhaftSeitDerVoranschrift": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "anzahlPkw": {
+                  "type": "integer"
+                }
+              },
+              "additionalProperties": false
+            },
+            "kontakt": {
+              "type": "object",
+              "properties": {
+                "telefonPrivat": {
+                  "type": "string"
+                },
+                "telefonGeschaeftlich": {
+                  "type": "string"
+                },
+                "eMail": {
+                  "type": "string",
+                  "format": "email"
+                }
+              },
+              "additionalProperties": false
+            },
+            "herkunft": {
+              "type": "object",
+              "properties": {
+                "aufenthaltstitel": {
+                  "type": "object",
+                  "properties": {
+                    "inDeutschlandSeit": {
+                      "$ref": "axilarisDefinitions.json#/date"
+                    },
+                    "art": {
+                      "enum": [
+                        "AUFENTHALTSERLAUBNIS_UNBEFRISTET",
+                        "AUFENTHALTSERLAUBNIS_BEFRISTET",
+                        "VISUM"
+                      ]
+                    },
+                    "befristetBis": {
+                      "$ref": "axilarisDefinitions.json#/date"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "arbeitserlaubnisBefristetBis": {
                   "$ref": "axilarisDefinitions.json#/date"
                 }
               },
               "additionalProperties": false
             },
-            "arbeitserlaubnisBefristetBis": {
-              "$ref": "axilarisDefinitions.json#/date"
+            "ausgaben": {
+              "$ref": "axilarisDefinitions.json#/ausgaben"
+            },
+            "einnahmen": {
+              "$ref": "axilarisDefinitions.json#/einnahmen"
+            },
+            "vermoegen": {
+              "$ref": "axilarisDefinitions.json#/vermoegen"
+            },
+            "verbindlichkeiten": {
+              "$ref": "axilarisDefinitions.json#/verbindlichkeiten"
+            },
+            "anzahlKinder": {
+              "type": "integer"
+            },
+            "rentenversicherung": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "anschrift": {
+                  "$ref": "axilarisDefinitions.json#/adresse"
+                },
+                "rentnerSeit": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                }
+              },
+              "additionalProperties": false
+            },
+            "legitimation": {
+              "type": "object",
+              "properties": {
+                "ausweisart": {
+                  "enum": [
+                    "PERSONALAUSWEIS",
+                    "REISEPASS",
+                    "ANDERER_AUSWEIS"
+                  ]
+                },
+                "ausweisnummer": {
+                  "type": "string"
+                },
+                "ausstellendeBehoerde": {
+                  "type": "string"
+                },
+                "ausstellungsdatum": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "ausstellungsort": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
             }
           },
           "additionalProperties": false
         },
-        "ausgaben": {
-          "$ref": "axilarisDefinitions.json#/ausgaben"
-        },
-        "einnahmen": {
-          "$ref": "axilarisDefinitions.json#/einnahmen"
-        },
-        "vermoegen": {
-          "$ref": "axilarisDefinitions.json#/vermoegen"
-        },
-        "verbindlichkeiten": {
-          "$ref": "axilarisDefinitions.json#/verbindlichkeiten"
-        },
-        "anzahlKinder": {
-          "type": "integer"
-        },
-        "rentenversicherung": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "anschrift": {
-              "$ref": "axilarisDefinitions.json#/adresse"
-            },
-            "rentnerSeit": {
-              "$ref": "axilarisDefinitions.json#/date"
-            }
-          },
-          "additionalProperties": false
-        },
-        "legitimation": {
-          "type": "object",
-          "properties": {
-            "ausweisart": {
-              "enum": [
-                "PERSONALAUSWEIS",
-                "REISEPASS",
-                "ANDERER_AUSWEIS"
-              ]
-            },
-            "ausweisnummer": {
-              "type": "string"
-            },
-            "ausstellendeBehoerde": {
-              "type": "string"
-            },
-            "ausstellungsdatum": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "ausstellungsort": {
-              "type": "string"
-            }
-          },
-          "additionalProperties": false
-        }
+        "maxItems": 2,
+        "additionalProperties": false
       },
-      "additionalProperties": false
-    },
-    "maxItems": 2,
-    "additionalProperties": false
-  },
-  "gemeinsameAntragstellerangaben": {
-    "type": "object",
-    "properties": {
-      "ausgaben": {
-        "$ref": "axilarisDefinitions.json#/ausgaben"
-      },
-      "einnahmen": {
-        "$ref": "axilarisDefinitions.json#/einnahmen"
-      },
-      "vermoegen": {
-        "$ref": "axilarisDefinitions.json#/vermoegen"
-      },
-      "verbindlichkeiten": {
-        "$ref": "axilarisDefinitions.json#/verbindlichkeiten"
-      },
-      "anzahlKinder": {
-        "type": "integer"
-      }
-    },
-    "additionalProperties": false
-  },
-  "abzuloesendeVerbindlichkeiten": {
-    "type": "object",
-    "properties": {
-      "ratenkredite": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string"
-            },
-            "monatlicheRate": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "letzteRate": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "datumErsteRate": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "datumLetzteRate": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "urspruenglicherBetrag": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "abloesebetrag": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "konto": {
-              "$ref": "axilarisDefinitions.json#/konto"
-            }
-          },
-          "additionalProperties": false
-        }
-      },
-      "sonstigeVerbindlichkeiten": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string"
-            },
-            "monatlicheRate": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "letzteRate": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "datumErsteRate": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "datumLetzteRate": {
-              "$ref": "axilarisDefinitions.json#/date"
-            },
-            "urspruenglicherBetrag": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "abloesebetrag": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "konto": {
-              "$ref": "axilarisDefinitions.json#/konto"
-            }
-          },
-          "additionalProperties": false
-        }
-      },
-      "kreditkarten": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string"
-            },
-            "verfuegungsrahmen": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "monatlicheRate": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "abloesebetrag": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "konto": {
-              "$ref": "axilarisDefinitions.json#/konto"
-            }
-          },
-          "additionalProperties": false
-        }
-      },
-      "dispositionskredite": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string"
-            },
-            "verfuegungsrahmen": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "abloesebetrag": {
-              "$ref": "axilarisDefinitions.json#/EUR"
-            },
-            "konto": {
-              "$ref": "axilarisDefinitions.json#/konto"
-            }
-          },
-          "additionalProperties": false
-        }
-      }
-    },
-    "additionalProperties": false
-  },
-  "finanzierungszweck": {
-    "enum": [
-      "UMSCHULDUNG",
-      "SONSITGES",
-      "NEUWAGENKAUF",
-      "MODERNISIERUNG_UND_WOHNEN"
-    ]
-  },
-  "fahrzeugdaten": {
-    "type": "object",
-    "properties": {
-      "erstzulassungsdatum": {
-        "$ref": "axilarisDefinitions.json#/date"
-      },
-      "kaufpreis": {
-        "$ref": "axilarisDefinitions.json#/EUR"
-      },
-      "beglicheneKosten": {
-        "$ref": "axilarisDefinitions.json#/EUR"
-      },
-      "fahrzeugleistung": {
+      "gemeinsameAntragstellerangaben": {
         "type": "object",
         "properties": {
-          "nennleistung": {
-            "type": "number"
+          "ausgaben": {
+            "$ref": "axilarisDefinitions.json#/ausgaben"
           },
-          "einheit": {
+          "einnahmen": {
+            "$ref": "axilarisDefinitions.json#/einnahmen"
+          },
+          "vermoegen": {
+            "$ref": "axilarisDefinitions.json#/vermoegen"
+          },
+          "verbindlichkeiten": {
+            "$ref": "axilarisDefinitions.json#/verbindlichkeiten"
+          },
+          "anzahlKinder": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "konto": {
+        "$ref": "axilarisDefinitions.json#/konto"
+      },
+      "abzuloesendeVerbindlichkeiten": {
+        "type": "object",
+        "properties": {
+          "ratenkredite": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "monatlicheRate": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "letzteRate": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "datumErsteRate": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "datumLetzteRate": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "urspruenglicherBetrag": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "abloesebetrag": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "konto": {
+                  "$ref": "axilarisDefinitions.json#/konto"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "sonstigeVerbindlichkeiten": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "monatlicheRate": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "letzteRate": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "datumErsteRate": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "datumLetzteRate": {
+                  "$ref": "axilarisDefinitions.json#/date"
+                },
+                "urspruenglicherBetrag": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "abloesebetrag": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "konto": {
+                  "$ref": "axilarisDefinitions.json#/konto"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "kreditkarten": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "verfuegungsrahmen": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "monatlicheRate": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "abloesebetrag": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "konto": {
+                  "$ref": "axilarisDefinitions.json#/konto"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "dispositionskredite": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "verfuegungsrahmen": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "abloesebetrag": {
+                  "$ref": "axilarisDefinitions.json#/EUR"
+                },
+                "konto": {
+                  "$ref": "axilarisDefinitions.json#/konto"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "finanzierungszweck": {
+        "enum": [
+          "UMSCHULDUNG",
+          "SONSITGES",
+          "NEUWAGENKAUF",
+          "MODERNISIERUNG_UND_WOHNEN"
+        ]
+      },
+      "fahrzeugdaten": {
+        "type": "object",
+        "properties": {
+          "erstzulassungsdatum": {
+            "$ref": "axilarisDefinitions.json#/date"
+          },
+          "kaufpreis": {
+            "$ref": "axilarisDefinitions.json#/EUR"
+          },
+          "beglicheneKosten": {
+            "$ref": "axilarisDefinitions.json#/EUR"
+          },
+          "fahrzeugleistung": {
+            "type": "object",
+            "properties": {
+              "nennleistung": {
+                "type": "number"
+              },
+              "einheit": {
+                "enum": [
+                  "PS",
+                  "KW"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "laufleistung": {
+            "type": "integer"
+          },
+          "marke": {
+            "type": "string"
+          },
+          "modell": {
+            "type": "string"
+          },
+          "verkaeuferart": {
             "enum": [
-              "PS",
-              "KW"
+              "PRIVAT",
+              "HAENDLER"
             ]
           }
         },
         "additionalProperties": false
       },
-      "laufleistung": {
-        "type": "integer"
-      },
-      "marke": {
-        "type": "string"
-      },
-      "modell": {
-        "type": "string"
-      },
-      "verkaeuferart": {
-        "enum": [
-          "PRIVAT",
-          "HAENDLER"
-        ]
-      }
-    },
-    "additionalProperties": false
-  },
-  "kundenbetreuer": {
-    "type": "object",
-    "properties": {
-      "partnerId": {
-        "type": "string"
-      },
-      "firmenname": {
-        "type": "string"
-      },
-      "vorname": {
-        "type": "string"
-      },
-      "nachname": {
-        "type": "string"
-      },
-      "anschrift": {
-        "$ref": "axilarisDefinitions.json#/adresse"
-      },
-      "telefon": {
-        "type": "string"
-      },
-      "fax": {
-        "type": "string"
-      },
-      "email": {
-        "type": "string",
-        "format": "email"
-      },
-      "iban": {
-        "type": "string"
-      },
-      "anrede": {
-        "$ref": "axilarisDefinitions.json#/anrede"
+      "kundenbetreuer": {
+        "type": "object",
+        "properties": {
+          "partnerId": {
+            "type": "string"
+          },
+          "firmenname": {
+            "type": "string"
+          },
+          "vorname": {
+            "type": "string"
+          },
+          "nachname": {
+            "type": "string"
+          },
+          "anschrift": {
+            "$ref": "axilarisDefinitions.json#/adresse"
+          },
+          "telefon": {
+            "type": "string"
+          },
+          "fax": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "iban": {
+            "type": "string"
+          },
+          "anrede": {
+            "$ref": "axilarisDefinitions.json#/anrede"
+          }
+        },
+        "additionalProperties": false
       }
     },
     "additionalProperties": false
