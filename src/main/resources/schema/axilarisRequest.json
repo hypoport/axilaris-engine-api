@@ -75,7 +75,15 @@
               "type": "string"
             },
             "familienstand": {
-              "type": "string"
+              "enum": [
+                "LEDIG",
+                "VERHEIRATET",
+                "GESCHIEDEN",
+                "VERWITWET",
+                "GETRENNT_LEBEND",
+                "EHEAEHNLICHE_GEMEINSCHAFT",
+                "EINGETRAGENE_LEBENSPARTNERSCHAFT"
+              ]
             },
             "anzahlPersonenImHaushalt": {
               "type": "integer"
