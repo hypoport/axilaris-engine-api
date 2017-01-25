@@ -405,7 +405,8 @@
   },
   "date": {
     "type": "string",
-    "format": "date-time"
+    "format": "date-time",
+    "customDateTimePattern": "yyyy-MM-dd"
   },
   "country": {
     "type": "string",
