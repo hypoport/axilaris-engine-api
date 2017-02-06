@@ -143,9 +143,6 @@
       "uebersichten": {
         "type": "object",
         "properties": {
-          "bausteinUebersicht": {
-            "$ref": "axilarisDefinitions.json#/uebersicht"
-          },
           "bonicheck": {
             "$ref": "axilarisDefinitions.json#/uebersicht"
           }
