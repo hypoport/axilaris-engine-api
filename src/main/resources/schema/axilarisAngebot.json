@@ -134,22 +134,43 @@
       "bonitaetsCheck": {
         "type": "object",
         "properties": {
+          "einnahmen": {
+            "$ref": "#/bonitaetsCheckPosition"
+          },
+          "ausgaben": {
+            "$ref": "#/bonitaetsCheckPosition"
+          },
           "ueberschuss": {
             "$ref": "axilarisDefinitions.json#/EUR"
           }
         },
         "additionalProperties": false
       },
-      "uebersichten": {
-        "type": "object",
-        "properties": {
-          "bonicheck": {
-            "$ref": "axilarisDefinitions.json#/uebersicht"
-          }
-        },
-        "additionalProperties": false
-      },
       "maximalerAuszahlungsbetrag": {
+        "$ref": "axilarisDefinitions.json#/EUR"
+      }
+    },
+    "additionalProperties": false
+  },
+  "bonitaetsCheckPosition": {
+    "type": "object",
+    "properties": {
+      "positionen": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "wert": {
+              "$ref": "axilarisDefinitions.json#/EUR"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "summe": {
         "$ref": "axilarisDefinitions.json#/EUR"
       }
     },

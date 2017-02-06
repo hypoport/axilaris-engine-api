@@ -50,15 +50,37 @@
         "Str_ljTlGbBGNe"
       ],
       "bonitaetsCheck": {
-        "ueberschuss": "3387.000000"
-      },
-      "uebersichten": {
-        "bausteinUebersicht": {
-          "ueberschrift": "Str_ymMxYbiLqa"
+        "einnahmen": {
+          "positionen": [
+            {
+              "label": "Regelm. Nettoeinkommen (unselbständig)",
+              "wert": "2793.050000"
+            },
+            {
+              "label": "Kindergeld",
+              "wert": "194.000000"
+            }
+          ],
+          "summe": "98232.000000"
         },
-        "bonicheck": {
-          "ueberschrift": "Str_ALlhwsNBPR"
-        }
+        "ausgaben": {
+          "positionen": [
+            {
+              "label": "Lebenshaltungskosten",
+              "wert": "1815.000000"
+            },
+            {
+              "label": "Krankenversicherungsbeiträge",
+              "wert": "387.000000"
+            },
+            {
+              "label": "Rate der Finanzierung",
+              "wert": "123.000000"
+            }
+          ],
+          "summe": "11377.000000"
+        },
+        "ueberschuss": "50516.000000"
       },
       "maximalerAuszahlungsbetrag": "37227.000000"
     },
@@ -112,15 +134,37 @@
         "Str_dfhIkvmQVh"
       ],
       "bonitaetsCheck": {
-        "ueberschuss": "8664.000000"
-      },
-      "uebersichten": {
-        "bausteinUebersicht": {
-          "ueberschrift": "Str_COtNcoMwab"
+        "einnahmen": {
+          "positionen": [
+            {
+              "label": "Regelm. Nettoeinkommen (unselbständig)",
+              "wert": "2793.050000"
+            },
+            {
+              "label": "Kindergeld",
+              "wert": "194.000000"
+            }
+          ],
+          "summe": "98232.000000"
         },
-        "bonicheck": {
-          "ueberschrift": "Str_cxPSXhLjrc"
-        }
+        "ausgaben": {
+          "positionen": [
+            {
+              "label": "Lebenshaltungskosten",
+              "wert": "1815.000000"
+            },
+            {
+              "label": "Krankenversicherungsbeiträge",
+              "wert": "387.000000"
+            },
+            {
+              "label": "Rate der Finanzierung",
+              "wert": "123.000000"
+            }
+          ],
+          "summe": "11377.000000"
+        },
+        "ueberschuss": "50516.000000"
       },
       "maximalerAuszahlungsbetrag": "65923.000000"
     }

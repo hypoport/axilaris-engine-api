@@ -49,15 +49,37 @@
       "Str_jRGmgOLrhE"
     ],
     "bonitaetsCheck": {
-      "ueberschuss": "15413.000000"
-    },
-    "uebersichten": {
-      "bausteinUebersicht": {
-        "ueberschrift": "Str_HvQsYBWmNv"
+      "einnahmen": {
+        "positionen": [
+          {
+            "label": "Regelm. Nettoeinkommen (unselbständig)",
+            "wert": "2793.050000"
+          },
+          {
+            "label": "Kindergeld",
+            "wert": "194.000000"
+          }
+        ],
+        "summe": "98232.000000"
       },
-      "bonicheck": {
-        "ueberschrift": "Str_gpxyXLdNdP"
-      }
+      "ausgaben": {
+        "positionen": [
+          {
+            "label": "Lebenshaltungskosten",
+            "wert": "1815.000000"
+          },
+          {
+            "label": "Krankenversicherungsbeiträge",
+            "wert": "387.000000"
+          },
+          {
+            "label": "Rate der Finanzierung",
+            "wert": "123.000000"
+          }
+        ],
+        "summe": "11377.000000"
+      },
+      "ueberschuss": "50516.000000"
     },
     "maximalerAuszahlungsbetrag": "46551.000000"
   },
