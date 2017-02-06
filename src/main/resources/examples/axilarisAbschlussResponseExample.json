@@ -61,16 +61,14 @@
     },
     "maximalerAuszahlungsbetrag": "46551.000000"
   },
-  "dokumente": [
-    {
-      "bezeichnung": "Kreditvertrag",
-      "dateiname": "SPK Berlin Kreditvertrag Heinz Meier.pdf",
-      "base64pdf": "Str_ODoOnUgqYj",
-      "sichtbarkeit": {
-        "sichtbarFuerVertrieb": true,
-        "sichtbarFuerProduktanbieter": false
-      }
+  "dokumente": {
+    "bezeichnung": "Kreditvertrag",
+    "dateiname": "SPK Berlin Kreditvertrag Heinz Meier.pdf",
+    "base64pdf": "ZXlKaGJtZGxZbTkwYzFaaGNtbGhiblJsYmxSNWNDSTZleUpoYm1kbFltOTBjMVpoY21saGJuUmxibFI1Y0NJNklsSkJWRVZPUzFKRlJFbFVJaXdpYjJabVpYSlhiM0pyWm14dmR5STZJazFoYzNSbGNrOW1abVZ5VjI5eWEwWnNiM2RKWkNJc0luQnliMlIxZW1WdWRDSTZJbE5MUnlKOWZR",
+    "sichtbarkeit": {
+      "sichtbarFuerVertrieb": true,
+      "sichtbarFuerProduktanbieter": false
     }
-  ],
+  },
   "referenznummerProduktanbieter": "Str_XNaqkBcBdQ"
 }
