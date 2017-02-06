@@ -1,5 +1,15 @@
 {
   "angebot": {
+    "dokument": {
+      "bezeichnung": "Kreditvertrag",
+      "dateiname": "SPK Berlin Kreditvertrag Heinz Meier.pdf",
+      "base64pdf": "ZXlKaGJtZGxZbTkwYzFaaGNtbGhiblJsYmxSNWNDSTZleUpoYm1kbFltOTBjMVpoY21saGJuUmxibFI1Y0NJNklsSkJWRVZPUzFKRlJFbFVJaXdpYjJabVpYSlhiM0pyWm14dmR5STZJazFoYzNSbGNrOW1abVZ5VjI5eWEwWnNiM2RKWkNJc0luQnliMlIxZW1WdWRDSTZJbE5MUnlKOWZR",
+      "sichtbarkeit": {
+        "sichtbarFuerVertrieb": true,
+        "sichtbarFuerProduktanbieter": true
+      }
+    },
+    "referenznummerProduktanbieter": "Str_gTytWSYKqS",
     "produktanbieter": "SPK_BERLIN",
     "produktbezeichnung": "Str_zvsYgRtAKZ",
     "angebotsvariantentyp": "eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6IlJBVEVOS1JFRElUIiwib2ZmZXJXb3JrZmxvdyI6Ik1hc3Rlck9mZmVyV29ya0Zsb3dJZCIsInByb2R1emVudCI6IlNLRyJ9fQ==",
@@ -82,15 +92,5 @@
       "ueberschuss": "50516.000000"
     },
     "maximalerAuszahlungsbetrag": "46551.000000"
-  },
-  "dokumente": {
-    "bezeichnung": "Kreditvertrag",
-    "dateiname": "SPK Berlin Kreditvertrag Heinz Meier.pdf",
-    "base64pdf": "ZXlKaGJtZGxZbTkwYzFaaGNtbGhiblJsYmxSNWNDSTZleUpoYm1kbFltOTBjMVpoY21saGJuUmxibFI1Y0NJNklsSkJWRVZPUzFKRlJFbFVJaXdpYjJabVpYSlhiM0pyWm14dmR5STZJazFoYzNSbGNrOW1abVZ5VjI5eWEwWnNiM2RKWkNJc0luQnliMlIxZW1WdWRDSTZJbE5MUnlKOWZR",
-    "sichtbarkeit": {
-      "sichtbarFuerVertrieb": true,
-      "sichtbarFuerProduktanbieter": false
-    }
-  },
-  "referenznummerProduktanbieter": "Str_XNaqkBcBdQ"
+  }
 }

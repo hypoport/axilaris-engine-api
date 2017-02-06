@@ -3,10 +3,10 @@
   "title": "axilaris-engine-api Abschlussresponse",
   "id": "http://jsonschema.net/axilaris-engine-api/abschluss/response",
   "type": "object",
+  "extends": {
+    "$ref": "axilarisAngebot.json#/angebot"
+  },
   "properties": {
-    "angebot": {
-      "$ref": "axilarisAngebot.json#/angebot"
-    },
     "dokument": {
       "type": "object",
       "properties": {
