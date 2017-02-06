@@ -131,14 +131,14 @@
           "type": "string"
         }
       },
-      "bonitaetsCheck": {
+      "bonitaetscheck": {
         "type": "object",
         "properties": {
           "einnahmen": {
-            "$ref": "#/bonitaetsCheckPosition"
+            "$ref": "#/bonitaetscheckPosition"
           },
           "ausgaben": {
-            "$ref": "#/bonitaetsCheckPosition"
+            "$ref": "#/bonitaetscheckPosition"
           },
           "ueberschuss": {
             "$ref": "axilarisDefinitions.json#/EUR"
@@ -152,7 +152,7 @@
     },
     "additionalProperties": false
   },
-  "bonitaetsCheckPosition": {
+  "bonitaetscheckPosition": {
     "type": "object",
     "properties": {
       "positionen": {
