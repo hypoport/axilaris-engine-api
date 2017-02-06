@@ -8,7 +8,8 @@
       "produktbezeichnung": {
         "type": "string"
       },
-      "angebotsVariantenTyp": {
+      "angebotsvariantentyp": {
+        "description": "Identifier der es dem Client ermöglicht das Angebot gezielt abzuschliessen. Nicht das konkrete Angebot wird identifiziert, sondern das konkrete Produkt eines Produktanbieters.",
         "type": "string"
       },
       "kreditkonditionen": {

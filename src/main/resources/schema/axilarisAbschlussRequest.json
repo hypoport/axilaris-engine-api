@@ -7,7 +7,7 @@
     "$ref": "axilarisRequest.json#/request"
   },
   "properties": {
-    "angebotsVariantenTyp": {
+    "angebotsvariantentyp": {
       "type": "string"
     },
     "bearbeiter": {

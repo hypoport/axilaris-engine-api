@@ -3,7 +3,7 @@
     {
       "produktanbieter": "SPK_BERLIN",
       "produktbezeichnung": "Str_scVQCzMnPp",
-      "angebotsVariantenTyp": "eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6IlJBVEVOS1JFRElUIiwib2ZmZXJXb3JrZmxvdyI6Ik1hc3Rlck9mZmVyV29ya0Zsb3dJZCIsInByb2R1emVudCI6IlNLRyJ9fQ==",
+      "angebotsvariantentyp": "eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6IlJBVEVOS1JFRElUIiwib2ZmZXJXb3JrZmxvdyI6Ik1hc3Rlck9mZmVyV29ya0Zsb3dJZCIsInByb2R1emVudCI6IlNLRyJ9fQ==",
       "kreditkonditionen": {
         "effektivzinssatz": 0.0531,
         "sollzinssatz": 0.0511,
@@ -87,7 +87,7 @@
     {
       "produktanbieter": "KASSEL_SPK",
       "produktbezeichnung": "Str_MAKqdyJSWx",
-      "angebotsVariantenTyp": "eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6IlBST0RVS1RWQVJJQU5URV9CIiwib2ZmZXJXb3JrZmxvdyI6Ik1hc3Rlck9mZmVyV29ya0Zsb3dJZCIsInByb2R1emVudCI6IlNBTlRBTkRFUl9DQVIifX0=",
+      "angebotsvariantentyp": "eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6IlBST0RVS1RWQVJJQU5URV9CIiwib2ZmZXJXb3JrZmxvdyI6Ik1hc3Rlck9mZmVyV29ya0Zsb3dJZCIsInByb2R1emVudCI6IlNBTlRBTkRFUl9DQVIifX0=",
       "kreditkonditionen": {
         "effektivzinssatz": 0.0407,
         "sollzinssatz": 0.0399,
