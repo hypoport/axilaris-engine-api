@@ -7,35 +7,36 @@
     "angebot": {
       "$ref": "axilarisAngebot.json#/angebot"
     },
-    "dokumente": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "bezeichnung": {
-            "type": "string"
-          },
-          "dateiname": {
-            "type": "string"
-          },
-          "base64pdf": {
-            "type": "string"
-          },
-          "sichtbarkeit": {
-            "type": "object",
-            "properties": {
-              "sichtbarFuerVertrieb": {
-                "type": "boolean"
-              },
-              "sichtbarFuerProduktanbieter": {
-                "type": "boolean"
-              }
-            },
-            "additionalProperties": false
+    "dokument": {
+      "type": "object",
+      "properties": {
+        "bezeichnung": {
+          "type": "string"
+        },
+        "dateiname": {
+          "type": "string"
+        },
+        "base64pdf": {
+          "type": "string",
+          "media": {
+            "binaryEncoding": "base64",
+            "type": "application/octet-stream"
           }
         },
-        "additionalProperties": false
-      }
+        "sichtbarkeit": {
+          "type": "object",
+          "properties": {
+            "sichtbarFuerVertrieb": {
+              "type": "boolean"
+            },
+            "sichtbarFuerProduktanbieter": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
     },
     "referenznummerProduktanbieter": {
       "type": "string"
