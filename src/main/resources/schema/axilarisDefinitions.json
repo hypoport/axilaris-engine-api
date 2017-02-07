@@ -348,22 +348,18 @@
         "arbeitsunfaehigkeit": {
           "type": "boolean"
         },
-        "arbeitsLosigkeit": {
+        "arbeitslosigkeit": {
           "type": "boolean"
         }
       },
+      "required": [
+        "antragstellerId",
+        "tod",
+        "arbeitsunfaehigkeit",
+        "arbeitslosigkeit"
+      ],
       "additionalProperties": false
     }
-  },
-  "uebersicht": {
-    "type": "object",
-    "description": "TODO Typ ist nicht final spezifiziert",
-    "properties": {
-      "ueberschrift": {
-        "type": "string"
-      }
-    },
-    "additionalProperties": false
   },
   "jaehrlicheAngaben": {
     "type": "object",

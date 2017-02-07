@@ -36,6 +36,12 @@
           "additionalProperties": false
         }
       },
+      "required": [
+        "bezeichnung",
+        "dateiname",
+        "base64pdf",
+        "sichtbarkeit"
+      ],
       "additionalProperties": false
     },
     "referenznummerProduktanbieter": {

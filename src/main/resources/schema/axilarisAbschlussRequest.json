@@ -48,5 +48,8 @@
       "$ref": "axilarisDefinitions.json#/percent"
     }
   },
+  "required": [
+    "angebotsvariantentyp"
+  ],
   "additionalProperties": false
 }

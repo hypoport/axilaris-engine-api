@@ -22,12 +22,15 @@
             "$ref": "axilarisDefinitions.json#/percent"
           },
           "gesamtbetrag": {
+            "description": "Auszahlungsbetrag + Versicherungsprämie + Zinsen",
             "$ref": "axilarisDefinitions.json#/EUR"
           },
           "nettokreditbetrag": {
+            "description": "Auszahlungsbetrag + Versicherungsprämie",
             "$ref": "axilarisDefinitions.json#/EUR"
           },
           "auszahlungsbetrag": {
+            "description": "Kreditbetrag",
             "$ref": "axilarisDefinitions.json#/EUR"
           },
           "laufzeitInMonaten": {
@@ -55,6 +58,21 @@
             "$ref": "axilarisDefinitions.json#/EUR"
           }
         },
+        "required": [
+          "effektivzinssatz",
+          "sollzinssatz",
+          "gesamtbetrag",
+          "nettokreditbetrag",
+          "auszahlungsbetrag",
+          "laufzeitInMonaten",
+          "rateProMonat",
+          "letzteRate",
+          "provision",
+          "basisbetragFuerDieProvisionsermittlung",
+          "europaceNutzungsgebuehr",
+          "produktanbieterZahltEuropaceNutzungsgebuehr",
+          "vorlaufzinsenProTag"
+        ],
         "additionalProperties": false
       },
       "versicherungskonditionen": {
@@ -70,9 +88,11 @@
             "$ref": "axilarisDefinitions.json#/EUR"
           },
           "versicherungspraemieBrutto": {
+            "description": "Versicherungsprämie inklusive Steuer für Arbeitslosigkeitsversicherung",
             "$ref": "axilarisDefinitions.json#/EUR"
           },
           "versicherungspraemieNetto": {
+            "description": "Versicherungsprämie exklusive Steuer für Arbeitslosigkeitsversicherung",
             "$ref": "axilarisDefinitions.json#/EUR"
           },
           "versicherungsrisiken": {
@@ -85,6 +105,15 @@
             "$ref": "axilarisDefinitions.json#/EUR"
           }
         },
+        "required": [
+          "basisFuerDieProvisionsermittlung",
+          "versicherungsprovision",
+          "versicherungspraemieBrutto",
+          "versicherungspraemieNetto",
+          "versicherungsrisiken",
+          "versicherer",
+          "europaceNutzungsgebuehr"
+        ],
         "additionalProperties": false
       },
       "status": {
@@ -98,9 +127,14 @@
             ]
           },
           "angepasst": {
+            "description": "true wenn der Kredit- oder Versicherungswunsch des Antragstellers angepasst wurde.",
             "type": "boolean"
           }
         },
+        "required": [
+          "machbarkeitsstatus",
+          "angepasst"
+        ],
         "additionalProperties": false
       },
       "meldungen": {
@@ -123,6 +157,11 @@
               "type": "string"
             }
           },
+          "required": [
+            "kategorie",
+            "text",
+            "code"
+          ],
           "additionalProperties": false
         }
       },
@@ -145,12 +184,25 @@
             "$ref": "axilarisDefinitions.json#/EUR"
           }
         },
+        "required": [
+          "einnahmen",
+          "ausgaben",
+          "ueberschuss"
+        ],
         "additionalProperties": false
       },
       "maximalerAuszahlungsbetrag": {
         "$ref": "axilarisDefinitions.json#/EUR"
       }
     },
+    "required": [
+      "produktanbieter",
+      "produktbezeichnung",
+      "angebotsvariantentyp",
+      "kreditkonditionen",
+      "status",
+      "bonitaetscheck"
+    ],
     "additionalProperties": false
   },
   "bonitaetscheckPosition": {
@@ -168,6 +220,10 @@
               "$ref": "axilarisDefinitions.json#/EUR"
             }
           },
+          "required": [
+            "label",
+            "wert"
+          ],
           "additionalProperties": false
         }
       },
@@ -175,6 +231,10 @@
         "$ref": "axilarisDefinitions.json#/EUR"
       }
     },
+    "required": [
+      "positionen",
+      "summe"
+    ],
     "additionalProperties": false
   }
 }

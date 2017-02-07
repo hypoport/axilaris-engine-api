@@ -3,6 +3,7 @@
     "type": "object",
     "properties": {
       "metadaten": {
+        "description": "Dient der Identifikation von Reqests und Vorgängen.",
         "type": "object",
         "properties": {
           "traceId": {
@@ -12,9 +13,14 @@
             "type": "string"
           },
           "teilantragsnummer": {
+            "description": "Wird nur beim Abschluss geliefert.",
             "type": "string"
           }
         },
+        "required": [
+          "traceId",
+          "vorgangsnummer"
+        ],
         "additionalProperties": false
       },
       "kreditwunsch": {
@@ -27,15 +33,20 @@
             "type": "integer"
           },
           "laufzeitInMonaten": {
+            "description": "Der Client muss mindestens Laufzeit oder Rate liefern.",
             "type": "integer"
           },
           "rateProMonat": {
+            "description": "Der Client muss mindestens Laufzeit oder Rate liefern.",
             "$ref": "axilarisDefinitions.json#/EUR"
           },
           "versicherungsrisiken": {
             "$ref": "axilarisDefinitions.json#/versicherungsrisiken"
           }
         },
+        "required": [
+          "auszahlungsbetrag"
+        ],
         "additionalProperties": false
       },
       "antragsteller": {

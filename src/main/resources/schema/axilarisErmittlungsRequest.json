@@ -22,6 +22,9 @@
             "$ref": "axilarisDefinitions.json#/percent"
           }
         },
+        "required": [
+          "produktanbieter"
+        ],
         "additionalProperties": false
       }
     }
