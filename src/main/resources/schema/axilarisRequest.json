@@ -23,6 +23,17 @@
         ],
         "additionalProperties": false
       },
+      "featureToggles": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "aktiv": {
+            "type": "boolean"
+          }
+        }
+      },
       "kreditwunsch": {
         "type": "object",
         "properties": {
