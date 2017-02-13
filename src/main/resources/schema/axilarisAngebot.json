@@ -54,7 +54,7 @@
           "produktanbieterZahltEuropaceNutzungsgebuehr": {
             "type": "boolean"
           },
-//         TODO JSa
+          //         TODO JSa
           "vorlaufzinsenProTag": {
             "$ref": "axilarisDefinitions.json#/EUR"
           }
@@ -192,7 +192,6 @@
         ],
         "additionalProperties": false
       },
-//     TODO JSa Optional??
       "maximalerAuszahlungsbetrag": {
         "$ref": "axilarisDefinitions.json#/EUR"
       }
