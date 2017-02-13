@@ -4,8 +4,10 @@
   "id": "http://jsonschema.net/axilaris-engine-api/produktanbieter",
   "description": "Dokumentation aller zulaessigen Produktanbieter",
   "enum": [
-    "SPK_BERLIN",
-    "HAMBURGER_SPK",
-    "KASSEL_SPK"
+    "SPK_MEISSEN",
+    "SPK_BARNIM",
+    "KSK_ANH_BITTER",
+    "SPK_VOGTLAND",
+    "SPK_CHEMNITZ"
   ]
 }
