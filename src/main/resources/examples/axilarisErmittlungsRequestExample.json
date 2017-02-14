@@ -1,4 +1,16 @@
 {
+  "handelsbeziehungen": [
+    {
+      "produktanbieter": "SPK_BERLIN",
+      "vertriebsgruppe": "DR_KLEIN",
+      "kreditProvisionswunsch": 0.01
+    },
+    {
+      "produktanbieter": "KASSEL_SPK",
+      "kreditProvisionswunsch": 0.025
+    }
+  ],
+  "apiversion": 1,
   "metadaten": {
     "traceId": "ks-18efa128",
     "vorgangsnummer": "RC2229"
@@ -673,16 +685,5 @@
     "email": "Str_uizoAEhHCH",
     "iban": "Str_BAwriewCdn",
     "anrede": "HERR"
-  },
-  "handelsbeziehungen": [
-    {
-      "produktanbieter": "SPK_BERLIN",
-      "vertriebsgruppe": "DR_KLEIN",
-      "kreditProvisionswunsch": 0.01
-    },
-    {
-      "produktanbieter": "KASSEL_SPK",
-      "kreditProvisionswunsch": 0.025
-    }
-  ]
+  }
 }

@@ -2,6 +2,9 @@
   "request": {
     "type": "object",
     "properties": {
+      "apiversion": {
+        "type": "integer"
+      },
       "metadaten": {
         "description": "Dient der Identifikation von Reqests und Vorgängen.",
         "type": "object",

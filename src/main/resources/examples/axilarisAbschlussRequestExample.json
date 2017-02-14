@@ -1,623 +1,690 @@
 {
-  "metadaten" : {
-    "traceId" : "ks-18efa128",
-    "teilantragsnummer" : "RC2229/1/1"
+  "angebotsvariantentyp": "eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6IlJBVEVOS1JFRElUIiwib2ZmZXJXb3JrZmxvdyI6Ik1hc3Rlck9mZmVyV29ya0Zsb3dJZCIsInByb2R1emVudCI6IlNLRyJ9fQ==",
+  "bearbeiter": {
+    "vorname": "Str_AxnEHVwpDX",
+    "nachname": "Str_XYtTffcZdd"
   },
-  "kreditwunsch" : {
-    "auszahlungsbetrag" : "10000.000000",
-    "ratenzahlungtermin" : 15,
-    "laufzeitInMonaten" : 2060539933,
-    "rateProMonat" : "500.000000",
-    "versicherungsrisiken" : [ {
-      "antragstellerId" : "e46cafd4-7a3f-40a3-a070-a09d5c2aa436",
-      "tod" : true,
-      "arbeitsunfaehigkeit" : true,
-      "arbeitsLosigkeit" : true
-    } ]
+  "beratungsart": "PRAESENZ_GESCHAEFT",
+  "vertriebsgruppe": "Str_nizrVYMKOp",
+  "vertriebsorganisation": {
+    "id": "Str_HWkBmhlkmf",
+    "name": "Str_xBTbGLItnd"
   },
-  "antragsteller" : [ {
-    "id" : "e46cafd4-7a3f-40a3-a070-a09d5c2aa436",
-    "haushaltspartnerId" : "v46cafd5-7a3f-10a2-a070-a09d5c2aa437",
-    "persoenlicheAngaben" : {
-      "anrede" : "HERR",
-      "titel" : "Dr.",
-      "vorname" : "Str_vhDxjZLjIS",
-      "nachname" : "Str_RCMoMHDgOi",
-      "geburtsdatum" : "2032-03-23",
-      "geburtsort" : "Str_qZHZWFJyrB",
-      "geburtsname" : "Str_ARxpXXGqsT",
-      "staatsangehoerigkeit" : "DE",
-      "familienstand" : "EHEAEHNLICHE_GEMEINSCHAFT",
-      "anzahlPersonenImHaushalt" : 4
-    },
-    "angabenZurBeschaeftigung" : {
-      "beschaeftigungsverhaeltnis" : "BEAMTER",
-      "befristet" : "BEFRISTET",
-      "beschaeftigtSeit" : "2024-05-17",
-      "befristetBis" : "2039-09-14",
-      "beruf" : "Str_sGFpedTeci",
-      "branche" : "HOTEL_GASTRONOMIE",
-      "anschrift" : {
-        "strasse" : "Str_KtcIbljbMn",
-        "hausnummer" : "Str_JHrBQjfOLr",
-        "postleitzahl" : "Str_blQHaWSdJJ",
-        "ort" : "Str_EBGmqWMVAY",
-        "land" : "Str_yEmbEALuon"
+  "kreditProvisionswunsch": 0.0305,
+  "apiversion": 1,
+  "metadaten": {
+    "traceId": "ks-18efa128",
+    "teilantragsnummer": "RC2229/1/1"
+  },
+  "kreditwunsch": {
+    "auszahlungsbetrag": "10000.000000",
+    "ratenzahlungtermin": 15,
+    "laufzeitInMonaten": 2060539933,
+    "rateProMonat": "500.000000",
+    "versicherungsrisiken": [
+      {
+        "antragstellerId": "e46cafd4-7a3f-40a3-a070-a09d5c2aa436",
+        "tod": true,
+        "arbeitsunfaehigkeit": true,
+        "arbeitsLosigkeit": true
+      }
+    ]
+  },
+  "antragsteller": [
+    {
+      "id": "e46cafd4-7a3f-40a3-a070-a09d5c2aa436",
+      "haushaltspartnerId": "v46cafd5-7a3f-10a2-a070-a09d5c2aa437",
+      "persoenlicheAngaben": {
+        "anrede": "HERR",
+        "titel": "Dr.",
+        "vorname": "Str_vhDxjZLjIS",
+        "nachname": "Str_RCMoMHDgOi",
+        "geburtsdatum": "2032-03-23",
+        "geburtsort": "Str_qZHZWFJyrB",
+        "geburtsname": "Str_ARxpXXGqsT",
+        "staatsangehoerigkeit": "DE",
+        "familienstand": "EHEAEHNLICHE_GEMEINSCHAFT",
+        "anzahlPersonenImHaushalt": 4
       },
-      "arbeitgebername" : "Str_OUfndhpfpr"
-    },
-    "angabenZurVorherigenBeschaeftigung" : {
-      "beschaeftigtSeit" : "2041-01-07",
-      "befristetBis" : "2041-07-22",
-      "anschrift" : {
-        "strasse" : "Str_sFviMKKZTk",
-        "hausnummer" : "Str_pUPrghKFSN",
-        "postleitzahl" : "Str_HUVYWXKZTH",
-        "ort" : "Str_MtmSPIsqbw",
-        "land" : "Str_JoHARXyCMw"
-      },
-      "arbeitgebername" : "Str_WyIthiALzP"
-    },
-    "wohnsituation" : {
-      "wohnart" : "BEI_DEN_ELTERN",
-      "wohnhaftSeit" : "2039-08-21",
-      "anschrift" : {
-        "strasse" : "Str_XmJqJzfYOu",
-        "hausnummer" : "Str_ZgouAzLqhe",
-        "postleitzahl" : "Str_tLbhiEzqTz",
-        "ort" : "Str_EVYosKxtSX",
-        "land" : "Str_ghjjTmBNqI"
-      },
-      "voranschrift" : {
-        "strasse" : "Str_GqgJTsFYHB",
-        "hausnummer" : "Str_QChmRrdYeh",
-        "postleitzahl" : "Str_PqEchvrHPC",
-        "ort" : "Str_gekNdUbSnT",
-        "land" : "Str_JbYfEzlwmV"
-      },
-      "wohnhaftSeitDerVoranschrift" : "2025-11-05",
-      "anzahlPkw" : 1
-    },
-    "kontakt" : {
-      "telefonPrivat" : "074093374790",
-      "telefonGeschaeftlich" : "017624826444",
-      "eMail" : "bla@blu.de"
-    },
-    "herkunft" : {
-      "aufenthaltstitel" : {
-        "inDeutschlandSeit" : "2037-04-14",
-        "art" : "VISUM",
-        "befristetBis" : "2020-04-14"
-      },
-      "arbeitserlaubnisBefristetBis" : "2029-12-22"
-    },
-    "ausgaben" : {
-      "krankenversicherungsbeitraege" : "23959.000000",
-      "eigenmieteInklusiveNebenkosten" : "69393.000000",
-      "unterhalt" : "43868.000000",
-      "rateImmobiliendarlehen" : "85106.000000",
-      "lebensversicherungsbeitraege" : "20425.000000",
-      "bauspardarlehensrate" : "19038.000000",
-      "sonstigeAusgaben" : "92567.000000"
-    },
-    "einnahmen" : {
-      "monatlicheEinnahmen" : {
-        "regelmaessigesUnselbstaendigesEinkommenMonatlich" : "56679.000000",
-        "rente" : "69759.000000",
-        "kindesunterhalt" : "2292.000000",
-        "ehegattenunterhalt" : "40467.000000",
-        "kindergeld" : "61240.000000",
-        "nebentaetigkeit" : "51161.000000",
-        "mietUndPachteinnahmen" : {
-          "warm" : "89095.000000",
-          "kalt" : "45235.000000"
+      "angabenZurBeschaeftigung": {
+        "beschaeftigungsverhaeltnis": "BEAMTER",
+        "befristet": "BEFRISTET",
+        "beschaeftigtSeit": "2024-05-17",
+        "befristetBis": "2039-09-14",
+        "beruf": "Str_sGFpedTeci",
+        "branche": "HOTEL_GASTRONOMIE",
+        "anschrift": {
+          "strasse": "Str_KtcIbljbMn",
+          "hausnummer": "Str_JHrBQjfOLr",
+          "postleitzahl": "Str_blQHaWSdJJ",
+          "ort": "Str_EBGmqWMVAY",
+          "land": "Str_yEmbEALuon"
         },
-        "sonstige" : "53310.000000"
+        "arbeitgebername": "Str_OUfndhpfpr"
       },
-      "jaehrlicheEinnahmen" : {
-        "einkommenAusSelbstaendigkeit" : {
-          "nettoeinkommenJaehrlich" : "63174.000000",
-          "zuVersteuerndesJahreseinkommen" : {
-            "laufendesJahr" : "79777.000000",
-            "vorEinemJahr" : "82525.000000",
-            "vorZweiJahren" : "47654.000000",
-            "vorDreiJahren" : "68900.000000"
+      "angabenZurVorherigenBeschaeftigung": {
+        "beschaeftigtSeit": "2041-01-07",
+        "befristetBis": "2041-07-22",
+        "anschrift": {
+          "strasse": "Str_sFviMKKZTk",
+          "hausnummer": "Str_pUPrghKFSN",
+          "postleitzahl": "Str_HUVYWXKZTH",
+          "ort": "Str_MtmSPIsqbw",
+          "land": "Str_JoHARXyCMw"
+        },
+        "arbeitgebername": "Str_WyIthiALzP"
+      },
+      "wohnsituation": {
+        "wohnart": "BEI_DEN_ELTERN",
+        "wohnhaftSeit": "2039-08-21",
+        "anschrift": {
+          "strasse": "Str_XmJqJzfYOu",
+          "hausnummer": "Str_ZgouAzLqhe",
+          "postleitzahl": "Str_tLbhiEzqTz",
+          "ort": "Str_EVYosKxtSX",
+          "land": "Str_ghjjTmBNqI"
+        },
+        "voranschrift": {
+          "strasse": "Str_GqgJTsFYHB",
+          "hausnummer": "Str_QChmRrdYeh",
+          "postleitzahl": "Str_PqEchvrHPC",
+          "ort": "Str_gekNdUbSnT",
+          "land": "Str_JbYfEzlwmV"
+        },
+        "wohnhaftSeitDerVoranschrift": "2025-11-05",
+        "anzahlPkw": 1
+      },
+      "kontakt": {
+        "telefonPrivat": "074093374790",
+        "telefonGeschaeftlich": "017624826444",
+        "eMail": "bla@blu.de"
+      },
+      "herkunft": {
+        "aufenthaltstitel": {
+          "inDeutschlandSeit": "2037-04-14",
+          "art": "VISUM",
+          "befristetBis": "2020-04-14"
+        },
+        "arbeitserlaubnisBefristetBis": "2029-12-22"
+      },
+      "ausgaben": {
+        "krankenversicherungsbeitraege": "23959.000000",
+        "eigenmieteInklusiveNebenkosten": "69393.000000",
+        "unterhalt": "43868.000000",
+        "rateImmobiliendarlehen": "85106.000000",
+        "lebensversicherungsbeitraege": "20425.000000",
+        "bauspardarlehensrate": "19038.000000",
+        "sonstigeAusgaben": "92567.000000"
+      },
+      "einnahmen": {
+        "monatlicheEinnahmen": {
+          "regelmaessigesUnselbstaendigesEinkommenMonatlich": "56679.000000",
+          "rente": "69759.000000",
+          "kindesunterhalt": "2292.000000",
+          "ehegattenunterhalt": "40467.000000",
+          "kindergeld": "61240.000000",
+          "nebentaetigkeit": "51161.000000",
+          "mietUndPachteinnahmen": {
+            "warm": "89095.000000",
+            "kalt": "45235.000000"
           },
-          "einkommenssteuer" : {
-            "laufendesJahr" : "2171.000000",
-            "vorEinemJahr" : "74983.000000",
-            "vorZweiJahren" : "23078.000000",
-            "vorDreiJahren" : "32609.000000"
-          },
-          "abschreibungen" : {
-            "laufendesJahr" : "90742.000000",
-            "vorEinemJahr" : "96043.000000",
-            "vorZweiJahren" : "71353.000000",
-            "vorDreiJahren" : "30324.000000"
-          },
-          "bruttoeinkommenJaehrlichErwartet" : "6555.000000"
+          "sonstige": "53310.000000"
+        },
+        "jaehrlicheEinnahmen": {
+          "einkommenAusSelbstaendigkeit": {
+            "nettoeinkommenJaehrlich": "63174.000000",
+            "zuVersteuerndesJahreseinkommen": {
+              "laufendesJahr": "79777.000000",
+              "vorEinemJahr": "82525.000000",
+              "vorZweiJahren": "47654.000000",
+              "vorDreiJahren": "68900.000000"
+            },
+            "einkommenssteuer": {
+              "laufendesJahr": "2171.000000",
+              "vorEinemJahr": "74983.000000",
+              "vorZweiJahren": "23078.000000",
+              "vorDreiJahren": "32609.000000"
+            },
+            "abschreibungen": {
+              "laufendesJahr": "90742.000000",
+              "vorEinemJahr": "96043.000000",
+              "vorZweiJahren": "71353.000000",
+              "vorDreiJahren": "30324.000000"
+            },
+            "bruttoeinkommenJaehrlichErwartet": "6555.000000"
+          }
         }
+      },
+      "vermoegen": {
+        "rueckkaufswertLebensversicherung": "45869.000000",
+        "bausparguthaben": "43341.000000",
+        "eigengenutzteImmobilien": "67479.000000",
+        "vermieteteImmobilien": "57726.000000",
+        "immobilie": [
+          {
+            "id": "Str_RrLFylLtor",
+            "art": "Str_BDuVdYrJTe",
+            "verkehrswert": "41815.000000",
+            "wohnflaeche": 160,
+            "vermieteteWohnflaeche": 1363954579,
+            "nutzungsart": "EIGENGENUTZT"
+          }
+        ],
+        "wohnflaecheEigengenutzterImmobilieInQm": 120
+      },
+      "verbindlichkeiten": {
+        "ratenkredite": [
+          {
+            "id": "Str_vWzjECGOAU",
+            "monatlicheRate": "98724.000000",
+            "letzteRate": "66832.000000",
+            "datumLetzteRate": "2027-03-15",
+            "restschuld": "4599.000000"
+          }
+        ],
+        "sonstigeVerbindlichkeiten": [
+          {
+            "id": "Str_PwIToidwfK",
+            "monatlicheRate": "99691.000000",
+            "letzteRate": "20491.000000",
+            "datumLetzteRate": "2028-09-28",
+            "restschuld": "78997.000000"
+          }
+        ],
+        "leasings": [
+          {
+            "id": "Str_VVwImwXpbx",
+            "monatlicheRate": "42930.000000",
+            "letzteRate": "24516.000000",
+            "datumLetzteRate": "2018-11-04"
+          }
+        ],
+        "kreditkarten": [
+          {
+            "id": "Str_mYNNcGtLxN",
+            "verfuegungsrahmen": "84647.000000",
+            "monatlicheRate": "9321.000000",
+            "beanspruchterBetrag": "78382.000000"
+          }
+        ],
+        "dispositionskredite": [
+          {
+            "id": "Str_bLjpYNXAZN",
+            "verfuegungsrahmen": "74553.000000",
+            "beanspruchterBetrag": "16988.000000"
+          }
+        ],
+        "immobiliendarlehen": [
+          {
+            "immobilieId": "Str_keqnCCwOJD",
+            "monatlicheRate": "55475.000000",
+            "restschuld": "46730.000000"
+          }
+        ],
+        "summeImmobiliendarlehen": "53537.000000"
+      },
+      "anzahlKinder": 978729473,
+      "rentenversicherung": {
+        "name": "Str_elvADYwxrN",
+        "anschrift": {
+          "strasse": "Str_IZkbLYiKMr",
+          "hausnummer": "Str_eFsgBVwfuo",
+          "postleitzahl": "Str_hQIPvkcvwM",
+          "ort": "Str_GfpcIdvtck",
+          "land": "Str_EucBKOddSp"
+        },
+        "rentnerSeit": "2039-10-08"
+      },
+      "legitimation": {
+        "ausweisart": "ANDERER_AUSWEIS",
+        "ausweisnummer": "Str_fGMUhQOhDX",
+        "ausstellendeBehoerde": "Str_GAxxEEfmXi",
+        "ausstellungsdatum": "2023-01-24",
+        "ausstellungsort": "Str_fKWivuqHoF"
       }
     },
-    "vermoegen" : {
-      "rueckkaufswertLebensversicherung" : "45869.000000",
-      "bausparguthaben" : "43341.000000",
-      "eigengenutzteImmobilien" : "67479.000000",
-      "vermieteteImmobilien" : "57726.000000",
-      "immobilie" : [ {
-        "id" : "Str_RrLFylLtor",
-        "art" : "Str_BDuVdYrJTe",
-        "verkehrswert" : "41815.000000",
-        "wohnflaeche" : 160,
-        "vermieteteWohnflaeche" : 1363954579,
-        "nutzungsart" : "EIGENGENUTZT"
-      } ],
-      "wohnflaecheEigengenutzterImmobilieInQm" : 120
-    },
-    "verbindlichkeiten" : {
-      "ratenkredite" : [ {
-        "id" : "Str_vWzjECGOAU",
-        "monatlicheRate" : "98724.000000",
-        "letzteRate" : "66832.000000",
-        "datumLetzteRate" : "2027-03-15",
-        "restschuld" : "4599.000000"
-      } ],
-      "sonstigeVerbindlichkeiten" : [ {
-        "id" : "Str_PwIToidwfK",
-        "monatlicheRate" : "99691.000000",
-        "letzteRate" : "20491.000000",
-        "datumLetzteRate" : "2028-09-28",
-        "restschuld" : "78997.000000"
-      } ],
-      "leasings" : [ {
-        "id" : "Str_VVwImwXpbx",
-        "monatlicheRate" : "42930.000000",
-        "letzteRate" : "24516.000000",
-        "datumLetzteRate" : "2018-11-04"
-      } ],
-      "kreditkarten" : [ {
-        "id" : "Str_mYNNcGtLxN",
-        "verfuegungsrahmen" : "84647.000000",
-        "monatlicheRate" : "9321.000000",
-        "beanspruchterBetrag" : "78382.000000"
-      } ],
-      "dispositionskredite" : [ {
-        "id" : "Str_bLjpYNXAZN",
-        "verfuegungsrahmen" : "74553.000000",
-        "beanspruchterBetrag" : "16988.000000"
-      } ],
-      "immobiliendarlehen" : [ {
-        "immobilieId" : "Str_keqnCCwOJD",
-        "monatlicheRate" : "55475.000000",
-        "restschuld" : "46730.000000"
-      } ],
-      "summeImmobiliendarlehen" : "53537.000000"
-    },
-    "anzahlKinder" : 978729473,
-    "rentenversicherung" : {
-      "name" : "Str_elvADYwxrN",
-      "anschrift" : {
-        "strasse" : "Str_IZkbLYiKMr",
-        "hausnummer" : "Str_eFsgBVwfuo",
-        "postleitzahl" : "Str_hQIPvkcvwM",
-        "ort" : "Str_GfpcIdvtck",
-        "land" : "Str_EucBKOddSp"
+    {
+      "id": "v46cafd5-7a3f-10a2-a070-a09d5c2aa437",
+      "haushaltspartnerId": "e46cafd4-7a3f-40a3-a070-a09d5c2aa436",
+      "persoenlicheAngaben": {
+        "anrede": "HERR",
+        "titel": "Str_sklrzXKfhb",
+        "vorname": "Str_uBoQDIcJBF",
+        "nachname": "Str_zuvYxkfoAA",
+        "geburtsdatum": "2029-08-18",
+        "geburtsort": "Str_UBUbEQsjUE",
+        "geburtsname": "Str_sXnLHrqKiD",
+        "staatsangehoerigkeit": "DE",
+        "familienstand": "GESCHIEDEN",
+        "anzahlPersonenImHaushalt": 4
       },
-      "rentnerSeit" : "2039-10-08"
-    },
-    "legitimation" : {
-      "ausweisart" : "ANDERER_AUSWEIS",
-      "ausweisnummer" : "Str_fGMUhQOhDX",
-      "ausstellendeBehoerde" : "Str_GAxxEEfmXi",
-      "ausstellungsdatum" : "2023-01-24",
-      "ausstellungsort" : "Str_fKWivuqHoF"
+      "angabenZurBeschaeftigung": {
+        "beschaeftigungsverhaeltnis": "RENTNER",
+        "befristet": "BEFRISTET",
+        "beschaeftigtSeit": "2032-06-29",
+        "befristetBis": "2026-11-13",
+        "beruf": "Str_PVQEhfGgcy",
+        "branche": "GEBIETSKOERPERSCHAFTEN",
+        "anschrift": {
+          "strasse": "Str_esHHQXbIZc",
+          "hausnummer": "Str_uNKuwDfVcs",
+          "postleitzahl": "Str_xukldUVIjW",
+          "ort": "Str_AePGNYtvZr",
+          "land": "Str_dCqFIcNYjD"
+        },
+        "arbeitgebername": "Str_TCogToCkZc"
+      },
+      "angabenZurVorherigenBeschaeftigung": {
+        "beschaeftigtSeit": "2031-06-21",
+        "befristetBis": "2019-04-29",
+        "anschrift": {
+          "strasse": "Str_FjEZRrTywg",
+          "hausnummer": "Str_JeqiwHnlGu",
+          "postleitzahl": "Str_rbWtfyNuAR",
+          "ort": "Str_daTkEyZcBv",
+          "land": "Str_FsPZAojQgf"
+        },
+        "arbeitgebername": "Str_LimVPimACT"
+      },
+      "wohnsituation": {
+        "wohnart": "ZUR_UNTERMIETE",
+        "wohnhaftSeit": "2022-10-03",
+        "anschrift": {
+          "strasse": "Str_eybJGDmpUr",
+          "hausnummer": "Str_SstHdNlEnf",
+          "postleitzahl": "Str_HbMoJLZzhy",
+          "ort": "Str_yQUNbiVwjN",
+          "land": "Str_jNmuWhAyyO"
+        },
+        "voranschrift": {
+          "strasse": "Str_kfLxRqUkQK",
+          "hausnummer": "Str_xbfHXIyBif",
+          "postleitzahl": "Str_cJjFuWkcWq",
+          "ort": "Str_NjJROzUqPT",
+          "land": "Str_zVzFJmxYzN"
+        },
+        "wohnhaftSeitDerVoranschrift": "2043-11-12",
+        "anzahlPkw": 1
+      },
+      "kontakt": {
+        "telefonPrivat": "030-5293909",
+        "telefonGeschaeftlich": "+491773214482",
+        "eMail": "foo@bar.de"
+      },
+      "herkunft": {
+        "aufenthaltstitel": {
+          "inDeutschlandSeit": "2043-04-10",
+          "art": "AUFENTHALTSERLAUBNIS_BEFRISTET",
+          "befristetBis": "2030-10-24"
+        },
+        "arbeitserlaubnisBefristetBis": "2042-08-03"
+      },
+      "ausgaben": {
+        "krankenversicherungsbeitraege": "37203.000000",
+        "eigenmieteInklusiveNebenkosten": "60370.000000",
+        "unterhalt": "75394.000000",
+        "rateImmobiliendarlehen": "54797.000000",
+        "lebensversicherungsbeitraege": "81462.000000",
+        "bauspardarlehensrate": "28169.000000",
+        "sonstigeAusgaben": "4854.000000"
+      },
+      "einnahmen": {
+        "monatlicheEinnahmen": {
+          "regelmaessigesUnselbstaendigesEinkommenMonatlich": "42704.000000",
+          "rente": "60150.000000",
+          "kindesunterhalt": "58249.000000",
+          "ehegattenunterhalt": "28466.000000",
+          "kindergeld": "76038.000000",
+          "nebentaetigkeit": "29633.000000",
+          "mietUndPachteinnahmen": {
+            "warm": "3285.000000",
+            "kalt": "44375.000000"
+          },
+          "sonstige": "83017.000000"
+        },
+        "jaehrlicheEinnahmen": {
+          "einkommenAusSelbstaendigkeit": {
+            "nettoeinkommenJaehrlich": "40535.000000",
+            "zuVersteuerndesJahreseinkommen": {
+              "laufendesJahr": "32828.000000",
+              "vorEinemJahr": "7550.000000",
+              "vorZweiJahren": "7205.000000",
+              "vorDreiJahren": "15060.000000"
+            },
+            "einkommenssteuer": {
+              "laufendesJahr": "88001.000000",
+              "vorEinemJahr": "41532.000000",
+              "vorZweiJahren": "20076.000000",
+              "vorDreiJahren": "50227.000000"
+            },
+            "abschreibungen": {
+              "laufendesJahr": "64312.000000",
+              "vorEinemJahr": "93393.000000",
+              "vorZweiJahren": "36067.000000",
+              "vorDreiJahren": "58934.000000"
+            },
+            "bruttoeinkommenJaehrlichErwartet": "87982.000000"
+          }
+        }
+      },
+      "vermoegen": {
+        "rueckkaufswertLebensversicherung": "52802.000000",
+        "bausparguthaben": "81388.000000",
+        "eigengenutzteImmobilien": "70862.000000",
+        "vermieteteImmobilien": "9702.000000",
+        "immobilie": [
+          {
+            "id": "Str_aqJByePeDM",
+            "art": "Str_nzuzocvqet",
+            "verkehrswert": "43676.000000",
+            "wohnflaeche": 100,
+            "vermieteteWohnflaeche": 2143592917,
+            "nutzungsart": "EIGENGENUTZT"
+          }
+        ],
+        "wohnflaecheEigengenutzterImmobilieInQm": 40
+      },
+      "verbindlichkeiten": {
+        "ratenkredite": [
+          {
+            "id": "Str_Kqlmlepazq",
+            "monatlicheRate": "81117.000000",
+            "letzteRate": "97824.000000",
+            "datumLetzteRate": "2030-06-15",
+            "restschuld": "74410.000000"
+          }
+        ],
+        "sonstigeVerbindlichkeiten": [
+          {
+            "id": "Str_RLMpZmaapf",
+            "monatlicheRate": "15925.000000",
+            "letzteRate": "28783.000000",
+            "datumLetzteRate": "2041-01-18",
+            "restschuld": "7868.000000"
+          }
+        ],
+        "leasings": [
+          {
+            "id": "Str_yeinXLBIgO",
+            "monatlicheRate": "88942.000000",
+            "letzteRate": "6160.000000",
+            "datumLetzteRate": "2032-11-20"
+          }
+        ],
+        "kreditkarten": [
+          {
+            "id": "Str_ZifvAXbXOJ",
+            "verfuegungsrahmen": "92128.000000",
+            "monatlicheRate": "71466.000000",
+            "beanspruchterBetrag": "70765.000000"
+          }
+        ],
+        "dispositionskredite": [
+          {
+            "id": "Str_RSjMCaQlPW",
+            "verfuegungsrahmen": "77674.000000",
+            "beanspruchterBetrag": "31902.000000"
+          }
+        ],
+        "immobiliendarlehen": [
+          {
+            "immobilieId": "Str_YKrmXoKPLi",
+            "monatlicheRate": "18702.000000",
+            "restschuld": "66180.000000"
+          }
+        ],
+        "summeImmobiliendarlehen": "81541.000000"
+      },
+      "anzahlKinder": 2,
+      "rentenversicherung": {
+        "name": "Str_lYftWETFXI",
+        "anschrift": {
+          "strasse": "Str_fGItEgqasq",
+          "hausnummer": "Str_nEFytkzuxb",
+          "postleitzahl": "Str_HtfcuuevMM",
+          "ort": "Str_mHNLRudnbe",
+          "land": "Str_AMfWsPFYkV"
+        },
+        "rentnerSeit": "2022-01-25"
+      },
+      "legitimation": {
+        "ausweisart": "REISEPASS",
+        "ausweisnummer": "Str_cLDpTlyUIB",
+        "ausstellendeBehoerde": "Str_VhHRLdGSnq",
+        "ausstellungsdatum": "2035-05-17",
+        "ausstellungsort": "Str_gRZaJcqsXH"
+      }
     }
-  }, {
-    "id" : "v46cafd5-7a3f-10a2-a070-a09d5c2aa437",
-    "haushaltspartnerId" : "e46cafd4-7a3f-40a3-a070-a09d5c2aa436",
-    "persoenlicheAngaben" : {
-      "anrede" : "HERR",
-      "titel" : "Str_sklrzXKfhb",
-      "vorname" : "Str_uBoQDIcJBF",
-      "nachname" : "Str_zuvYxkfoAA",
-      "geburtsdatum" : "2029-08-18",
-      "geburtsort" : "Str_UBUbEQsjUE",
-      "geburtsname" : "Str_sXnLHrqKiD",
-      "staatsangehoerigkeit" : "DE",
-      "familienstand" : "GESCHIEDEN",
-      "anzahlPersonenImHaushalt" : 4
+  ],
+  "gemeinsameAntragstellerangaben": {
+    "ausgaben": {
+      "krankenversicherungsbeitraege": "66673.000000",
+      "eigenmieteInklusiveNebenkosten": "3351.000000",
+      "unterhalt": "74228.000000",
+      "rateImmobiliendarlehen": "77418.000000",
+      "lebensversicherungsbeitraege": "27342.000000",
+      "bauspardarlehensrate": "46604.000000",
+      "sonstigeAusgaben": "70699.000000"
     },
-    "angabenZurBeschaeftigung" : {
-      "beschaeftigungsverhaeltnis" : "RENTNER",
-      "befristet" : "BEFRISTET",
-      "beschaeftigtSeit" : "2032-06-29",
-      "befristetBis" : "2026-11-13",
-      "beruf" : "Str_PVQEhfGgcy",
-      "branche" : "GEBIETSKOERPERSCHAFTEN",
-      "anschrift" : {
-        "strasse" : "Str_esHHQXbIZc",
-        "hausnummer" : "Str_uNKuwDfVcs",
-        "postleitzahl" : "Str_xukldUVIjW",
-        "ort" : "Str_AePGNYtvZr",
-        "land" : "Str_dCqFIcNYjD"
-      },
-      "arbeitgebername" : "Str_TCogToCkZc"
-    },
-    "angabenZurVorherigenBeschaeftigung" : {
-      "beschaeftigtSeit" : "2031-06-21",
-      "befristetBis" : "2019-04-29",
-      "anschrift" : {
-        "strasse" : "Str_FjEZRrTywg",
-        "hausnummer" : "Str_JeqiwHnlGu",
-        "postleitzahl" : "Str_rbWtfyNuAR",
-        "ort" : "Str_daTkEyZcBv",
-        "land" : "Str_FsPZAojQgf"
-      },
-      "arbeitgebername" : "Str_LimVPimACT"
-    },
-    "wohnsituation" : {
-      "wohnart" : "ZUR_UNTERMIETE",
-      "wohnhaftSeit" : "2022-10-03",
-      "anschrift" : {
-        "strasse" : "Str_eybJGDmpUr",
-        "hausnummer" : "Str_SstHdNlEnf",
-        "postleitzahl" : "Str_HbMoJLZzhy",
-        "ort" : "Str_yQUNbiVwjN",
-        "land" : "Str_jNmuWhAyyO"
-      },
-      "voranschrift" : {
-        "strasse" : "Str_kfLxRqUkQK",
-        "hausnummer" : "Str_xbfHXIyBif",
-        "postleitzahl" : "Str_cJjFuWkcWq",
-        "ort" : "Str_NjJROzUqPT",
-        "land" : "Str_zVzFJmxYzN"
-      },
-      "wohnhaftSeitDerVoranschrift" : "2043-11-12",
-      "anzahlPkw" : 1
-    },
-    "kontakt" : {
-      "telefonPrivat" : "030-5293909",
-      "telefonGeschaeftlich" : "+491773214482",
-      "eMail" : "foo@bar.de"
-    },
-    "herkunft" : {
-      "aufenthaltstitel" : {
-        "inDeutschlandSeit" : "2043-04-10",
-        "art" : "AUFENTHALTSERLAUBNIS_BEFRISTET",
-        "befristetBis" : "2030-10-24"
-      },
-      "arbeitserlaubnisBefristetBis" : "2042-08-03"
-    },
-    "ausgaben" : {
-      "krankenversicherungsbeitraege" : "37203.000000",
-      "eigenmieteInklusiveNebenkosten" : "60370.000000",
-      "unterhalt" : "75394.000000",
-      "rateImmobiliendarlehen" : "54797.000000",
-      "lebensversicherungsbeitraege" : "81462.000000",
-      "bauspardarlehensrate" : "28169.000000",
-      "sonstigeAusgaben" : "4854.000000"
-    },
-    "einnahmen" : {
-      "monatlicheEinnahmen" : {
-        "regelmaessigesUnselbstaendigesEinkommenMonatlich" : "42704.000000",
-        "rente" : "60150.000000",
-        "kindesunterhalt" : "58249.000000",
-        "ehegattenunterhalt" : "28466.000000",
-        "kindergeld" : "76038.000000",
-        "nebentaetigkeit" : "29633.000000",
-        "mietUndPachteinnahmen" : {
-          "warm" : "3285.000000",
-          "kalt" : "44375.000000"
+    "einnahmen": {
+      "monatlicheEinnahmen": {
+        "regelmaessigesUnselbstaendigesEinkommenMonatlich": "82084.000000",
+        "rente": "49487.000000",
+        "kindesunterhalt": "79916.000000",
+        "ehegattenunterhalt": "19482.000000",
+        "kindergeld": "40241.000000",
+        "nebentaetigkeit": "86519.000000",
+        "mietUndPachteinnahmen": {
+          "warm": "86730.000000",
+          "kalt": "85677.000000"
         },
-        "sonstige" : "83017.000000"
+        "sonstige": "909.000000"
       },
-      "jaehrlicheEinnahmen" : {
-        "einkommenAusSelbstaendigkeit" : {
-          "nettoeinkommenJaehrlich" : "40535.000000",
-          "zuVersteuerndesJahreseinkommen" : {
-            "laufendesJahr" : "32828.000000",
-            "vorEinemJahr" : "7550.000000",
-            "vorZweiJahren" : "7205.000000",
-            "vorDreiJahren" : "15060.000000"
+      "jaehrlicheEinnahmen": {
+        "einkommenAusSelbstaendigkeit": {
+          "nettoeinkommenJaehrlich": "44510.000000",
+          "zuVersteuerndesJahreseinkommen": {
+            "laufendesJahr": "19022.000000",
+            "vorEinemJahr": "77458.000000",
+            "vorZweiJahren": "6673.000000",
+            "vorDreiJahren": "39735.000000"
           },
-          "einkommenssteuer" : {
-            "laufendesJahr" : "88001.000000",
-            "vorEinemJahr" : "41532.000000",
-            "vorZweiJahren" : "20076.000000",
-            "vorDreiJahren" : "50227.000000"
+          "einkommenssteuer": {
+            "laufendesJahr": "35878.000000",
+            "vorEinemJahr": "55977.000000",
+            "vorZweiJahren": "68568.000000",
+            "vorDreiJahren": "60794.000000"
           },
-          "abschreibungen" : {
-            "laufendesJahr" : "64312.000000",
-            "vorEinemJahr" : "93393.000000",
-            "vorZweiJahren" : "36067.000000",
-            "vorDreiJahren" : "58934.000000"
+          "abschreibungen": {
+            "laufendesJahr": "37515.000000",
+            "vorEinemJahr": "76174.000000",
+            "vorZweiJahren": "36091.000000",
+            "vorDreiJahren": "36318.000000"
           },
-          "bruttoeinkommenJaehrlichErwartet" : "87982.000000"
+          "bruttoeinkommenJaehrlichErwartet": "63979.000000"
         }
       }
     },
-    "vermoegen" : {
-      "rueckkaufswertLebensversicherung" : "52802.000000",
-      "bausparguthaben" : "81388.000000",
-      "eigengenutzteImmobilien" : "70862.000000",
-      "vermieteteImmobilien" : "9702.000000",
-      "immobilie" : [ {
-        "id" : "Str_aqJByePeDM",
-        "art" : "Str_nzuzocvqet",
-        "verkehrswert" : "43676.000000",
-        "wohnflaeche" : 100,
-        "vermieteteWohnflaeche" : 2143592917,
-        "nutzungsart" : "EIGENGENUTZT"
-      } ],
-      "wohnflaecheEigengenutzterImmobilieInQm" : 40
+    "vermoegen": {
+      "rueckkaufswertLebensversicherung": "11061.000000",
+      "bausparguthaben": "32582.000000",
+      "eigengenutzteImmobilien": "30205.000000",
+      "vermieteteImmobilien": "77097.000000",
+      "immobilie": [
+        {
+          "id": "Str_pvYAUQgCPa",
+          "art": "Str_CVNUsVmlQU",
+          "verkehrswert": "25561.000000",
+          "wohnflaeche": 1707137169,
+          "vermieteteWohnflaeche": 1226286352,
+          "nutzungsart": "EIGENGENUTZT"
+        }
+      ],
+      "wohnflaecheEigengenutzterImmobilieInQm": 977074946
     },
-    "verbindlichkeiten" : {
-      "ratenkredite" : [ {
-        "id" : "Str_Kqlmlepazq",
-        "monatlicheRate" : "81117.000000",
-        "letzteRate" : "97824.000000",
-        "datumLetzteRate" : "2030-06-15",
-        "restschuld" : "74410.000000"
-      } ],
-      "sonstigeVerbindlichkeiten" : [ {
-        "id" : "Str_RLMpZmaapf",
-        "monatlicheRate" : "15925.000000",
-        "letzteRate" : "28783.000000",
-        "datumLetzteRate" : "2041-01-18",
-        "restschuld" : "7868.000000"
-      } ],
-      "leasings" : [ {
-        "id" : "Str_yeinXLBIgO",
-        "monatlicheRate" : "88942.000000",
-        "letzteRate" : "6160.000000",
-        "datumLetzteRate" : "2032-11-20"
-      } ],
-      "kreditkarten" : [ {
-        "id" : "Str_ZifvAXbXOJ",
-        "verfuegungsrahmen" : "92128.000000",
-        "monatlicheRate" : "71466.000000",
-        "beanspruchterBetrag" : "70765.000000"
-      } ],
-      "dispositionskredite" : [ {
-        "id" : "Str_RSjMCaQlPW",
-        "verfuegungsrahmen" : "77674.000000",
-        "beanspruchterBetrag" : "31902.000000"
-      } ],
-      "immobiliendarlehen" : [ {
-        "immobilieId" : "Str_YKrmXoKPLi",
-        "monatlicheRate" : "18702.000000",
-        "restschuld" : "66180.000000"
-      } ],
-      "summeImmobiliendarlehen" : "81541.000000"
+    "verbindlichkeiten": {
+      "ratenkredite": [
+        {
+          "id": "Str_ouaBtHAbiR",
+          "monatlicheRate": "43525.000000",
+          "letzteRate": "41049.000000",
+          "datumLetzteRate": "2044-06-02",
+          "restschuld": "2858.000000"
+        }
+      ],
+      "sonstigeVerbindlichkeiten": [
+        {
+          "id": "Str_EmvzCMNWYY",
+          "monatlicheRate": "70550.000000",
+          "letzteRate": "21662.000000",
+          "datumLetzteRate": "2032-12-08",
+          "restschuld": "86091.000000"
+        }
+      ],
+      "leasings": [
+        {
+          "id": "Str_qAnpvGyDWI",
+          "monatlicheRate": "50234.000000",
+          "letzteRate": "40251.000000",
+          "datumLetzteRate": "2032-06-07"
+        }
+      ],
+      "kreditkarten": [
+        {
+          "id": "Str_uGFNdekYDe",
+          "verfuegungsrahmen": "53619.000000",
+          "monatlicheRate": "19835.000000",
+          "beanspruchterBetrag": "66730.000000"
+        }
+      ],
+      "dispositionskredite": [
+        {
+          "id": "Str_LJgXsFmYKB",
+          "verfuegungsrahmen": "4477.000000",
+          "beanspruchterBetrag": "67267.000000"
+        }
+      ],
+      "immobiliendarlehen": [
+        {
+          "immobilieId": "Str_WzbcZDoHKV",
+          "monatlicheRate": "71230.000000",
+          "restschuld": "79201.000000"
+        }
+      ],
+      "summeImmobiliendarlehen": "46412.000000"
     },
-    "anzahlKinder" : 2,
-    "rentenversicherung" : {
-      "name" : "Str_lYftWETFXI",
-      "anschrift" : {
-        "strasse" : "Str_fGItEgqasq",
-        "hausnummer" : "Str_nEFytkzuxb",
-        "postleitzahl" : "Str_HtfcuuevMM",
-        "ort" : "Str_mHNLRudnbe",
-        "land" : "Str_AMfWsPFYkV"
-      },
-      "rentnerSeit" : "2022-01-25"
-    },
-    "legitimation" : {
-      "ausweisart" : "REISEPASS",
-      "ausweisnummer" : "Str_cLDpTlyUIB",
-      "ausstellendeBehoerde" : "Str_VhHRLdGSnq",
-      "ausstellungsdatum" : "2035-05-17",
-      "ausstellungsort" : "Str_gRZaJcqsXH"
-    }
-  } ],
-  "gemeinsameAntragstellerangaben" : {
-    "ausgaben" : {
-      "krankenversicherungsbeitraege" : "66673.000000",
-      "eigenmieteInklusiveNebenkosten" : "3351.000000",
-      "unterhalt" : "74228.000000",
-      "rateImmobiliendarlehen" : "77418.000000",
-      "lebensversicherungsbeitraege" : "27342.000000",
-      "bauspardarlehensrate" : "46604.000000",
-      "sonstigeAusgaben" : "70699.000000"
-    },
-    "einnahmen" : {
-      "monatlicheEinnahmen" : {
-        "regelmaessigesUnselbstaendigesEinkommenMonatlich" : "82084.000000",
-        "rente" : "49487.000000",
-        "kindesunterhalt" : "79916.000000",
-        "ehegattenunterhalt" : "19482.000000",
-        "kindergeld" : "40241.000000",
-        "nebentaetigkeit" : "86519.000000",
-        "mietUndPachteinnahmen" : {
-          "warm" : "86730.000000",
-          "kalt" : "85677.000000"
-        },
-        "sonstige" : "909.000000"
-      },
-      "jaehrlicheEinnahmen" : {
-        "einkommenAusSelbstaendigkeit" : {
-          "nettoeinkommenJaehrlich" : "44510.000000",
-          "zuVersteuerndesJahreseinkommen" : {
-            "laufendesJahr" : "19022.000000",
-            "vorEinemJahr" : "77458.000000",
-            "vorZweiJahren" : "6673.000000",
-            "vorDreiJahren" : "39735.000000"
-          },
-          "einkommenssteuer" : {
-            "laufendesJahr" : "35878.000000",
-            "vorEinemJahr" : "55977.000000",
-            "vorZweiJahren" : "68568.000000",
-            "vorDreiJahren" : "60794.000000"
-          },
-          "abschreibungen" : {
-            "laufendesJahr" : "37515.000000",
-            "vorEinemJahr" : "76174.000000",
-            "vorZweiJahren" : "36091.000000",
-            "vorDreiJahren" : "36318.000000"
-          },
-          "bruttoeinkommenJaehrlichErwartet" : "63979.000000"
+    "anzahlKinder": 1357988201
+  },
+  "konto": {
+    "kreditinstitut": "Str_rgXEWwiGuW",
+    "kontoinhaberIds": [
+      "e46cafd4-7a3f-40a3-a070-a09d5c2aa436",
+      "v46cafd5-7a3f-10a2-a070-a09d5c2aa437"
+    ],
+    "iban": "Str_BWERhnYoWL",
+    "bic": "Str_GVcoPhdcMT"
+  },
+  "abzuloesendeVerbindlichkeiten": {
+    "ratenkredite": [
+      {
+        "id": "Str_MGXCcUKpuw",
+        "monatlicheRate": "89398.000000",
+        "letzteRate": "45279.000000",
+        "datumErsteRate": "2034-12-31",
+        "datumLetzteRate": "2018-01-31",
+        "urspruenglicherBetrag": "19066.000000",
+        "abloesebetrag": "9578.000000",
+        "konto": {
+          "kreditinstitut": "Str_JAWDmDaxiZ",
+          "kontoinhaberIds": [
+            "Str_KMZerHkuCA"
+          ],
+          "iban": "Str_CaFmgZZSOo",
+          "bic": "Str_RlUeJLjfgB"
         }
       }
-    },
-    "vermoegen" : {
-      "rueckkaufswertLebensversicherung" : "11061.000000",
-      "bausparguthaben" : "32582.000000",
-      "eigengenutzteImmobilien" : "30205.000000",
-      "vermieteteImmobilien" : "77097.000000",
-      "immobilie" : [ {
-        "id" : "Str_pvYAUQgCPa",
-        "art" : "Str_CVNUsVmlQU",
-        "verkehrswert" : "25561.000000",
-        "wohnflaeche" : 1707137169,
-        "vermieteteWohnflaeche" : 1226286352,
-        "nutzungsart" : "EIGENGENUTZT"
-      } ],
-      "wohnflaecheEigengenutzterImmobilieInQm" : 977074946
-    },
-    "verbindlichkeiten" : {
-      "ratenkredite" : [ {
-        "id" : "Str_ouaBtHAbiR",
-        "monatlicheRate" : "43525.000000",
-        "letzteRate" : "41049.000000",
-        "datumLetzteRate" : "2044-06-02",
-        "restschuld" : "2858.000000"
-      } ],
-      "sonstigeVerbindlichkeiten" : [ {
-        "id" : "Str_EmvzCMNWYY",
-        "monatlicheRate" : "70550.000000",
-        "letzteRate" : "21662.000000",
-        "datumLetzteRate" : "2032-12-08",
-        "restschuld" : "86091.000000"
-      } ],
-      "leasings" : [ {
-        "id" : "Str_qAnpvGyDWI",
-        "monatlicheRate" : "50234.000000",
-        "letzteRate" : "40251.000000",
-        "datumLetzteRate" : "2032-06-07"
-      } ],
-      "kreditkarten" : [ {
-        "id" : "Str_uGFNdekYDe",
-        "verfuegungsrahmen" : "53619.000000",
-        "monatlicheRate" : "19835.000000",
-        "beanspruchterBetrag" : "66730.000000"
-      } ],
-      "dispositionskredite" : [ {
-        "id" : "Str_LJgXsFmYKB",
-        "verfuegungsrahmen" : "4477.000000",
-        "beanspruchterBetrag" : "67267.000000"
-      } ],
-      "immobiliendarlehen" : [ {
-        "immobilieId" : "Str_WzbcZDoHKV",
-        "monatlicheRate" : "71230.000000",
-        "restschuld" : "79201.000000"
-      } ],
-      "summeImmobiliendarlehen" : "46412.000000"
-    },
-    "anzahlKinder" : 1357988201
-  },
-  "konto" : {
-    "kreditinstitut" : "Str_rgXEWwiGuW",
-    "kontoinhaberIds" : [ "e46cafd4-7a3f-40a3-a070-a09d5c2aa436", "v46cafd5-7a3f-10a2-a070-a09d5c2aa437" ],
-    "iban" : "Str_BWERhnYoWL",
-    "bic" : "Str_GVcoPhdcMT"
-  },
-  "abzuloesendeVerbindlichkeiten" : {
-    "ratenkredite" : [ {
-      "id" : "Str_MGXCcUKpuw",
-      "monatlicheRate" : "89398.000000",
-      "letzteRate" : "45279.000000",
-      "datumErsteRate" : "2034-12-31",
-      "datumLetzteRate" : "2018-01-31",
-      "urspruenglicherBetrag" : "19066.000000",
-      "abloesebetrag" : "9578.000000",
-      "konto" : {
-        "kreditinstitut" : "Str_JAWDmDaxiZ",
-        "kontoinhaberIds" : [ "Str_KMZerHkuCA" ],
-        "iban" : "Str_CaFmgZZSOo",
-        "bic" : "Str_RlUeJLjfgB"
+    ],
+    "sonstigeVerbindlichkeiten": [
+      {
+        "id": "Str_uPIgakOBxl",
+        "monatlicheRate": "57104.000000",
+        "letzteRate": "17040.000000",
+        "datumErsteRate": "2027-10-01",
+        "datumLetzteRate": "2023-03-25",
+        "urspruenglicherBetrag": "65438.000000",
+        "abloesebetrag": "90508.000000",
+        "konto": {
+          "kreditinstitut": "Str_FfifLcVhDS",
+          "kontoinhaberIds": [
+            "Str_cqRZiYPgkA"
+          ],
+          "iban": "Str_UFralfhlSb",
+          "bic": "Str_jpxoYoWKeN"
+        }
       }
-    } ],
-    "sonstigeVerbindlichkeiten" : [ {
-      "id" : "Str_uPIgakOBxl",
-      "monatlicheRate" : "57104.000000",
-      "letzteRate" : "17040.000000",
-      "datumErsteRate" : "2027-10-01",
-      "datumLetzteRate" : "2023-03-25",
-      "urspruenglicherBetrag" : "65438.000000",
-      "abloesebetrag" : "90508.000000",
-      "konto" : {
-        "kreditinstitut" : "Str_FfifLcVhDS",
-        "kontoinhaberIds" : [ "Str_cqRZiYPgkA" ],
-        "iban" : "Str_UFralfhlSb",
-        "bic" : "Str_jpxoYoWKeN"
+    ],
+    "kreditkarten": [
+      {
+        "id": "Str_FHvoyrDllH",
+        "verfuegungsrahmen": "16374.000000",
+        "monatlicheRate": "18727.000000",
+        "abloesebetrag": "75017.000000",
+        "konto": {
+          "kreditinstitut": "Str_KoFcPXjPGL",
+          "kontoinhaberIds": [
+            "Str_nsSdLcnVTZ"
+          ],
+          "iban": "Str_fnhtSIVDJU",
+          "bic": "Str_hSZPnfWrcR"
+        }
       }
-    } ],
-    "kreditkarten" : [ {
-      "id" : "Str_FHvoyrDllH",
-      "verfuegungsrahmen" : "16374.000000",
-      "monatlicheRate" : "18727.000000",
-      "abloesebetrag" : "75017.000000",
-      "konto" : {
-        "kreditinstitut" : "Str_KoFcPXjPGL",
-        "kontoinhaberIds" : [ "Str_nsSdLcnVTZ" ],
-        "iban" : "Str_fnhtSIVDJU",
-        "bic" : "Str_hSZPnfWrcR"
+    ],
+    "dispositionskredite": [
+      {
+        "id": "Str_KAJGHrWxtx",
+        "verfuegungsrahmen": "16389.000000",
+        "abloesebetrag": "3760.000000",
+        "konto": {
+          "kreditinstitut": "Str_zcmCfhehPA",
+          "kontoinhaberIds": [
+            "Str_uLdeMKgSYK"
+          ],
+          "iban": "Str_fYtculgRVP",
+          "bic": "Str_hGvRLYusZR"
+        }
       }
-    } ],
-    "dispositionskredite" : [ {
-      "id" : "Str_KAJGHrWxtx",
-      "verfuegungsrahmen" : "16389.000000",
-      "abloesebetrag" : "3760.000000",
-      "konto" : {
-        "kreditinstitut" : "Str_zcmCfhehPA",
-        "kontoinhaberIds" : [ "Str_uLdeMKgSYK" ],
-        "iban" : "Str_fYtculgRVP",
-        "bic" : "Str_hGvRLYusZR"
-      }
-    } ]
+    ]
   },
-  "finanzierungszweck" : "NEUWAGENKAUF",
-  "fahrzeugdaten" : {
-    "erstzulassungsdatum" : "2024-11-14",
-    "kaufpreis" : "51829.000000",
-    "beglicheneKosten" : "42826.000000",
-    "fahrzeugleistung" : {
-      "nennleistung" : 0.6400915074788542,
-      "einheit" : "PS"
+  "finanzierungszweck": "NEUWAGENKAUF",
+  "fahrzeugdaten": {
+    "erstzulassungsdatum": "2024-11-14",
+    "kaufpreis": "51829.000000",
+    "beglicheneKosten": "42826.000000",
+    "fahrzeugleistung": {
+      "nennleistung": 0.6400915074788542,
+      "einheit": "PS"
     },
-    "laufleistung" : 597217679,
-    "marke" : "Str_GFjFOjSffL",
-    "modell" : "Str_yuMvmWTKsa",
-    "verkaeuferart" : "PRIVAT"
+    "laufleistung": 597217679,
+    "marke": "Str_GFjFOjSffL",
+    "modell": "Str_yuMvmWTKsa",
+    "verkaeuferart": "PRIVAT"
   },
-  "kundenbetreuer" : {
-    "partnerId" : "Str_DSBKHjdHpp",
-    "firmenname" : "Str_wpXVqFuhSv",
-    "vorname" : "Str_piVqCnLrMj",
-    "nachname" : "Str_mpvAJBTeIm",
-    "anschrift" : {
-      "strasse" : "Str_HPikZEnsTq",
-      "hausnummer" : "Str_xzyIWIzZGM",
-      "postleitzahl" : "Str_aybbLnWhuU",
-      "ort" : "Str_XPcRNDqjvb",
-      "land" : "Str_KPxZerNRnD"
+  "kundenbetreuer": {
+    "partnerId": "Str_DSBKHjdHpp",
+    "firmenname": "Str_wpXVqFuhSv",
+    "vorname": "Str_piVqCnLrMj",
+    "nachname": "Str_mpvAJBTeIm",
+    "anschrift": {
+      "strasse": "Str_HPikZEnsTq",
+      "hausnummer": "Str_xzyIWIzZGM",
+      "postleitzahl": "Str_aybbLnWhuU",
+      "ort": "Str_XPcRNDqjvb",
+      "land": "Str_KPxZerNRnD"
     },
-    "telefon" : "Str_zZpMbnjauO",
-    "fax" : "Str_heMOGxpJOQ",
-    "email" : "Str_DutnAJvvCU",
-    "iban" : "Str_DjtDNEcLHn",
-    "anrede" : "FRAU"
-  },
-  "angebotsvariantentyp" : "eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6eyJhbmdlYm90c1ZhcmlhbnRlblR5cCI6IlJBVEVOS1JFRElUIiwib2ZmZXJXb3JrZmxvdyI6Ik1hc3Rlck9mZmVyV29ya0Zsb3dJZCIsInByb2R1emVudCI6IlNLRyJ9fQ==",
-  "bearbeiter" : {
-    "vorname" : "Str_AxnEHVwpDX",
-    "nachname" : "Str_XYtTffcZdd"
-  },
-  "beratungsart" : "PRAESENZ_GESCHAEFT",
-  "vertriebsgruppe" : "Str_nizrVYMKOp",
-  "vertriebsorganisation" : {
-    "id" : "Str_HWkBmhlkmf",
-    "name" : "Str_xBTbGLItnd"
-  },
-  "kreditProvisionswunsch" : 0.0305
+    "telefon": "Str_zZpMbnjauO",
+    "fax": "Str_heMOGxpJOQ",
+    "email": "Str_DutnAJvvCU",
+    "iban": "Str_DjtDNEcLHn",
+    "anrede": "FRAU"
+  }
 }

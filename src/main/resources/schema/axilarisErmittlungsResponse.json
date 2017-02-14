@@ -4,6 +4,9 @@
   "id": "http://jsonschema.net/axilaris-engine-api/ermittlung/response",
   "type": "object",
   "properties": {
+    "apiversion": {
+      "type": "integer"
+    },
     "angebote": {
       "type": "array",
       "items": {

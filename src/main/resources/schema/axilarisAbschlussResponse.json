@@ -7,6 +7,9 @@
     "$ref": "axilarisAngebot.json#/angebot"
   },
   "properties": {
+    "apiversion": {
+      "type": "integer"
+    },
     "dokument": {
       "type": "object",
       "properties": {
