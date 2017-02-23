@@ -16,8 +16,6 @@
         "letzteRate": "40278.000000",
         "provision": "64193.000000",
         "basisbetragFuerDieProvisionsermittlung": "57155.000000",
-        "europaceNutzungsgebuehr": "43509.000000",
-        "produktanbieterZahltEuropaceNutzungsgebuehr": false,
         "vorlaufzinsenProTag": "31638.000000"
       },
       "versicherungskonditionen": {
@@ -33,8 +31,7 @@
             "arbeitsLosigkeit": true
           }
         ],
-        "versicherer": "Str_PWDzCirhFF",
-        "europaceNutzungsgebuehr": "91665.000000"
+        "versicherer": "Str_PWDzCirhFF"
       },
       "status": {
         "machbarkeitsstatus": "NICHT_MACHBAR",
@@ -100,8 +97,6 @@
         "letzteRate": "35550.000000",
         "provision": "89689.000000",
         "basisbetragFuerDieProvisionsermittlung": "17051.000000",
-        "europaceNutzungsgebuehr": "92636.000000",
-        "produktanbieterZahltEuropaceNutzungsgebuehr": true,
         "vorlaufzinsenProTag": "16734.000000"
       },
       "versicherungskonditionen": {
@@ -117,8 +112,7 @@
             "arbeitsLosigkeit": false
           }
         ],
-        "versicherer": "Str_aDrFfLSnnR",
-        "europaceNutzungsgebuehr": "17774.000000"
+        "versicherer": "Str_aDrFfLSnnR"
       },
       "status": {
         "machbarkeitsstatus": "MACHBAR",

@@ -48,13 +48,6 @@
           "basisbetragFuerDieProvisionsermittlung": {
             "$ref": "axilarisDefinitions.json#/EUR"
           },
-          "europaceNutzungsgebuehr": {
-            "$ref": "axilarisDefinitions.json#/EUR"
-          },
-          "produktanbieterZahltEuropaceNutzungsgebuehr": {
-            "type": "boolean"
-          },
-          //         TODO JSa
           "vorlaufzinsenProTag": {
             "$ref": "axilarisDefinitions.json#/EUR"
           }
@@ -70,8 +63,6 @@
           "letzteRate",
           "provision",
           "basisbetragFuerDieProvisionsermittlung",
-          "europaceNutzungsgebuehr",
-          "produktanbieterZahltEuropaceNutzungsgebuehr",
           "vorlaufzinsenProTag"
         ],
         "additionalProperties": false
@@ -102,9 +93,6 @@
           "versicherer": {
             "type": "string"
           },
-          "europaceNutzungsgebuehr": {
-            "$ref": "axilarisDefinitions.json#/EUR"
-          }
         },
         "required": [
           "basisFuerDieProvisionsermittlung",
@@ -112,8 +100,7 @@
           "versicherungspraemieBrutto",
           "versicherungspraemieNetto",
           "versicherungsrisiken",
-          "versicherer",
-          "europaceNutzungsgebuehr"
+          "versicherer"
         ],
         "additionalProperties": false
       },

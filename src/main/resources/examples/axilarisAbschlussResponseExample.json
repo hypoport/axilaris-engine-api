@@ -25,8 +25,6 @@
       "letzteRate": "38371.000000",
       "provision": "75680.000000",
       "basisbetragFuerDieProvisionsermittlung": "61743.000000",
-      "europaceNutzungsgebuehr": "48564.000000",
-      "produktanbieterZahltEuropaceNutzungsgebuehr": true,
       "vorlaufzinsenProTag": "74400.000000"
     },
     "versicherungskonditionen": {
@@ -42,8 +40,7 @@
           "arbeitsLosigkeit": true
         }
       ],
-      "versicherer": "Str_VGDYyWPYXr",
-      "europaceNutzungsgebuehr": "29041.000000"
+      "versicherer": "Str_VGDYyWPYXr"
     },
     "status": {
       "machbarkeitsstatus": "NICHT_MACHBAR",
