@@ -72,6 +72,7 @@
               "type": "string"
             },
             "haushaltspartnerId": {
+              "description": "Antragsteller ID des Haushaltspartners",
               "type": "string"
             },
             "persoenlicheAngaben": {
@@ -472,6 +473,7 @@
         "additionalProperties": false
       },
       "finanzierungszweck": {
+        "description": "Verwendungszweck",
         "enum": [
           "UMSCHULDUNG",
           "SONSITGES",
