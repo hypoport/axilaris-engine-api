@@ -92,7 +92,7 @@
           },
           "versicherer": {
             "type": "string"
-          },
+          }
         },
         "required": [
           "basisFuerDieProvisionsermittlung",
