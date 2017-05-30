@@ -27,13 +27,16 @@
         "additionalProperties": false
       },
       "featureToggles": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "aktiv": {
-            "type": "boolean"
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "aktiv": {
+              "type": "boolean"
+            }
           }
         }
       },
@@ -185,7 +188,7 @@
                 "beschaeftigtSeit": {
                   "$ref": "axilarisDefinitions.json#/date"
                 },
-                "befristetBis": {
+                "beschaeftigtBis": {
                   "$ref": "axilarisDefinitions.json#/date"
                 },
                 "anschrift": {
