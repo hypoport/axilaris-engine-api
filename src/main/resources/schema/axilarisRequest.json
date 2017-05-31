@@ -47,7 +47,10 @@
             "$ref": "axilarisDefinitions.json#/EUR"
           },
           "ratenzahlungtermin": {
-            "type": "integer"
+            "enum": [
+              "MEDIO",
+              "ULTIMO"
+            ]
           },
           "laufzeitInMonaten": {
             "description": "Der Client muss mindestens Laufzeit oder Rate liefern.",
