@@ -1,5 +1,6 @@
 {
   "apiversion": 1,
+  "supportMeldung" : "Kein Angebot für Sparkasse X, da SST ausgefallen.",
   "angebote": [
     {
       "produktanbieter": "SPK_BERLIN",

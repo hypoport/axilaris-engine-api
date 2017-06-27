@@ -5,11 +5,6 @@
     "nachname": "Str_XYtTffcZdd"
   },
   "beratungsart": "PRAESENZ_GESCHAEFT",
-  "vertriebsgruppe": "Str_nizrVYMKOp",
-  "vertriebsorganisation": {
-    "id": "Str_HWkBmhlkmf",
-    "name": "Str_xBTbGLItnd"
-  },
   "kreditProvisionswunsch": 0.0305,
   "apiversion": 1,
   "metadaten": {

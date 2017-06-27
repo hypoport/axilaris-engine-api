@@ -15,9 +15,6 @@
           "produktanbieter": {
             "type": "string"
           },
-          "vertriebsgruppe": {
-            "type": "string"
-          },
           "kreditProvisionswunsch": {
             "$ref": "axilarisDefinitions.json#/percent"
           }

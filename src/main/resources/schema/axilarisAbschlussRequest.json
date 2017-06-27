@@ -29,21 +29,6 @@
         "AUSSER_GESCHAEFTSRAUM_VERTRAG"
       ]
     },
-    "vertriebsgruppe": {
-      "type": "string"
-    },
-    "vertriebsorganisation": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
     "kreditProvisionswunsch": {
       "$ref": "axilarisDefinitions.json#/percent"
     }

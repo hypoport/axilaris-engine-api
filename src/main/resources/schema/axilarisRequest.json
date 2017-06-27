@@ -482,6 +482,7 @@
         "description": "Verwendungszweck",
         "enum": [
           "UMSCHULDUNG",
+          "SONSTIGES",
           "SONSITGES",
           "NEUWAGENKAUF",
           "MODERNISIERUNG_UND_WOHNEN"

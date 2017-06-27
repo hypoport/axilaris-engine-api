@@ -7,6 +7,10 @@
     "apiversion": {
       "type": "integer"
     },
+    "supportMeldung": {
+      "description": "Hinweis für den Support, um zu verstehen, was im Axilaris-Backend los ist. (z.B. Sparkasse nicht erreichbar, aber auch StackTrace, etc)",
+      "type": "string"
+    },
     "angebote": {
       "type": "array",
       "items": {

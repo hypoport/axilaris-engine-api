@@ -1,5 +1,6 @@
 {
   "apiversion" : 1,
+  "supportMeldung" : "Generierung des Dokuments fehlgeschlagen - Grund XYZ",
   "angebot": {
     "dokument": {
       "bezeichnung": "Kreditvertrag",

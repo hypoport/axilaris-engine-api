@@ -2,7 +2,6 @@
   "handelsbeziehungen": [
     {
       "produktanbieter": "SPK_BERLIN",
-      "vertriebsgruppe": "DR_KLEIN",
       "kreditProvisionswunsch": 0.01
     },
     {
