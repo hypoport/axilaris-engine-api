@@ -32,9 +32,6 @@
       "unterhalt": {
         "$ref": "#/EUR"
       },
-      "rateImmobiliendarlehen": {
-        "$ref": "#/EUR"
-      },
       "lebensversicherungsbeitraege": {
         "$ref": "#/EUR"
       },
