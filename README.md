@@ -1,2 +1,2 @@
 # axilaris-engine-api
-API Beschreibung der Europace - Axilaris Engine API
+API Beschreibung der Europace - Axilaris Engine API für Ratenkredite
